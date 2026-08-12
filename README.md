@@ -42,6 +42,12 @@ Modular Windows screen-recording application built with Python and FFmpeg. It in
 
 The project is split into dedicated components and mixins instead of a single monolithic file, and includes automated structural checks through GitHub Actions.
 
+### [ZeTer OS](https://github.com/zeter1/ZeTer-OS)
+
+Hybrid Windows productivity application built with Python, pywebview, HTML, CSS and modular JavaScript. It combines multiple workspaces, notes, tasks, calendar data, files, tables and local-first persistence with backups, restore points and portable release tooling.
+
+The repository includes architecture and data-model documentation, repository-specific `AGENTS.md`, structural validation, JavaScript scenario smoke tests, native bridge checks and release-builder verification.
+
 ## Other project areas
 
 I have built more than 20 personal software projects, primarily Python applications and Windows utilities. They include:
@@ -49,8 +55,7 @@ I have built more than 20 personal software projects, primarily Python applicati
 - file, archive, and long-path automation tools;
 - text-to-speech and transcription utilities;
 - vacancy parsing and Excel export;
-- network traffic and process monitoring;
-- hybrid Python applications with HTML/CSS/JavaScript interfaces.
+- network traffic and process monitoring.
 
 More selected projects will be published here as separate, documented repositories.
 
