@@ -48,13 +48,18 @@ Hybrid Windows productivity application built with Python, pywebview, HTML, CSS 
 
 The repository includes architecture and data-model documentation, repository-specific `AGENTS.md`, structural validation, JavaScript scenario smoke tests, native bridge checks and release-builder verification.
 
+### [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)
+
+Windows desktop vacancy aggregator built with Python and Tkinter. It searches Rabota.by, HH.ru, Praca.by, Belmeta and GSZ.gov.by, applies local salary and vacancy filters, removes duplicates, opens source vacancies directly and exports results to Excel.
+
+The project includes resilient per-source fallback logic, structured diagnostic sessions for parser and network failures, network-free regression tests, GitHub Actions verification and Windows EXE build tooling.
+
 ## Other project areas
 
 I have built more than 20 personal software projects, primarily Python applications and Windows utilities. They include:
 
 - file, archive, and long-path automation tools;
 - text-to-speech and transcription utilities;
-- vacancy parsing and Excel export;
 - network traffic and process monitoring.
 
 More selected projects will be published here as separate, documented repositories.
