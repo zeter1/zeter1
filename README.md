@@ -48,5 +48,5 @@ I am interested in **Junior Python Developer**, **Python Automation Developer**,
 
 ## Contact
 
-- Email: **zeter4@mail.ru**
-- Telegram: **https://t.me/Zeterd**
+- Email: **zeter11@gmail.com**
+- Telegram: **https://t.me/zeter1**
