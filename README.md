@@ -28,7 +28,7 @@ I pay particular attention to:
 - refactoring large modules without breaking existing behavior;
 - reviewing Git diffs and validating AI-generated changes before accepting them.
 
-## Featured project
+## Featured projects
 
 ### [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)
 
@@ -36,11 +36,16 @@ Windows diagnostic application for investigating BSODs and system crashes. It wo
 
 The repository includes documented setup and build steps, runtime-artifact protection through `.gitignore`, and GitHub Actions checks for Python syntax and the built-in self-test.
 
+### [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)
+
+Modular Windows screen-recording application built with Python and FFmpeg. It includes global hotkeys, system-audio and microphone handling, multi-monitor capture, webcam/annotation components, recording-session management, recovery-oriented diagnostics, and project verification scripts.
+
+The project is split into dedicated components and mixins instead of a single monolithic file, and includes automated structural checks through GitHub Actions.
+
 ## Other project areas
 
 I have built more than 20 personal software projects, primarily Python applications and Windows utilities. They include:
 
-- screen recording and multimedia processing;
 - file, archive, and long-path automation tools;
 - text-to-speech and transcription utilities;
 - vacancy parsing and Excel export;
