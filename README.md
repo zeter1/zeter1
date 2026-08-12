@@ -28,11 +28,18 @@ I pay particular attention to:
 - refactoring large modules without breaking existing behavior;
 - reviewing Git diffs and validating AI-generated changes before accepting them.
 
-## Selected project areas
+## Featured project
+
+### [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)
+
+Windows diagnostic application for investigating BSODs and system crashes. It works with crash dumps, Windows Event Log data, driver/process context, SQLite history, diagnostic reports, and automated self-checks.
+
+The repository includes documented setup and build steps, runtime-artifact protection through `.gitignore`, and GitHub Actions checks for Python syntax and the built-in self-test.
+
+## Other project areas
 
 I have built more than 20 personal software projects, primarily Python applications and Windows utilities. They include:
 
-- Windows BSOD and crash-dump diagnostics;
 - screen recording and multimedia processing;
 - file, archive, and long-path automation tools;
 - text-to-speech and transcription utilities;
@@ -40,7 +47,7 @@ I have built more than 20 personal software projects, primarily Python applicati
 - network traffic and process monitoring;
 - hybrid Python applications with HTML/CSS/JavaScript interfaces.
 
-Selected projects will be published here as separate, documented repositories.
+More selected projects will be published here as separate, documented repositories.
 
 ## Currently looking for
 
