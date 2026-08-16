@@ -48,6 +48,12 @@ Offline Windows voice-dictation application built with Python and faster-whisper
 
 The project includes configurable global hotkeys, CPU/CUDA model execution, voice commands, pause-aware punctuation, optional local text cleanup and LanguageTool grammar processing, system-tray/background operation, Windows autostart, movable recording notifications and detailed diagnostic logs for hotkeys, recording state, streaming, text insertion, notifications and GPU problems.
 
+### [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)
+
+Windows desktop media downloader built with Python, Tkinter, yt-dlp, FFmpeg and FFprobe. It handles individual videos and playlists, supports VPN/proxy and browser-cookie workflows, converts downloaded media to MP3, merges audio files and can split long audio into smaller parts.
+
+The project includes multiple download fallback strategies, bounded retries, download watchdogs and stall detection, problematic-item skipping so one bad URL does not block the queue, download history, FFprobe result validation, structured diagnostic sessions, secret-aware log sanitization, a standalone problem-log validator and GitHub Actions syntax checks.
+
 ### [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)
 
 Windows desktop video translation and dubbing application built with Python, Whisper, Edge TTS, gTTS and FFmpeg. It recognizes speech, translates it, generates a new voice track and can preserve the full translated phrase with Pause Sync instead of forcing aggressive x2–x4 speech compression.
