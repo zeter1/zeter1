@@ -42,6 +42,12 @@ Modular Windows screen-recording application built with Python and FFmpeg. It in
 
 The project is split into dedicated components and mixins instead of a single monolithic file, and includes automated structural checks through GitHub Actions.
 
+### [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)
+
+Windows desktop text-to-speech and MP3 conversion application built with Python, Tkinter, Microsoft SAPI and FFmpeg. It supports multiple persistent text tabs, per-tab global hotkeys for capturing selected text from other applications, playback-device selection, extended speed and pitch controls, pause/resume bookmarks, optional deletion of read sentences, and long-text MP3 generation.
+
+The project includes resumable conversion checkpoints, safe text backups, atomic settings/workspace persistence, MP3 output validation, bounded SAPI retries, disk-space forecasting, and structured diagnostic logs designed for troubleshooting with ChatGPT/Codex.
+
 ### [ZeTer OS](https://github.com/zeter1/ZeTer-OS)
 
 Hybrid Windows productivity application built with Python, pywebview, HTML, CSS and modular JavaScript. It combines multiple workspaces, notes, tasks, calendar data, files, tables and local-first persistence with backups, restore points and portable release tooling.
