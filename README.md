@@ -42,6 +42,12 @@ Modular Windows screen-recording application built with Python and FFmpeg. It in
 
 The project is split into dedicated components and mixins instead of a single monolithic file, and includes automated structural checks through GitHub Actions.
 
+### [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)
+
+Windows desktop video translation and dubbing application built with Python, Whisper, Edge TTS, gTTS and FFmpeg. It recognizes speech, translates it, generates a new voice track and can preserve the full translated phrase with Pause Sync instead of forcing aggressive x2–x4 speech compression.
+
+The project includes translation checkpoints, resumable batch processing, persistent TTS recovery cache, bounded network retries, Edge/gTTS fallback handling, final MP4 validation, FFmpeg-based assembly, structured diagnostic sessions and compact Codex-oriented issue summaries for long-running failures.
+
 ### [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)
 
 Windows desktop text-to-speech and MP3 conversion application built with Python, Tkinter, Microsoft SAPI and FFmpeg. It supports multiple persistent text tabs, per-tab global hotkeys for capturing selected text from other applications, playback-device selection, extended speed and pitch controls, pause/resume bookmarks, optional deletion of read sentences, and long-text MP3 generation.
