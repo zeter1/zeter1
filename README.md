@@ -42,6 +42,12 @@ Modular Windows screen-recording application built with Python and FFmpeg. It in
 
 The project is split into dedicated components and mixins instead of a single monolithic file, and includes automated structural checks through GitHub Actions.
 
+### [VoiceFlow](https://github.com/zeter1/VoiceFlow)
+
+Offline Windows voice-dictation application built with Python and faster-whisper. It records microphone input, transcribes speech locally and inserts confirmed realtime text chunks directly into the currently focused field, allowing the user to switch between Telegram, browsers, documents, editors and other applications during one recording session.
+
+The project includes configurable global hotkeys, CPU/CUDA model execution, voice commands, pause-aware punctuation, optional local text cleanup and LanguageTool grammar processing, system-tray/background operation, Windows autostart, movable recording notifications and detailed diagnostic logs for hotkeys, recording state, streaming, text insertion, notifications and GPU problems.
+
 ### [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)
 
 Windows desktop video translation and dubbing application built with Python, Whisper, Edge TTS, gTTS and FFmpeg. It recognizes speech, translates it, generates a new voice track and can preserve the full translated phrase with Pause Sync instead of forcing aggressive x2–x4 speech compression.
