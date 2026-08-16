@@ -36,6 +36,12 @@ Windows diagnostic application for investigating BSODs and system crashes. It wo
 
 The repository includes documented setup and build steps, runtime-artifact protection through `.gitignore`, and GitHub Actions checks for Python syntax and the built-in self-test.
 
+### [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)
+
+Windows desktop utility built with Python, Tkinter and native WinAPI. It locks the current Windows session through `LockWorkStation` while optionally keeping the system awake so long-running background tasks can continue without replacing or bypassing the standard Windows lock screen.
+
+The project includes configurable sleep/display prevention, a safety timeout, automatic keep-awake shutdown after session unlock, single-instance protection, local persistent settings, bounded diagnostic logs with configurable retention, compact ChatGPT/Codex-oriented problem context, and Windows GitHub Actions checks for syntax and a non-destructive self-test.
+
 ### [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)
 
 Modular Windows screen-recording application built with Python and FFmpeg. It includes global hotkeys, system-audio and microphone handling, multi-monitor capture, webcam/annotation components, recording-session management, recovery-oriented diagnostics, and project verification scripts.
