@@ -1,53 +1,57 @@
-# Dmitry Kolesnichenko
+# Дмитрий Колесниченко
 
-**Python Developer · Windows Desktop Apps · Automation · AI-assisted Development**
+**Python-разработчик · Windows-приложения · Автоматизация · Разработка с использованием ИИ**
 
-I build practical Windows applications and automation tools in Python, with a focus on reliability, diagnostics, safe data handling and long-running workflows.
+Создаю практичные приложения для Windows и инструменты автоматизации на Python. Основное внимание уделяю надёжности, диагностике проблем, безопасной работе с пользовательскими данными и устойчивости длительных процессов.
 
-**Core stack:** Python · WinAPI · Tkinter · FFmpeg/FFprobe · SQLite · pywebview · JavaScript · Git · PyInstaller
+**Основной стек:** Python · WinAPI · Tkinter · FFmpeg/FFprobe · SQLite · pywebview · JavaScript · Git · PyInstaller
 
-## Featured projects
+## Избранные проекты
 
-| Project | What it demonstrates |
+| Проект | Что демонстрирует |
 |---|---|
-| **[Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)** | FFmpeg, Desktop Duplication, NVENC, audio capture, native hotkeys, subprocess lifecycle, modular architecture and diagnostics |
-| **[BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)** | Windows diagnostics, crash dumps, WinDbg/CDB, Event Log correlation, driver analysis, SQLite history and automated self-tests |
-| **[VoiceFlow](https://github.com/zeter1/VoiceFlow)** | Offline speech-to-text with faster-whisper, CUDA/CPU execution, realtime text insertion, global hotkeys and background operation |
-| **[Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)** | Whisper, TTS, FFmpeg media pipelines, checkpoints, recovery, bounded retries and long-running job reliability |
-| **[ZeTer OS](https://github.com/zeter1/ZeTer-OS)** | Python + JavaScript desktop architecture, pywebview native bridge, local-first persistence, backups and automated structural checks |
-| **[Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)** | Networking, multi-source parsing, filtering, deduplication, Excel export, fault isolation and regression tests |
+| **[Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)** | Запись экрана через FFmpeg и Desktop Duplication, NVENC, захват аудио, нативные горячие клавиши, управление подпроцессами, модульная архитектура и диагностика |
+| **[BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)** | Диагностика Windows, анализ дампов сбоев, WinDbg/CDB, корреляция с журналом событий, анализ драйверов, история в SQLite и автоматические самопроверки |
+| **[VoiceFlow](https://github.com/zeter1/VoiceFlow)** | Офлайн-распознавание речи через faster-whisper, CUDA/CPU, вставка текста в реальном времени, глобальные горячие клавиши и фоновая работа |
+| **[Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)** | Whisper, TTS, обработка медиа через FFmpeg, контрольные точки, восстановление после сбоев, ограниченные повторы и надёжность длительных задач |
+| **[ZeTer OS](https://github.com/zeter1/ZeTer-OS)** | Desktop-архитектура Python + JavaScript, нативный мост pywebview, локальное хранение данных, резервные копии и автоматические структурные проверки |
+| **[Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)** | Работа с сетью, парсинг нескольких источников, фильтрация, удаление дублей, экспорт в Excel, изоляция ошибок и регрессионные тесты |
 
-## More published projects
+## Другие опубликованные проекты
 
-- **[Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)** — yt-dlp/FFmpeg downloader with VPN/proxy-aware retries, validation, watchdogs and diagnostic logging.
-- **[Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)** — Windows SAPI text-to-speech and MP3 conversion with tabs, global hotkeys, recovery and persistent workspace state.
-- **[Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)** — native Windows session locking with controlled sleep prevention, unlock detection and compact diagnostics.
+- **[Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)** — загрузчик видео на базе yt-dlp и FFmpeg с поддержкой VPN/прокси, повторными попытками, проверкой результата, watchdog-механизмами и диагностическими логами.
+- **[Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)** — озвучивание текста через Windows SAPI и конвертация в MP3 с вкладками, глобальными горячими клавишами, восстановлением после сбоев и сохранением рабочего состояния.
+- **[Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)** — блокировка сеанса Windows с управляемым предотвращением сна, отслеживанием разблокировки и компактной диагностикой.
 
-## Engineering focus
+## Мой подход к разработке
 
-- Root-cause debugging instead of masking symptoms.
-- Reliable long-running operations with timeouts, bounded retries and correct process cleanup.
-- Safe persistence, backups, recovery and protection of user data.
-- Structured diagnostics that make real failures easier to reproduce and analyze.
-- AI-assisted development with ChatGPT/Codex, followed by diff review, automated checks and manual verification where required.
+- Поиск первопричины проблемы вместо маскировки симптомов.
+- Надёжные длительные операции с тайм-аутами, ограниченными повторными попытками и корректным завершением процессов.
+- Безопасное хранение данных, резервное копирование, восстановление и защита пользовательской информации.
+- Структурированная диагностика, которая помогает быстрее воспроизводить и анализировать реальные сбои.
+- Разработка с помощью ChatGPT и Codex с последующей проверкой изменений, автоматическими тестами и ручной валидацией там, где она необходима.
 
-## Technologies
+## Технологии
 
-- **Desktop / Windows:** Tkinter, WinAPI, COM/SAPI, global hotkeys, autostart, system integration
-- **Multimedia:** FFmpeg, FFprobe, yt-dlp, Whisper, faster-whisper, Edge TTS
-- **Data / automation:** SQLite, JSON, pandas, openpyxl, requests, BeautifulSoup
+- **Desktop / Windows:** Tkinter, WinAPI, COM/SAPI, глобальные горячие клавиши, автозапуск, системная интеграция
+- **Мультимедиа:** FFmpeg, FFprobe, yt-dlp, Whisper, faster-whisper, Edge TTS
+- **Данные и автоматизация:** SQLite, JSON, pandas, openpyxl, requests, BeautifulSoup
 - **Frontend:** pywebview, HTML, CSS, JavaScript
-- **Engineering:** Git, GitHub Actions, PyInstaller, logging, testing, refactoring, recovery-oriented design
+- **Инженерия:** Git, GitHub Actions, PyInstaller, логирование, тестирование, рефакторинг, восстановление после сбоев
 
-## Background
+## Обо мне
 
-I have built more than 20 personal software projects, primarily Python applications and Windows utilities, including file/archive automation, multimedia tools, speech utilities, system diagnostics and process/network monitoring.
+Разработал более 20 собственных программных проектов, преимущественно на Python: приложения и утилиты для Windows, инструменты автоматизации файлов и архивов, мультимедийные программы, голосовые инструменты, системную диагностику, а также средства мониторинга процессов и сети.
 
-## Currently looking for
+Мне особенно интересны практические программы, которыми можно пользоваться в реальных повседневных задачах, и развитие существующих проектов до более стабильного, удобного и поддерживаемого состояния.
 
-I am interested in **Junior Python Developer**, **Python Automation Developer**, internship and project-based opportunities involving real applications, automation, Windows tooling and existing Python codebases.
+## Рассматриваю возможности
 
-## Contact
+Интересуют позиции **Junior Python Developer**, **Python Automation Developer**, стажировки и проектная работа, связанные с реальными приложениями, автоматизацией, Windows-инструментами и развитием существующих Python-проектов.
+
+## Контакты
 
 - Email: **zeter11@gmail.com**
 - Telegram: **https://t.me/zeter1**
+- LinkedIn: **https://www.linkedin.com/in/zeter/**
+- Портфолио: **https://dkl.do.am/**
