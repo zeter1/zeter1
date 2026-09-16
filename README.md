@@ -1,3 +1,5 @@
+**Язык / Language:** **Русский** · [English](README_EN.md)
+
 # Дмитрий Колесниченко
 
 ### Python-разработчик · Windows/Desktop · Автоматизация · Multimedia · AI-assisted development
