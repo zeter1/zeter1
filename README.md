@@ -9,7 +9,7 @@
 ## Быстрая навигация
 
 - **[PROJECTS.md](PROJECTS.md)** — подробная карта проектов: что решает каждый проект и какие инженерные решения в нём смотреть.
-- **[REVIEW_GUIDE.md](REVIEW_GUIDE.md)** — маршрут технического просмотра портфолио на 5, 15 или 30 минут.
+- **[REVIEW_GUIDE.md](REVIEW_GUIDE.md)** — маршрут технического просмотра портфолио на 5, 15 или 30 минут с конкретными файлами и проверками.
 - **[ENGINEERING.md](ENGINEERING.md)** — мой инженерный подход: надёжность, диагностика, восстановление, тестирование и AI-assisted development.
 - **[SUPPORT.md](SUPPORT.md)** — как правильно сообщать о проблемах и какие диагностические данные полезны в разных проектах.
 
@@ -38,6 +38,21 @@
 | **[Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)** | Загрузка видео и аудио с приоритетом совместимого результата | yt-dlp, FFmpeg/ffprobe, MP4 до 1080p, remux/transcoding fallback, диагностика |
 | **[Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)** | Озвучивание текста и создание MP3 | Microsoft SAPI, COM, глобальные hotkeys, восстановление длительных заданий |
 | **[Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)** | Блокировка Windows без остановки длительных фоновых задач | WinAPI, WTS API, power management, mutex, компактная диагностика |
+
+## Инженерные доказательства
+
+В профиле стараюсь отделять утверждение от его доказательства. Ниже — короткие точки входа для технического просмотра.
+
+| Инженерная тема | Где смотреть | Что можно проверить |
+|---|---|---|
+| **Recovery и защита результата** | `Screen-Recorder-Pro/verify_capture_recovery.py`, `verify_save_safety.py`, `screen_recorder/` | поведение при сбоях FFmpeg, остановке и частично созданном результате |
+| **Regression / structural verification** | `Screen-Recorder-Pro/verify_project.py`, `Universal-Video-Downloader/tests/`, `Vacancy-Parser-Pro/tests/` | реальные автоматические проверки вместо только ручного smoke-test |
+| **Evidence-based диагностика** | `BSOD-Investigator`, `Vacancy-Parser-Pro/problem_logging.py`, `Universal-Video-Downloader/problem_log_validator.py` | как диагностический контекст превращается в воспроизводимое расследование |
+| **Local AI pipeline** | `VoiceFlow/voiceflow.py`, `Video-Translator-Pro/videotranslator/` | CPU/CUDA, speech-to-text, этапность и recovery длительной обработки |
+| **Hybrid desktop/web** | `ZeTer-OS/app/`, `tools/check_project.py` | native bridge, frontend-модули и project-level verification |
+| **CI и безопасная автоматизация** | `.github/workflows/` в основных репозиториях | compile/test/self-test gates, Windows runners, external-tool validation |
+
+Подробный маршрут с конкретными файлами и уровнями доказательств: **[REVIEW_GUIDE.md](REVIEW_GUIDE.md)**.
 
 ## Карта компетенций по репозиториям
 
