@@ -10,10 +10,10 @@ I try to take projects beyond a working prototype: separating responsibilities, 
 
 ## Quick navigation
 
-- **[PROJECTS.md](PROJECTS.md)** — detailed project map: what each project solves and which engineering decisions are worth reviewing.
-- **[REVIEW_GUIDE.md](REVIEW_GUIDE.md)** — a 5-, 15-, or 30-minute technical review path with concrete files and checks.
-- **[ENGINEERING.md](ENGINEERING.md)** — my engineering approach to reliability, diagnostics, recovery, testing, and AI-assisted development.
-- **[SUPPORT.md](SUPPORT.md)** — guidance for useful bug reports and diagnostic data across projects.
+- **[PROJECTS_EN.md](PROJECTS_EN.md)** — detailed project map: what each project solves and which engineering decisions are worth reviewing.
+- **[REVIEW_GUIDE_EN.md](REVIEW_GUIDE_EN.md)** — a 5-, 15-, or 30-minute technical review path with concrete files and checks.
+- **[ENGINEERING_EN.md](ENGINEERING_EN.md)** — my engineering approach to reliability, diagnostics, recovery, testing, and AI-assisted development.
+- **[SUPPORT_EN.md](SUPPORT_EN.md)** — guidance for useful bug reports and diagnostic data across projects.
 
 For a fast view of my technical range, start with **Screen Recorder Pro → BSOD Investigator → VoiceFlow → ZeTer OS → Video Translator Pro**.
 
@@ -54,7 +54,7 @@ I try to separate engineering claims from the evidence supporting them. These ar
 | **Hybrid desktop/web architecture** | `ZeTer-OS/app/`, `tools/check_project.py` | native bridge, frontend modules, and project-level verification |
 | **CI and safe automation** | `.github/workflows/` across the main repositories | compile/test/self-test gates, Windows runners, external-tool validation |
 
-For a detailed route through specific files and evidence levels, see **[REVIEW_GUIDE.md](REVIEW_GUIDE.md)**.
+For a detailed route through specific files and evidence levels, see **[REVIEW_GUIDE_EN.md](REVIEW_GUIDE_EN.md)**.
 
 ## Competency map by repository
 
@@ -81,7 +81,7 @@ For a detailed route through specific files and evidence levels, see **[REVIEW_G
 
 **Verification.** I use syntax checks, self-tests, regression tests, smoke tests, and CI. Hardware-dependent scenarios are additionally validated manually on Windows.
 
-More detail: **[engineering approach and examples](ENGINEERING.md)**.
+More detail: **[engineering approach and examples](ENGINEERING_EN.md)**.
 
 ## How to review the projects quickly
 
