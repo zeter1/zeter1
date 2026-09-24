@@ -2,7 +2,7 @@
 
 # Дмитрий Колесниченко
 
-### Python-разработчик · Windows/Desktop · Автоматизация · Multimedia · AI-assisted development
+### Python-разработчик · Windows/Desktop · Автоматизация · Multimedia · Web Developer
 
 Разрабатываю прикладные программы для Windows, инструменты автоматизации, мультимедийные приложения, локальные AI-инструменты и гибридные desktop-системы.
 
