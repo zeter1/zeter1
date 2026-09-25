@@ -2,7 +2,7 @@
 
 # Support and bug reports
 
-The main repositories use structured GitHub Issue Forms for bug reports. They are designed to collect the information needed to reproduce and diagnose a problem from the beginning.
+Some of the main repositories use structured GitHub Issue Forms. Whether or not a form is available, the goal of a bug report is the same: provide enough context to reproduce the problem and distinguish an application bug from a browser, environment, external-tool, or data issue.
 
 ## Before opening an issue
 
@@ -16,7 +16,7 @@ The main repositories use structured GitHub Issue Forms for bug reports. They ar
 A strong report usually includes:
 
 - application version or revision;
-- Windows version;
+- platform and environment: browser/version for Web projects, Windows version for desktop projects;
 - exact reproduction steps;
 - actual result;
 - expected result;
@@ -47,6 +47,26 @@ Do not publish unless explicitly necessary and reviewed first:
 - logs containing private conversations or dictated text.
 
 ## Project-specific diagnostics
+
+### ZeTer Photo Editor
+
+Include browser/version, launch mode (`file://` or HTTP), document/format type, image size, PSD/PSB bit depth/color mode when relevant, exact reproduction steps, and DevTools Console errors. For import/export bugs, a minimal reproducible file without private content is especially useful.
+
+### BizPilot
+
+Include browser, affected section, action sequence, and whether the issue involves `localStorage`, ZIP import/export, or demo mode. Preserve a backup before clearing browser storage if the data matters.
+
+### ZAP ZONE
+
+Include browser, GPU/WebGL environment, graphics/FPS settings, gameplay situation, and Console errors. For AI or weapon issues, include the exact weapon, player action, and the point where behavior diverges from expectations.
+
+### CYBER RACE
+
+Include browser, GPU/WebGL environment, quality mode, approximate FPS, race stage, and whether the issue involves AI, weapons, Web Audio, or WebGL context loss.
+
+### Forest Hunter
+
+Include browser, GPU/WebGL environment, graphics quality, weapon/perks/enemy type, and exact action sequence. For performance problems, approximate FPS and the number of active enemies/objects are useful.
 
 ### Screen Recorder Pro
 

@@ -42,6 +42,16 @@ Full project map: **[PROJECTS_EN.md](PROJECTS_EN.md)**.
 
 More detail: **[ENGINEERING_EN.md](ENGINEERING_EN.md)**.
 
+## Verifiable entry points
+
+A technical reviewer can jump directly from the profile to code and checks:
+
+- **ZeTer Photo Editor:** [`src/adapters/`](https://github.com/zeter1/ZeTer-Photo-Editor/tree/main/src/adapters) · [`tests/color-management.test.mjs`](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/tests/color-management.test.mjs) · [CI](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/.github/workflows/ci.yml).
+- **ZAP ZONE:** [`src/core/`](https://github.com/zeter1/ZAP-ZONE/tree/main/src/core) · [`src/combat/`](https://github.com/zeter1/ZAP-ZONE/tree/main/src/combat) · [`src/weapons/`](https://github.com/zeter1/ZAP-ZONE/tree/main/src/weapons) · [structural validation](https://github.com/zeter1/ZAP-ZONE/blob/main/scripts/validate-structure.mjs) · [browser smoke CI](https://github.com/zeter1/ZAP-ZONE/blob/main/.github/workflows/validate.yml).
+- **Screen Recorder Pro:** [`screen_recorder/`](https://github.com/zeter1/Screen-Recorder-Pro/tree/main/screen_recorder) · [capture recovery](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_capture_recovery.py) · [save safety](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_save_safety.py).
+- **BSOD Investigator:** [`bsod_investigator.py`](https://github.com/zeter1/BSOD-Investigator/blob/main/bsod_investigator.py) · [`docs/`](https://github.com/zeter1/BSOD-Investigator/tree/main/docs).
+- **VoiceFlow:** [`voiceflow.py`](https://github.com/zeter1/VoiceFlow/blob/main/voiceflow.py) · [`docs/`](https://github.com/zeter1/VoiceFlow/tree/main/docs).
+
 ## Technologies
 
 **Web:** `HTML` · `CSS` · `JavaScript` · `Canvas 2D` · `WebGL` · `Three.js` · `Web Audio API` · `IndexedDB` · `localStorage`
@@ -59,7 +69,7 @@ More detail: **[ENGINEERING_EN.md](ENGINEERING_EN.md)**.
 - **[PROJECTS_EN.md](PROJECTS_EN.md)** — project map.
 - **[REVIEW_GUIDE_EN.md](REVIEW_GUIDE_EN.md)** — 5/15/30-minute technical review path.
 - **[ENGINEERING_EN.md](ENGINEERING_EN.md)** — engineering principles and examples.
-- **[SUPPORT_EN.md](SUPPORT_EN.md)** — diagnostics and bug-report guidance.
+- **[SUPPORT_EN.md](SUPPORT_EN.md)** — diagnostics and bug-report guidance for Web, Python, and hybrid projects.
 
 ## Contacts
 

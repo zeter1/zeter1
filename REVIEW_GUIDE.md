@@ -20,9 +20,9 @@
 
 | Что проверить | Проект | Куда смотреть | Что показывает |
 |---|---|---|---|
-| Browser image architecture | ZeTer Photo Editor | основной app/adapter/rendering код, tests, CI | layered document model, masks, PSD/PSB, typed pixel buffers |
-| WebGL/game architecture | ZAP ZONE | `src/core`, `src/weapons`, `src/combat`, `src/entities`, `src/game` | modular JavaScript, realtime loop, tactical AI |
-| Local-first web state | BizPilot | `js/app.js`, storage и backup/restore flows | browser state model и user-data lifecycle |
+| Browser image architecture | ZeTer Photo Editor | [`src/adapters/`](https://github.com/zeter1/ZeTer-Photo-Editor/tree/main/src/adapters), [`tests/color-management.test.mjs`](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/tests/color-management.test.mjs), [CI](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/.github/workflows/ci.yml) | layered document model, PSD/PSB, typed pixel buffers, ICC/CMYK tests |
+| WebGL/game architecture | ZAP ZONE | [`src/core/`](https://github.com/zeter1/ZAP-ZONE/tree/main/src/core), [`src/combat/`](https://github.com/zeter1/ZAP-ZONE/tree/main/src/combat), [`src/weapons/`](https://github.com/zeter1/ZAP-ZONE/tree/main/src/weapons), [validation](https://github.com/zeter1/ZAP-ZONE/blob/main/scripts/validate-structure.mjs), [CI](https://github.com/zeter1/ZAP-ZONE/blob/main/.github/workflows/validate.yml) | modular JavaScript, realtime loop, tactical AI, browser boot smoke test |
+| Local-first web state | BizPilot | [`js/app.js`](https://github.com/zeter1/BizPilot/blob/main/js/app.js), storage и backup/restore flows | browser state model и user-data lifecycle |
 | Multimedia recovery | Screen Recorder Pro | `screen_recorder/`, `verify_capture_recovery.py`, `verify_save_safety.py` | FFmpeg lifecycle, recovery, output safety |
 | Windows diagnostics | BSOD Investigator | `bsod_investigator.py`, `docs/`, `--self-test` | crash evidence processing и reproducible self-check |
 | Local speech-to-text | VoiceFlow | `voiceflow.py`, `docs/` | faster-whisper, CPU/CUDA, Windows input |
