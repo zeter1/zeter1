@@ -36,7 +36,7 @@ This page covers **all 14 project repositories** on the profile (excluding the `
 
 **What it is:** a browser 3D combat racing game with AI opponents, weapons, pickups, and adaptive quality.
 
-**Engineering focus:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation, and WebGL context recovery. The first architecture pass moved the giant inline runtime into `src/core`, `src/game`, `src/ai`, `src/weapons`, `src/audio`, and `src/ui`; structural validation and a headless WebGL boot are green in Actions.
+**Engineering focus:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation, and WebGL context recovery. Deep Gameplay Decomposition extracted track/environment, lap state, opponent lane/rubber-band/lead math, collision/ballistics, and HUD/minimap into focused modules. `tests/contracts.mjs` validates deterministic gameplay contracts under Node; structural validation and headless WebGL boot are green in Actions.
 
 ---
 
@@ -44,7 +44,7 @@ This page covers **all 14 project repositories** on the profile (excluding the `
 
 **What it is:** a browser 3D FPS with hunting, progression, loot, contracts, and AI enemies.
 
-**Engineering focus:** state-based AI, InstancedMesh, object pools, spatial collision grid, and real-time object management. The first architecture pass introduced core/game/ai/weapons/audio/ui boundaries; structural validation and headless WebGL boot are green while interactive gameplay/GPU behavior remains a separate proof layer.
+**Engineering focus:** state-based AI, InstancedMesh, object pools, spatial collision grid, and real-time object management. Deep Gameplay Decomposition extracted environment ownership, boar AI policy, weapon/reload/deployable math, collision geometry, XP/upgrades, and HUD modeling. Node contract tests + structural validation + headless WebGL boot are green; pointer lock, Web Audio, GPU performance, and full gameplay remain separate proof layers.
 
 ## Python Development
 

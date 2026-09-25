@@ -89,7 +89,7 @@ Local-first приложение должно явно определять:
 - **Screen Recorder Pro** разделяет UI, capture, audio, FFmpeg, process management и diagnostics.
 - **ZeTer OS** использует модульный JavaScript frontend и отдельный Python/native bridge.
 - **ZAP ZONE** разделяет engine, weapons, player state, combat, entities, progression и runtime.
-- **CYBER RACE** и **Forest Hunter** переведены с giant inline runtime на staged subsystem boundaries (`core/game/ai/weapons/audio/ui`) без одномоментного rewrite; architecture docs и structural validators фиксируют эти границы.
+- **CYBER RACE** и **Forest Hunter** прошли второй этап decomposition: environment/track, AI policy, ballistics/combat, progression и HUD math вынесены из orchestration в testable contracts. Structural validators не дают этим границам незаметно схлопнуться обратно.
 - **BizPilot** выделяет cash-flow engine из UI orchestration, чтобы финансовую математику можно было проверять отдельно от DOM.
 - **Universal Video Downloader** содержит code map и инструменты определения минимального scope изменения.
 
@@ -100,8 +100,9 @@ Local-first приложение должно явно определять:
 - unit и regression tests;
 - self-tests;
 - structural checks;
+- deterministic gameplay contract tests без браузера;
 - structural architecture checks;
-- headless browser boot smoke с explicit ready-marker;
+- headless WebGL browser boot smoke с explicit ready-marker;
 - GitHub Actions;
 - ручная runtime-проверка там, где нужны реальная Windows-сессия, GPU, аудиоустройство или интерактивный браузер.
 

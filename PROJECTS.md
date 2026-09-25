@@ -40,7 +40,7 @@
 
 **Что это:** браузерная 3D боевая гонка с AI-соперниками, оружием, бонусами и adaptive quality.
 
-**Инженерный акцент:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation и WebGL context recovery. Первый architecture pass вынес giant inline runtime в `src/core`, `src/game`, `src/ai`, `src/weapons`, `src/audio`, `src/ui`; structural validator и headless WebGL boot подтверждены Actions.
+**Инженерный акцент:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation и WebGL context recovery. Deep Gameplay Decomposition вынес track/environment, lap state, opponent lane/rubber-band/lead math, collision/ballistics и HUD/minimap в отдельные modules. `tests/contracts.mjs` проверяет deterministic gameplay contracts под Node; structural validation и headless WebGL boot проходят Actions.
 
 ---
 
@@ -48,7 +48,7 @@
 
 **Что это:** браузерный 3D FPS с охотой, progression, loot, contracts и AI-противниками.
 
-**Инженерный акцент:** state-based AI, InstancedMesh, object pools, spatial collision grid и управление realtime-объектами. Первый architecture pass выделил core/game/ai/weapons/audio/ui boundaries; structural validation и настоящий headless WebGL boot проходят CI, а интерактивный gameplay/GPU остаются отдельным уровнем proof.
+**Инженерный акцент:** state-based AI, InstancedMesh, object pools, spatial collision grid и управление realtime-объектами. Deep Gameplay Decomposition вынес environment ownership, boar AI policy, weapon/reload/deployable math, collision geometry, XP/upgrades и HUD model. Node contract tests + structural validation + headless WebGL boot проходят CI; pointer lock, Web Audio, GPU performance и полный gameplay остаются отдельным уровнем proof.
 
 ## Python Development
 
