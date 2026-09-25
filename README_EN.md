@@ -16,20 +16,28 @@ My portfolio has two primary tracks: **Web Development** and **Python Developmen
 | **Python Development** | Windows desktop software, automation, system utilities, multimedia, local AI | Python, Tkinter, WinAPI, ctypes, COM/SAPI, SQLite, FFmpeg, Whisper, CUDA |
 | **Hybrid Desktop/Web** | desktop applications with JavaScript UI and a Python/native bridge | Python, pywebview, JavaScript, local-first state, backup/recovery |
 
-## Selected projects
+## All projects
+
+Below are **all 14 project repositories** on my GitHub profile. The `zeter1/zeter1` profile repository is not counted as a separate product because it hosts the portfolio itself.
 
 | Project | Area | What it demonstrates |
 |---|---|---|
-| **[ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor)** | Web / Graphics | Canvas 2D, layers and masks, PSD/PSB, high-depth pixel pipeline, ICC/CMYK, regression tests |
-| **[ZAP ZONE](https://github.com/zeter1/ZAP-ZONE)** | Web / 3D | Three.js/WebGL, modular JavaScript, tactical AI, weapon/ballistics systems, browser smoke testing |
-| **[BizPilot](https://github.com/zeter1/BizPilot)** | Web / Application | local-first frontend, state model, localStorage, ZIP backup/restore |
-| **[Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)** | Python / Windows | FFmpeg, Desktop Duplication, NVENC, WinAPI, process management, recovery |
-| **[BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)** | Python / Diagnostics | WinDbg/CDB, crash dumps, Event Log, SQLite, evidence-based diagnostics |
-| **[VoiceFlow](https://github.com/zeter1/VoiceFlow)** | Python / AI | faster-whisper, CPU/CUDA, real-time speech pipeline, Windows input |
-| **[Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)** | Python / AI + Multimedia | Whisper → translation → TTS → FFmpeg, checkpoints, recovery |
-| **[ZeTer OS](https://github.com/zeter1/ZeTer-OS)** | Hybrid | Python + JavaScript, pywebview bridge, local-first data, backup/recovery |
+| **[ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor)** | Web / Graphics | browser image editor: Canvas 2D, layers/masks, PSD/PSB, high-depth pixel pipeline, ICC/CMYK, regression tests |
+| **[BizPilot](https://github.com/zeter1/BizPilot)** | Web / Application | local-first business app, state model, localStorage, ZIP backup/restore, frontend without a mandatory backend |
+| **[ZAP ZONE](https://github.com/zeter1/ZAP-ZONE)** | Web / 3D | Three.js/WebGL FPS, modular JavaScript, tactical AI, weapons/ballistics, structural validation, browser smoke CI |
+| **[CYBER RACE](https://github.com/zeter1/CYBER-RACE)** | Web / 3D | browser 3D combat racing, AI opponents, weapons, Web Audio, adaptive quality, WebGL recovery |
+| **[Forest Hunter](https://github.com/zeter1/ForestHunter)** | Web / 3D | browser FPS with hunting, AI, progression, InstancedMesh, object pools, and spatial collisions |
+| **[Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)** | Python / Windows | FFmpeg, Desktop Duplication, NVENC, WinAPI, process lifecycle, capture recovery, save safety |
+| **[BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)** | Python / Diagnostics | WinDbg/CDB, crash dumps, Event Log, SQLite, and evidence-based diagnostics |
+| **[VoiceFlow](https://github.com/zeter1/VoiceFlow)** | Python / AI | local speech-to-text, faster-whisper, CPU/CUDA, background pipeline, Windows input |
+| **[Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)** | Python / AI + Multimedia | Whisper → translation → TTS → FFmpeg, checkpoints, cache, recovery, artifact validation |
+| **[Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)** | Python / Automation | multi-source vacancy parsing, adapters, fault isolation, deduplication, Excel export |
+| **[Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)** | Python / Multimedia | yt-dlp, MP4/MP3, format selection, remux/transcoding fallback, ffprobe validation, tests |
+| **[Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)** | Python / Windows | Microsoft SAPI/COM, Windows TTS, MP3, global hotkeys, state persistence, long-job recovery |
+| **[Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)** | Python / Windows | WinAPI, WTS API, mutex, power management, self-test, bounded logging |
+| **[ZeTer OS](https://github.com/zeter1/ZeTer-OS)** | Hybrid Desktop/Web | Python + JavaScript, pywebview bridge, modular frontend, local-first state, backup/recovery |
 
-Full project map: **[PROJECTS_EN.md](PROJECTS_EN.md)**.
+Extended technical map of all projects: **[PROJECTS_EN.md](PROJECTS_EN.md)**.
 
 ## Engineering approach
 

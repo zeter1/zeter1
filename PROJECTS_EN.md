@@ -2,7 +2,7 @@
 
 # Project map
 
-The portfolio has two main tracks — **Web Development** and **Python Development**. This page is not just a repository list; it highlights the engineering decisions worth inspecting in each project.
+This page covers **all 14 project repositories** on the profile (excluding the `zeter1/zeter1` portfolio repository). The portfolio has two main tracks — **Web Development** and **Python Development**. This page is not just a repository list; it highlights the engineering decisions worth inspecting in each project.
 
 ## Web Development
 
