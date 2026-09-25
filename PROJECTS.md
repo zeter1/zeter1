@@ -2,22 +2,15 @@
 
 # Карта проектов
 
-Этот файл — расширенная навигация по опубликованным проектам. Главный README даёт краткий обзор, а здесь проекты сгруппированы по инженерным направлениям и по тому, что именно в них полезно смотреть.
+Портфолио разделено на два основных направления — **Web Development** и **Python Development**. Ниже — не просто список репозиториев, а карта того, какие инженерные решения в каждом проекте стоит смотреть.
 
-## Web-приложения и browser-first продукты
+## Web Development
 
 ### [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor)
 
-**Задача:** полноценный браузерный графический редактор со слоями, масками, историей, non-destructive editing и импортом/экспортом профессиональных форматов.
+**Что это:** браузерный графический редактор со слоями, масками, историей, non-destructive editing и PSD/PSB pipeline.
 
-**Что смотреть:**
-
-- Canvas 2D render/composite pipeline;
-- модель слоёв, групп, raster/vector masks и smart objects;
-- PSD/PSB import/export, включая 16/32-bit typed pixel buffers;
-- ICC/CMYK color-management pipeline;
-- аварийное автосохранение через IndexedDB;
-- regression tests и CI.
+**Что смотреть:** Canvas 2D rendering/compositing, layers/groups, raster/vector masks, smart objects, PSD/PSB import/export, typed 16/32-bit pixel buffers, ICC/CMYK pipeline, IndexedDB crash autosave, regression tests и CI.
 
 **Инженерный акцент:** сложная browser-side графика, сохранение precision, совместимость форматов и эволюция крупного JavaScript-приложения.
 
@@ -25,211 +18,119 @@
 
 ### [BizPilot](https://github.com/zeter1/BizPilot)
 
-**Задача:** local-first рабочее пространство для малого бизнеса: клиенты, заказы, сделки, счета, финансы, заметки, календарь и аналитика.
+**Что это:** local-first рабочее пространство для малого бизнеса: клиенты, заказы, сделки, счета, финансы, заметки, календарь и аналитика.
 
-**Что смотреть:**
+**Что смотреть:** static frontend без обязательного backend, state model, `localStorage`, ZIP backup/restore, demo-data isolation, разделение `index.html`, `css/` и `js/`.
 
-- статический frontend без обязательного backend;
-- локальную модель данных и persistence через `localStorage`;
-- ZIP backup/restore;
-- изоляцию демо-режима от рабочих данных;
-- структуру `index.html + css/ + js/`.
+**Инженерный акцент:** frontend architecture, state lifecycle и сохранность пользовательских данных.
 
-**Инженерный акцент:** frontend application architecture, state management, local-first UX и защита пользовательских данных.
-
-## Browser 3D / WebGL
+---
 
 ### [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE)
 
-**Задача:** браузерный 3D FPS 5×5 с игроком, союзными и вражескими AI-ботами.
+**Что это:** браузерный 3D FPS 5×5 с союзными и вражескими AI-ботами.
 
-**Что смотреть:** modular JavaScript architecture, Three.js/WebGL, tactical/combat AI, оружие и баллистику, asset catalog, performance/recovery и headless browser smoke test.
+**Что смотреть:** модульную структуру `src/`, Three.js/WebGL runtime, tactical/combat AI, weapon handling и ballistics, asset catalog, performance/recovery и headless browser smoke test.
 
-**Инженерный акцент:** real-time browser gameplay, AI, modularization растущего JavaScript-кода и проверяемость игрового runtime.
+**Инженерный акцент:** realtime browser gameplay, AI, modularization и runtime verification.
 
 ---
 
 ### [CYBER RACE](https://github.com/zeter1/CYBER-RACE)
 
-**Задача:** браузерная 3D боевая гонка с AI-соперниками, оружием, бонусами и адаптивным качеством графики.
+**Что это:** браузерная 3D боевая гонка с AI-соперниками, оружием, бонусами и adaptive quality.
 
-**Что смотреть:** Three.js/WebGL loop, AI, combat systems, Web Audio, auto quality и восстановление после потери WebGL context.
-
-**Инженерный акцент:** realtime rendering, performance adaptation и игровые системы в браузере.
+**Инженерный акцент:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation и WebGL context recovery.
 
 ---
 
 ### [Forest Hunter](https://github.com/zeter1/ForestHunter)
 
-**Задача:** браузерный 3D FPS с охотой, прогрессией, лутом, контрактами и AI-противниками.
+**Что это:** браузерный 3D FPS с охотой, progression, loot, contracts и AI-противниками.
 
-**Что смотреть:** state-based AI, InstancedMesh, object pools, spatial collision grid, weapon systems и progression.
+**Инженерный акцент:** state-based AI, InstancedMesh, object pools, spatial collision grid и управление realtime-объектами.
 
-**Инженерный акцент:** производительность Three.js-сцены, AI/gameplay state и управление большим количеством realtime-объектов.
-
-## Windows и системная интеграция
-
-### [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)
-
-**Задача:** расследование причин BSOD в Windows на основе crash dumps, Windows Event Log, метаданных драйверов и истории предыдущих сбоев.
-
-**Что смотреть:**
-
-- интеграцию с Microsoft CDB / WinDbg;
-- модель оценки подозреваемых драйверов по нескольким источникам доказательств;
-- различие между силой доказательств и качеством телеметрии;
-- SQLite-историю, fingerprint сбоев и защиту от повторного учёта одного падения;
-- self-test и CI;
-- работу с UAC, защищёнными системными файлами и диагностическими пакетами.
-
-**Инженерный акцент:** диагностика первопричин, осторожная работа с неопределённостью и сохранение контекста для повторного анализа.
-
----
-
-### [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)
-
-**Задача:** безопасно блокировать Windows и при необходимости не позволять системе перейти в сон, пока выполняются фоновые задачи.
-
-**Что смотреть:**
-
-- `LockWorkStation`, `SetThreadExecutionState`, WTS API;
-- single-instance защита через mutex;
-- lifecycle режима предотвращения сна;
-- безопасный self-test;
-- компактное логирование с ограничением размера и срока хранения.
-
-**Инженерный акцент:** WinAPI через `ctypes`, системное состояние и аккуратное поведение фоновой утилиты.
-
----
-
-### [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)
-
-**Задача:** чтение текста системными голосами Windows и создание MP3 из больших текстов.
-
-**Что смотреть:**
-
-- Microsoft SAPI и COM;
-- глобальные горячие клавиши;
-- сохранение состояния нескольких вкладок;
-- восстановление длинных заданий конвертации;
-- интеграцию с FFmpeg и Windows-аудио.
-
-**Инженерный акцент:** Windows desktop, state persistence и восстановление длительных операций.
-
-## Мультимедиа
+## Python Development
 
 ### [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)
 
-**Задача:** запись экрана, микрофона и системного звука, создание скриншотов и работа с аннотациями.
+**Что это:** Windows-приложение для записи экрана, системного звука, микрофона и скриншотов.
 
-**Что смотреть:**
+**Что смотреть:** FFmpeg Desktop Duplication, NVENC, CoreAudio loopback fallback, child-process lifecycle, modular `screen_recorder/`, capture recovery, save safety и project verification.
 
-- FFmpeg Desktop Duplication (`ddagrab`);
-- GPU pipeline и NVIDIA NVENC;
-- CoreAudio loopback fallback;
-- управление дочерними процессами FFmpeg;
-- модульную структуру `screen_recorder/`;
-- отдельные проверяющие скрипты для capture recovery, save safety и publication flow;
-- диагностические данные таймингов и плавности записи.
+---
 
-**Инженерный акцент:** real-time multimedia, process management, fallback-стратегии и регрессионная защита сложного desktop-приложения.
+### [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)
+
+**Что это:** инструмент расследования причин BSOD по crash dumps, Event Log и данным драйверов.
+
+**Что смотреть:** CDB/WinDbg, evidence model, crash fingerprints, SQLite history, self-test и CI.
+
+---
+
+### [VoiceFlow](https://github.com/zeter1/VoiceFlow)
+
+**Что это:** локальный speech-to-text для ввода текста в активное поле Windows-приложения.
+
+**Что смотреть:** faster-whisper, CPU/CUDA paths, background pipeline, Windows input и diagnostics.
 
 ---
 
 ### [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)
 
-**Задача:** распознать речь в видео, перевести её, синтезировать новую озвучку и собрать итоговый ролик.
+**Что это:** Whisper → translation → TTS → FFmpeg pipeline для перевода и переозвучивания видео.
 
-**Что смотреть:**
+**Что смотреть:** checkpoints, persistent cache, bounded retry, recovery и final artifact validation.
 
-- Whisper → translation → TTS → FFmpeg pipeline;
-- Pause Sync для длинных переведённых реплик;
-- checkpoint/recovery;
-- persistent TTS cache;
-- ограниченные retry и защита от каскада сетевых ошибок;
-- финальную валидацию готового MP4.
+---
 
-**Инженерный акцент:** длинные многоэтапные workflow, восстановление после сбоев и проверка конечного результата, а не только успешного завершения процесса.
+### [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)
+
+**Что это:** multi-source aggregation вакансий с filtering, deduplication и Excel export.
+
+**Что смотреть:** source adapters, fault isolation, normalisation/deduplication и offline regression tests.
 
 ---
 
 ### [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)
 
-**Задача:** получить удобный MP4 до 1080p либо MP3 с сайтов, поддерживаемых yt-dlp.
+**Что это:** загрузка MP4/MP3 с compatibility-first стратегией.
 
-**Что смотреть:**
+**Что смотреть:** yt-dlp format selection, remux/transcoding fallback, ffprobe validation, modular `src/`, tests и code map.
 
-- выбор форматов yt-dlp;
-- стратегию `compatible streams → lossless remux → transcoding fallback`;
-- проверку результата через ffprobe;
-- модульную структуру;
-- `docs/CODE_MAP.md` и инструменты определения минимальной области кода для изменений.
+---
 
-**Инженерный акцент:** совместимость медиа, минимизация лишнего перекодирования и поддерживаемость проекта.
+### [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)
 
-## Speech / AI
+**Что это:** Windows TTS + MP3.
 
-### [VoiceFlow](https://github.com/zeter1/VoiceFlow)
+**Что смотреть:** Microsoft SAPI/COM, global hotkeys, state persistence и long-job recovery.
 
-**Задача:** локальный голосовой ввод текста прямо в активное поле любого Windows-приложения.
+---
 
-**Что смотреть:**
+### [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)
 
-- faster-whisper;
-- CPU/CUDA execution paths;
-- потоковую обработку стабильных фрагментов речи;
-- переключение между активными окнами во время диктовки;
-- нативную вставку текста и fallback-механизмы;
-- разделённую диагностику hotkeys / capture / inference / insertion;
-- privacy-first модель: распознавание локально после загрузки модели.
+**Что это:** системная Windows-утилита для блокировки и управления режимом сна.
 
-**Инженерный акцент:** real-time pipeline, локальный ML inference, Windows input automation и конкурентные фоновые задачи.
+**Что смотреть:** WinAPI, WTS API, mutex, power management, self-test и bounded logging.
 
-## Гибридные desktop/web-приложения
+## Hybrid Desktop/Web
 
 ### [ZeTer OS](https://github.com/zeter1/ZeTer-OS)
 
-**Задача:** локальное рабочее пространство, объединяющее заметки, задачи, календарь, файлы, таблицы и другие инструменты.
+**Что это:** локальное рабочее пространство с Python desktop shell и JavaScript frontend.
 
-**Что смотреть:**
-
-- Python desktop shell + pywebview;
-- native bridge между Python и JavaScript;
-- модульный frontend;
-- local-first state model;
-- резервные копии и точки восстановления;
-- portable release pipeline;
-- структурные проверки и JavaScript smoke-тесты.
-
-**Инженерный акцент:** границы между frontend/native слоями, управление пользовательскими данными и архитектура растущего приложения.
-
-## Сеть, парсинг и данные
-
-### [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)
-
-**Задача:** собирать вакансии из нескольких источников, фильтровать, дедуплицировать и экспортировать результаты.
-
-**Что смотреть:**
-
-- отдельные адаптеры источников;
-- изоляцию ошибок одного сайта от общей поисковой сессии;
-- локальную фильтрацию и дедупликацию;
-- экспорт в Excel;
-- структурированные диагностические сессии;
-- offline regression tests парсерной логики.
-
-**Инженерный акцент:** нестабильные внешние источники, fault isolation и наблюдаемость сетевого workflow.
+**Что смотреть:** pywebview bridge, modular frontend, local-first state, backup/recovery и project-level verification.
 
 ## Как смотреть портфолио
 
 Если времени мало:
+1. **ZeTer Photo Editor** — глубокая browser-side инженерия.
+2. **ZAP ZONE** — WebGL, modular JavaScript и AI.
+3. **Screen Recorder Pro** — Python/Windows/multimedia и recovery.
+4. **BSOD Investigator** — diagnostics и evidence handling.
+5. **VoiceFlow** — local AI.
+6. **BizPilot** — local-first web architecture.
+7. **ZeTer OS** — hybrid Python + JavaScript.
 
-1. Начать с [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) — глубокая browser-side графика, Canvas и PSD/PSB pipeline.
-2. Открыть [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE) — Three.js/WebGL, modular JavaScript и игровой AI.
-3. Посмотреть [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) — широкий набор Python/Windows/multimedia задач.
-4. Посмотреть [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator) — системная диагностика и работа с доказательствами.
-5. Открыть [VoiceFlow](https://github.com/zeter1/VoiceFlow) — локальный AI и real-time speech pipeline.
-6. Открыть [BizPilot](https://github.com/zeter1/BizPilot) — local-first frontend application architecture.
-7. Посмотреть [ZeTer OS](https://github.com/zeter1/ZeTer-OS) — гибридная Python/JavaScript архитектура.
-
-Дополнительно: [ENGINEERING.md](ENGINEERING.md) описывает общие инженерные принципы, повторяющиеся в этих проектах.
+Для конкретных точек входа и уровней проверки: **[REVIEW_GUIDE.md](REVIEW_GUIDE.md)**.

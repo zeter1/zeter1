@@ -2,145 +2,118 @@
 
 # Technical portfolio review guide
 
-This page shows **where** the most representative engineering decisions live in the repositories. It does not replace each project's README; the goal is to give a reviewer a short path from a claim to code, a test, or a verification step.
+This page provides a short route through the two main tracks of the profile: **Web Development** and **Python Development**. The goal is to move quickly from a description to code, architecture, tests, and verifiable engineering decisions.
 
 ## 5-minute review
 
-If time is limited, open these four projects and jump directly to the listed locations:
+If time is limited, open these five projects:
 
-1. **[Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)** — `screen_recorder/`, `verify_project.py`, `verify_capture_recovery.py`, `verify_save_safety.py`, `.github/workflows/validate.yml`.
-2. **[BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)** — `bsod_investigator.py`, built-in `--self-test`, `.github/workflows/ci.yml`, `docs/`.
-3. **[VoiceFlow](https://github.com/zeter1/VoiceFlow)** — `voiceflow.py`, `docs/`, `.github/workflows/python-check.yml`.
-4. **[ZeTer OS](https://github.com/zeter1/ZeTer-OS)** — `app/`, `tools/check_project.py`, `problem_logs.py`, `.github/workflows/ci.yml`.
+1. **[ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor)** — browser graphics, Canvas, PSD/PSB, high-depth pixel pipeline, masks, and color management.
+2. **[ZAP ZONE](https://github.com/zeter1/ZAP-ZONE)** — Three.js/WebGL, modular JavaScript, tactical AI, combat systems, and browser smoke testing.
+3. **[Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)** — Python/Windows, FFmpeg, capture lifecycle, recovery, and verification scripts.
+4. **[BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)** — system diagnostics, crash dumps, WinDbg/CDB, and evidence-based analysis.
+5. **[VoiceFlow](https://github.com/zeter1/VoiceFlow)** — local AI, faster-whisper, CPU/CUDA, and Windows input.
 
-Together they show Windows desktop work, multimedia, system diagnostics, local AI, hybrid desktop/web architecture, and automated verification.
+Together they show both sides of the portfolio: complex browser runtime work and deep Python/Windows integration.
 
 ## Engineering evidence map
 
 | What to evaluate | Project | Where to look | What it demonstrates |
 |---|---|---|---|
-| Long-running multimedia operation management | Screen Recorder Pro | `screen_recorder/`, `verify_capture_recovery.py`, `verify_save_safety.py` | external FFmpeg lifecycle, recovery, and output safety |
-| Real regression / structural checks | Screen Recorder Pro | `verify_project.py`, `verify_recording_publication.py`, `.github/workflows/validate.yml` | automated checks for architectural and user-facing invariants |
-| Evidence-based Windows diagnostics | BSOD Investigator | `bsod_investigator.py`, `docs/`, `--self-test` | dump/event/driver evidence processing and reproducible self-check logic |
-| Local speech-to-text pipeline | VoiceFlow | `voiceflow.py`, `docs/` | faster-whisper, CPU/CUDA paths, Windows input, background work |
-| Reliable video-download pipeline | Universal Video Downloader | `src/`, `tests/`, `problem_log_validator.py` | separation of downloader/format/diagnostics logic and offline regression tests |
-| Long AI/multimedia pipeline | Video Translator Pro | `videotranslator/`, `tests/`, `tools/`, `AGENTS.md` | checkpoints, recovery, staged processing, and AI-friendly structure |
-| Multi-source parsing | Vacancy Parser Pro | `job_scraper.py`, `problem_logging.py`, `tests/` | fault isolation, normalization/deduplication, and source diagnostics |
-| Hybrid desktop/web architecture | ZeTer OS | `app/`, `tools/check_project.py`, `problem_logs.py` | Python/native bridge + JavaScript UI + project verification |
-| Windows system-utility safety | Windows PC Locker | `computer_locker.pyw`, `--self-test`, `.github/workflows/windows-checks.yml` | WinAPI/WTS/power-management flow and safe self-test |
-| Windows TTS / long-running jobs | Text to MP3 | `text_to_mp3.py`, `.github/workflows/python-check.yml` | SAPI/COM pipeline and Windows-specific application logic |
+| Browser image architecture | ZeTer Photo Editor | main app/adapter/rendering code, tests, CI | layered document model, masks, PSD/PSB, typed pixel buffers |
+| WebGL/game architecture | ZAP ZONE | `src/core`, `src/weapons`, `src/combat`, `src/entities`, `src/game` | modular JavaScript, real-time loop, tactical AI |
+| Local-first web state | BizPilot | `js/app.js`, storage and backup/restore flows | browser state model and user-data lifecycle |
+| Multimedia recovery | Screen Recorder Pro | `screen_recorder/`, `verify_capture_recovery.py`, `verify_save_safety.py` | FFmpeg lifecycle, recovery, output safety |
+| Windows diagnostics | BSOD Investigator | `bsod_investigator.py`, `docs/`, `--self-test` | crash-evidence processing and reproducible self-check |
+| Local speech-to-text | VoiceFlow | `voiceflow.py`, `docs/` | faster-whisper, CPU/CUDA, Windows input |
+| Long AI/multimedia workflow | Video Translator Pro | `videotranslator/`, `tests/`, `tools/`, `AGENTS.md` | checkpoints, recovery, staged processing |
+| Hybrid desktop/web | ZeTer OS | `app/`, `tools/check_project.py` | Python/native bridge + modular JavaScript frontend |
+| Downloader/media pipeline | Universal Video Downloader | `src/`, `tests/`, `problem_log_validator.py` | format strategy, validation, and diagnostics |
 
 ## 15-minute review
 
-### 1. Architecture
+### 1. Compare Web architectures
 
-Compare how projects of different ages separate responsibilities:
+- **ZeTer Photo Editor** — a large browser application with rendering, format adapters, masks, typed pixel data, and persistence.
+- **ZAP ZONE** — a real-time Three.js application with separated runtime/gameplay modules.
+- **BizPilot** — a local-first business application with no mandatory backend.
+- **CYBER RACE / Forest Hunter** — compact browser games that make performance trade-offs and gameplay state easy to inspect.
 
-- `Screen-Recorder-Pro/screen_recorder/` — modular desktop application;
+### 2. Compare Python architectures
+
+- `Screen-Recorder-Pro/screen_recorder/` — modular Windows multimedia application;
 - `Universal-Video-Downloader/src/` — downloader with separate tests/scripts/docs;
 - `Video-Translator-Pro/videotranslator/` — package structure for a long-running pipeline;
-- `ZeTer-OS/app/` — hybrid frontend/backend;
-- `Vacancy-Parser-Pro` — separate scraper / GUI / logging layers.
+- `ZeTer-OS/app/` — hybrid Python + JavaScript boundary;
+- `Vacancy-Parser-Pro` — scraper / GUI / logging responsibilities.
 
-For `BSOD-Investigator`, `VoiceFlow`, and `Text-to-MP3-Windows`, the current size of the legacy entry module is also worth noting. They are real working applications where further decomposition remains an explicit engineering task rather than something hidden by marketing copy.
+### 3. Review the verification strategy
 
-### 2. Reliability of long-running operations
+Compare evidence levels:
+1. **syntax/compile**;
+2. **unit/regression**;
+3. **integration/self-test**;
+4. **browser smoke/runtime**;
+5. **manual Windows / GPU / audio verification**.
 
-Inspect:
-
-- checkpoints and recovery in `Video-Translator-Pro`;
-- FFmpeg management and capture recovery in `Screen-Recorder-Pro`;
-- recovery of long TTS/MP3 jobs in `Text-to-MP3-Windows`;
-- timeout/retry/fallback behavior in network-heavy parts of `Universal-Video-Downloader` and `Vacancy-Parser-Pro`.
-
-### 3. Diagnostics
-
-Notice that logs are intended for root-cause analysis rather than only event accumulation:
-
-- `BSOD-Investigator` — diagnostic reports and analysis history;
-- `Vacancy-Parser-Pro/problem_logging.py` — source-specific problem context;
-- `Universal-Video-Downloader/problem_log_validator.py` and `Логи проблем/` — schema and quality checks for diagnostic artifacts;
-- `ZeTer-OS/problem_logs.py` — centralized problem-log layer;
-- `Screen-Recorder-Pro/screen_recorder/mixins/problem_logs.py` — diagnostics inside the multimedia application lifecycle.
+The key rule: a claim should match the level of verification that was actually performed.
 
 ## 30-minute review
 
-### A. Real-time multimedia — Screen Recorder Pro
+### A. Web graphics — ZeTer Photo Editor
 
 Inspect:
+- document model, layers/groups/masks;
+- render state vs editable source separation;
+- PSD/PSB import/export;
+- 16/32-bit typed buffers;
+- ICC/CMYK path;
+- crash autosave;
+- regression tests and CI.
 
+### B. WebGL / AI — ZAP ZONE
+
+Inspect:
+- engine / weapons / combat / entities / progression / runtime boundaries;
+- tactical AI;
+- ballistics and weapon handling;
+- browser boot smoke test;
+- performance/recovery contracts.
+
+### C. Windows multimedia — Screen Recorder Pro
+
+Inspect:
 - FFmpeg command construction;
-- GPU/CPU capture and encoding selection;
-- system audio and fallback handling;
-- stopping, failure, and partially successful recording behavior;
-- what `verify_project.py`, `verify_capture_recovery.py`, `verify_save_safety.py`, and `verify_recording_publication.py` actually check;
-- which of those checks are executed by `.github/workflows/validate.yml`.
+- capture/encoding selection;
+- child-process lifecycle;
+- capture recovery;
+- save safety;
+- what GitHub Actions actually execute.
 
-### B. System diagnostics — BSOD Investigator
-
-Inspect:
-
-- how WinDbg/CDB output becomes a diagnostic model;
-- how strong signals are separated from weak signals;
-- how history across independent crashes is used;
-- why re-analyzing the same dump should not artificially increase confidence;
-- what the safe `--self-test` validates in CI.
-
-### C. Local AI — VoiceFlow
+### D. System diagnostics — BSOD Investigator
 
 Inspect:
+- how dump/Event Log/driver data become an evidence model;
+- how strong and weak signals are separated;
+- history across independent crashes;
+- safe self-test.
 
+### E. Local AI — VoiceFlow
+
+Inspect:
 - audio → faster-whisper pipeline;
-- CPU/CUDA modes;
-- stable-fragment insertion without final duplication;
-- behavior when the active window changes during dictation;
-- Windows input fallback mechanisms;
-- which parts are currently proven only by syntax/compile CI and still require real Windows runtime verification.
+- CPU/CUDA paths;
+- stable-fragment insertion;
+- Windows input fallbacks;
+- the boundary between CI-verifiable and hardware/runtime-dependent behavior.
 
-## How to interpret verification correctly
+## Strong signals to look for
 
-A green CI run does not mean a hardware-dependent feature is fully verified. The portfolio uses several evidence levels:
+**Web:** state lifecycle, rendering budgets, module boundaries, graceful degradation, persistence, browser smoke tests.
 
-1. **syntax/compile** — the code parses and compiles;
-2. **unit/regression** — a specific software contract is tested without external hardware;
-3. **integration/self-test** — multiple components are exercised together;
-4. **runtime/manual Windows verification** — requires a real window, audio device, GPU, WinAPI session, FFmpeg environment, or other runtime condition.
+**Python:** process lifecycle, WinAPI integration, recovery, external-tool validation, structured diagnostics.
 
-A technical review should match each claim to the level of evidence that actually supports it.
-
-## Strong engineering signals
-
-### Failure behavior
-
-The interesting part is not only the happy path, but also behavior around a hung child process, network failure, partially created output, user cancellation, restart after interruption, and temporarily unavailable devices or tools.
-
-### Verifiability
-
-The repositories use GitHub Actions, `py_compile` / `compileall`, self-tests, regression tests, smoke tests, and dedicated structural / publication / recovery checks. Hardware-dependent behavior is not treated as automatically proven just because a compile step passed.
-
-### User-data handling
-
-Review what is excluded from Git, how settings are stored, where backup/recovery is used, how logs/caches are bounded, and which diagnostic artifacts may contain sensitive data.
-
-### Maintainability
-
-Newer or actively refactored projects use focused modules, `docs/`, `AGENTS.md`, explicit entrypoints, and structural checks. Large legacy modules are treated as technical debt rather than desirable architecture.
-
-## Recurring engineering pattern
-
-```text
-external operation
-    ↓
-explicit state / stage
-    ↓
-timeout or bounded retry
-    ↓
-structured diagnostics
-    ↓
-result validation
-    ↓
-safe recovery or clear failure state
-```
+**Across both:** tests, CI, documentation, constrained change scope, and honest labeling of what is not yet verified.
 
 ## More navigation
 

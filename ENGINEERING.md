@@ -2,107 +2,128 @@
 
 # Инженерный подход
 
-Этот документ дополняет профиль и показывает практики, которые используются в опубликованных проектах. Они применяются там, где соответствуют задаче, а не как обязательный шаблон ради шаблона.
+Этот документ дополняет профиль и показывает практики, которые применяются в моих **Python** и **Web** проектах. Цель — не использовать одинаковый шаблон везде, а выбирать проверяемые решения под реальный риск проекта.
 
 ## 1. Диагностика должна помогать найти первопричину
 
-Обычный большой лог часто мало полезен: нужное событие теряется среди повторов. Поэтому в сложных проектах диагностика разделяется по областям ответственности и сохраняет контекст ошибки, параметры операции, traceback, ключевые события и итоговую сводку.
+Большой сырой лог сам по себе редко решает проблему. В сложных проектах диагностика должна сохранять этап операции, входные параметры, traceback или код ошибки, состояние внешнего компонента и итоговую сводку.
 
 Примеры:
-
-- **BSOD Investigator** — объединяет данные crash dump, WinDbg/CDB, Event Log, драйверов и истории прошлых сбоев.
-- **Screen Recorder Pro** — отдельно диагностирует FFmpeg-команды, тайминги, плавность записи, аудиоустройства и жизненный цикл процессов.
-- **Vacancy Parser Pro** — создаёт диагностическую сессию для каждого поиска и разделяет проблемы по источникам.
-- **Windows PC Locker** — ограничивает объём логов и хранит компактный контекст последней значимой проблемы.
+- **BSOD Investigator** объединяет crash dump, WinDbg/CDB, Event Log, метаданные драйверов и историю прошлых сбоев.
+- **Screen Recorder Pro** отдельно диагностирует FFmpeg-команды, тайминги, аудиоустройства, плавность записи и lifecycle процессов.
+- **Vacancy Parser Pro** разделяет проблемы по внешним источникам.
+- В браузерных проектах ошибки runtime/rendering не должны теряться между UI, игровым циклом и Web API.
 
 ## 2. Длительная операция не должна быть «чёрным ящиком»
 
-Для операций, которые могут идти минуты или часы, важно понимать текущий этап, уметь корректно отменить процесс и по возможности не терять уже выполненную работу.
+Для операций, идущих минуты или часы, нужен явный прогресс, корректная отмена и возможность сохранить выполненную работу.
 
 Используемые подходы:
-
 - checkpoints и recovery;
-- heartbeat для долгих внешних процессов;
-- ограниченные retry вместо бесконечных повторов;
-- тайм-ауты;
-- проверка return code;
-- повторное использование уже созданных промежуточных артефактов;
+- heartbeat для долгих процессов;
+- bounded retry вместо бесконечных повторов;
+- timeouts и return-code validation;
+- повторное использование промежуточных артефактов;
 - безопасная очистка временных данных.
 
-Хороший пример — **Video Translator Pro**, где один пользовательский процесс состоит из распознавания речи, перевода, TTS и нескольких этапов FFmpeg.
+**Video Translator Pro** показывает этот подход на длинном Whisper → translation → TTS → FFmpeg pipeline.
 
 ## 3. Успешная команда ещё не означает успешный результат
 
-Там, где это возможно, проверяется конечный артефакт.
-
-Примеры:
-
-- итоговое видео проверяется через FFprobe;
-- загрузчик различает скачивание, remux и transcoding и проверяет полученный медиафайл;
-- диагностический анализ отделяет наличие сигнала от уверенности в выводе;
-- self-tests проверяют критичные сценарии без выполнения потенциально разрушительных действий.
+Где возможно, проверяется конечный артефакт или observable behavior:
+- готовое видео — через FFprobe;
+- downloader — через проверку результата после download/remux/transcoding;
+- browser runtime — smoke-тестом загрузки и ключевых инвариантов;
+- графические форматы — regression tests на import/export contracts;
+- критичные сценарии — безопасными self-tests.
 
 ## 4. Внешняя зависимость должна иметь границы отказа
 
-Сайт, API, драйвер, FFmpeg, TTS-сервис или устройство могут перестать отвечать независимо от приложения.
+API, сайт, драйвер, FFmpeg, CDN, WebGL context или аудиоустройство могут отказать независимо от приложения.
 
-Поэтому применяются:
-
-- изоляция адаптеров;
+Поэтому нужны:
+- изоляция интеграций;
 - локальная обработка ошибок;
-- fallback только там, где он безопасен;
-- ограниченные повторы;
+- fallback только там, где он корректен;
+- bounded retry;
 - явное завершение дочерних процессов;
-- диагностический контекст конкретной внешней зависимости.
+- диагностический контекст конкретной зависимости.
 
-**Vacancy Parser Pro** показывает этот подход на нескольких сайтах вакансий, а **Video Translator Pro** — на TTS, переводе и FFmpeg.
+В web-проектах к этому добавляются CDN fallback, WebGL context recovery и graceful degradation качества.
 
-## 5. Пользовательские данные не должны смешиваться с исходным кодом
+## 5. Состояние браузерного приложения — часть архитектуры
 
-Runtime-данные, настройки, кэши, история и диагностика исключаются из Git. Для проектов, где данные важны, отдельно продумываются резервное копирование и восстановление.
+Local-first приложение должно явно определять:
+- что хранится в `localStorage`, IndexedDB или памяти;
+- что считается пользовательскими данными;
+- как выполняются backup/restore;
+- как переживается crash/reload;
+- какие данные можно безопасно удалить;
+- что никогда не должно попадать в Git.
 
-**ZeTer OS** использует local-first модель, экспорт, резервные копии и точки восстановления. Другие desktop-проекты хранят локальные настройки и рабочие данные отдельно от репозитория.
+**BizPilot** использует локальное состояние и ZIP backup/restore. **ZeTer Photo Editor** использует IndexedDB для аварийного восстановления несохранённых документов.
 
-## 6. Большой файл — сигнал проверить границы ответственности
+## 6. Rendering и realtime-код требуют бюджетов
 
-По мере роста проекта код разделяется на модули, если это уменьшает связанность и упрощает поиск нужного участка.
+В Canvas/WebGL-проектах корректность недостаточна: важны frame budget, память и количество realtime-объектов.
+
+Подходы:
+- `requestAnimationFrame`;
+- object pools;
+- `InstancedMesh`;
+- spatial grids;
+- ограничение тяжёлых операций;
+- bounded caches;
+- adaptive quality;
+- typed pixel pipelines там, где Canvas8 недостаточен.
+
+Это видно в **ZeTer Photo Editor**, **ZAP ZONE**, **CYBER RACE** и **Forest Hunter**.
+
+## 7. Большой файл — сигнал проверить границы ответственности
+
+По мере роста проекта код разделяется, если это уменьшает связанность и упрощает изменения.
 
 Примеры:
-
-- **Screen Recorder Pro** разделяет UI, запись, аудио, FFmpeg-команды, процессы, скриншоты и диагностику по компонентам и mixin-модулям.
+- **Screen Recorder Pro** разделяет UI, capture, audio, FFmpeg, process management и diagnostics.
 - **ZeTer OS** использует модульный JavaScript frontend и отдельный Python/native bridge.
-- **Universal Video Downloader** содержит карту кода и инструменты определения минимального scope изменения.
+- **ZAP ZONE** разделяет engine, weapons, player state, combat, entities, progression и runtime.
+- **Universal Video Downloader** содержит code map и инструменты определения минимального scope изменения.
 
-## 7. Проверка должна соответствовать реальному риску
+## 8. Проверка должна соответствовать реальному риску
 
-Не все функции можно полноценно протестировать в CI: микрофон, GPU, Desktop Duplication, системный звук и реальные Windows-сеансы требуют физической Windows-среды.
-
-Поэтому используется комбинация:
-
-- `py_compile` / `compileall`;
-- unit/regression tests;
+Используется комбинация:
+- syntax / compile checks;
+- unit и regression tests;
 - self-tests;
-- smoke-тесты;
-- структурные проверки;
+- structural checks;
+- browser smoke tests;
 - GitHub Actions;
-- ручная проверка аппаратно-зависимых сценариев.
+- ручная runtime-проверка там, где нужны реальная Windows-сессия, GPU, аудиоустройство или интерактивный браузер.
 
-Цель — не создать иллюзию стопроцентного покрытия, а автоматически проверять то, что действительно можно надёжно проверить.
+Зелёный CI не считается доказательством того, что аппаратно-зависимая функция полностью проверена.
 
-## 8. AI-assisted development требует тех же проверок, что и обычная разработка
+## 9. Пользовательские данные требуют отдельной стратегии
 
-ChatGPT и Codex используются для ускорения анализа, рефакторинга, поиска проблем и реализации изменений. Сгенерированное изменение не считается корректным только потому, что код выглядит правдоподобно.
+Настройки, runtime-state, кэши, crash recovery, diagnostic artifacts и пользовательские документы не должны случайно смешиваться с исходниками.
 
-Для крупных проектов используются документация архитектуры, карты кода, `AGENTS.md`, автоматические проверки и диагностика. Это помогает уменьшать область изменений и снижать риск регрессий.
+В зависимости от проекта используются:
+- локальное хранение вне репозитория;
+- backup/restore;
+- crash autosave;
+- bounded logs/caches;
+- sanitization диагностических данных;
+- явные правила `.gitignore`.
 
-## Репозитории
+## 10. AI-assisted development требует тех же проверок, что и обычная разработка
 
-- [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)
-- [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)
-- [VoiceFlow](https://github.com/zeter1/VoiceFlow)
-- [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)
-- [ZeTer OS](https://github.com/zeter1/ZeTer-OS)
-- [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)
-- [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)
-- [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)
-- [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)
+ChatGPT и Codex используются для analysis, refactoring, debugging и реализации. Изменение не считается корректным только потому, что выглядит правдоподобно.
+
+Для больших проектов используются architecture docs, code maps, `AGENTS.md`, tests, CI и diagnostics, чтобы уменьшить scope изменений и риск регрессий.
+
+## Репозитории по направлениям
+
+**Web:** [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) · [BizPilot](https://github.com/zeter1/BizPilot) · [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE) · [CYBER RACE](https://github.com/zeter1/CYBER-RACE) · [Forest Hunter](https://github.com/zeter1/ForestHunter)
+
+**Python / Windows:** [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) · [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator) · [VoiceFlow](https://github.com/zeter1/VoiceFlow) · [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) · [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) · [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader) · [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows) · [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)
+
+**Hybrid:** [ZeTer OS](https://github.com/zeter1/ZeTer-OS)

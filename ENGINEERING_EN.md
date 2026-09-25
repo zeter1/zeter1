@@ -2,107 +2,120 @@
 
 # Engineering approach
 
-This document complements the profile and describes practices used across the published projects. They are applied where they fit the problem rather than as mandatory ceremony.
+This document complements the profile and describes practices used across my **Python** and **Web** projects. The goal is not to apply the same template everywhere, but to use verifiable engineering choices that match the real risk of each project.
 
 ## 1. Diagnostics should help find the root cause
 
-A large raw log is often not enough: the important event gets lost among repetitions. In complex projects, diagnostics are separated by responsibility and preserve error context, operation parameters, traceback, key events, and a final summary.
+Complex projects preserve the operation stage, inputs, traceback or error code, external-component state, and a useful summary instead of relying on one large raw log.
 
 Examples:
+- **BSOD Investigator** combines crash dumps, WinDbg/CDB, Event Log data, driver metadata, and failure history.
+- **Screen Recorder Pro** separates FFmpeg commands, timing, audio devices, capture smoothness, and process lifecycle.
+- **Vacancy Parser Pro** isolates problems by external source.
+- Browser projects keep runtime/rendering failures visible across UI, game loops, and Web APIs.
 
-- **BSOD Investigator** combines crash dump data, WinDbg/CDB output, Event Log records, driver information, and history from previous failures.
-- **Screen Recorder Pro** separates FFmpeg command diagnostics, timing, recording smoothness, audio devices, and process lifecycle.
-- **Vacancy Parser Pro** creates a diagnostic session for each search and separates problems by source.
-- **Windows PC Locker** limits log size and keeps compact context about the latest important problem.
+## 2. Long-running operations should not be black boxes
 
-## 2. A long-running operation should not be a black box
+Approaches include checkpoints, recovery, heartbeats, bounded retries, timeouts, return-code validation, reuse of intermediate artifacts, and safe cleanup.
 
-For operations that may run for minutes or hours, it is important to know the current stage, cancel safely, and preserve completed work where possible.
-
-Approaches used include:
-
-- checkpoints and recovery;
-- heartbeat for long external processes;
-- bounded retries instead of infinite loops;
-- timeouts;
-- return-code validation;
-- reuse of already-created intermediate artifacts;
-- safe cleanup of temporary data.
-
-A representative example is **Video Translator Pro**, where one user operation includes speech recognition, translation, TTS, and several FFmpeg stages.
+**Video Translator Pro** demonstrates this in a long Whisper → translation → TTS → FFmpeg pipeline.
 
 ## 3. A successful command does not necessarily mean a successful result
 
-Whenever possible, the final artifact is validated.
-
-Examples:
-
-- final video output is inspected through FFprobe;
-- the downloader distinguishes download, remux, and transcoding and validates the produced media file;
-- diagnostic analysis separates the presence of a signal from confidence in the conclusion;
-- self-tests exercise critical scenarios without performing potentially destructive actions.
+Whenever possible, the final artifact or observable behavior is validated:
+- video through FFprobe;
+- download/remux/transcoding output through media validation;
+- browser runtime through boot smoke tests and key invariants;
+- graphics formats through regression tests around import/export contracts;
+- critical scenarios through safe self-tests.
 
 ## 4. External dependencies need failure boundaries
 
-A website, API, driver, FFmpeg, TTS service, or hardware device can fail independently of the application.
+An API, website, driver, FFmpeg, CDN, WebGL context, or audio device can fail independently of the application.
 
-For that reason, the projects use:
-
-- adapter isolation;
+Projects therefore use:
+- integration isolation;
 - local error handling;
-- fallback only where it is safe;
-- bounded retries;
+- fallback only where correct;
+- bounded retry;
 - explicit child-process termination;
-- diagnostic context for the specific external dependency.
+- diagnostic context for the failing dependency.
 
-**Vacancy Parser Pro** demonstrates this across several vacancy sites; **Video Translator Pro** applies the same principle to TTS, translation, and FFmpeg.
+Web projects add CDN fallback, WebGL context recovery, and graceful quality degradation where appropriate.
 
-## 5. User data should not be mixed with source code
+## 5. Browser application state is part of architecture
 
-Runtime data, settings, caches, history, and diagnostics are kept out of Git. Projects where user data matters also design explicit backup and recovery flows.
+A local-first application should explicitly define:
+- what lives in `localStorage`, IndexedDB, or memory;
+- what counts as user data;
+- how backup/restore works;
+- how crash/reload recovery works;
+- what can be safely discarded;
+- what must never enter Git.
 
-**ZeTer OS** uses a local-first model, exports, backups, and restore points. Other desktop projects store local settings and runtime data separately from the repository.
+**BizPilot** uses local state with ZIP backup/restore. **ZeTer Photo Editor** uses IndexedDB for crash recovery of unsaved documents.
 
-## 6. A very large file is a signal to inspect responsibility boundaries
+## 6. Rendering and real-time code need budgets
 
-As a project grows, code is split into modules when doing so reduces coupling and makes navigation easier.
+In Canvas/WebGL projects, correctness is not enough; frame budget, memory, and real-time object count also matter.
+
+Approaches include:
+- `requestAnimationFrame`;
+- object pools;
+- `InstancedMesh`;
+- spatial grids;
+- bounded heavy operations;
+- bounded caches;
+- adaptive quality;
+- typed pixel pipelines where Canvas8 is not sufficient.
+
+This is visible in **ZeTer Photo Editor**, **ZAP ZONE**, **CYBER RACE**, and **Forest Hunter**.
+
+## 7. Large files are a signal to inspect responsibility boundaries
+
+As projects grow, code is split when doing so reduces coupling and makes future changes easier.
 
 Examples:
-
-- **Screen Recorder Pro** separates UI, recording, audio, FFmpeg commands, process management, screenshots, and diagnostics across focused components and mixins.
+- **Screen Recorder Pro** separates UI, capture, audio, FFmpeg, process management, and diagnostics.
 - **ZeTer OS** uses a modular JavaScript frontend with a separate Python/native bridge.
-- **Universal Video Downloader** includes a code map and tools for finding the smallest scope required for a change.
+- **ZAP ZONE** separates engine, weapons, player state, combat, entities, progression, and runtime.
+- **Universal Video Downloader** includes a code map and tools for finding the smallest change scope.
 
-## 7. Verification should match real risk
+## 8. Verification should match real risk
 
-Not every function can be fully tested in CI. Microphones, GPUs, Desktop Duplication, system audio, and real interactive Windows sessions require physical runtime conditions.
-
-The projects therefore combine:
-
-- `py_compile` / `compileall`;
+The projects combine:
+- syntax / compile checks;
 - unit and regression tests;
 - self-tests;
-- smoke tests;
 - structural checks;
+- browser smoke tests;
 - GitHub Actions;
-- manual verification for hardware-dependent scenarios.
+- manual runtime verification where a real Windows session, GPU, audio device, or interactive browser is required.
 
-The goal is not to create the illusion of 100% coverage, but to automate the parts that can be verified reliably.
+A green CI run is not treated as proof that a hardware-dependent feature has been fully verified.
 
-## 8. AI-assisted development requires the same verification as regular development
+## 9. User data needs its own strategy
 
-ChatGPT and Codex are used to accelerate analysis, refactoring, debugging, and implementation. A generated change is not treated as correct simply because the code looks plausible.
+Settings, runtime state, caches, crash recovery, diagnostic artifacts, and user documents should not accidentally mix with source code.
 
-Larger projects use architecture documentation, code maps, `AGENTS.md`, automated checks, and diagnostics. This helps reduce change scope and lowers regression risk.
+Depending on the project, the design uses:
+- local storage outside the repository;
+- backup/restore;
+- crash autosave;
+- bounded logs/caches;
+- diagnostic-data sanitization;
+- explicit `.gitignore` rules.
 
-## Repositories
+## 10. AI-assisted development requires the same verification as regular development
 
-- [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)
-- [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)
-- [VoiceFlow](https://github.com/zeter1/VoiceFlow)
-- [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)
-- [ZeTer OS](https://github.com/zeter1/ZeTer-OS)
-- [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)
-- [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)
-- [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)
-- [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)
+ChatGPT and Codex are used for analysis, refactoring, debugging, and implementation. A change is not considered correct just because it looks plausible.
+
+Large projects use architecture docs, code maps, `AGENTS.md`, tests, CI, and diagnostics to reduce change scope and regression risk.
+
+## Repositories by area
+
+**Web:** [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) · [BizPilot](https://github.com/zeter1/BizPilot) · [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE) · [CYBER RACE](https://github.com/zeter1/CYBER-RACE) · [Forest Hunter](https://github.com/zeter1/ForestHunter)
+
+**Python / Windows:** [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) · [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator) · [VoiceFlow](https://github.com/zeter1/VoiceFlow) · [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) · [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) · [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader) · [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows) · [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)
+
+**Hybrid:** [ZeTer OS](https://github.com/zeter1/ZeTer-OS)
