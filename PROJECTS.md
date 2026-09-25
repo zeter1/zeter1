@@ -22,7 +22,7 @@
 
 **Что смотреть:** static frontend без обязательного backend, state model, `localStorage`, ZIP backup/restore, demo-data isolation, разделение `index.html`, `css/` и `js/`.
 
-**Инженерный акцент:** frontend architecture, state lifecycle и сохранность пользовательских данных.
+**Инженерный акцент:** frontend architecture, state lifecycle и сохранность пользовательских данных. Репозиторий дополнен read-only GitHub Actions validation, проверкой local assets/static serving, SECURITY policy и структурированным bug report.
 
 ---
 
@@ -40,7 +40,7 @@
 
 **Что это:** браузерная 3D боевая гонка с AI-соперниками, оружием, бонусами и adaptive quality.
 
-**Инженерный акцент:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation и WebGL context recovery.
+**Инженерный акцент:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation и WebGL context recovery. CI проверяет HTML, inline JavaScript и static-server contract; полный gameplay runtime остаётся отдельным уровнем verification.
 
 ---
 
@@ -48,7 +48,7 @@
 
 **Что это:** браузерный 3D FPS с охотой, progression, loot, contracts и AI-противниками.
 
-**Инженерный акцент:** state-based AI, InstancedMesh, object pools, spatial collision grid и управление realtime-объектами.
+**Инженерный акцент:** state-based AI, InstancedMesh, object pools, spatial collision grid и управление realtime-объектами. CI проверяет HTML, inline JavaScript и static-server contract; GPU/gameplay runtime не подменяется статической проверкой.
 
 ## Python Development
 

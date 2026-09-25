@@ -20,7 +20,7 @@ The portfolio has two main tracks — **Web Development** and **Python Developme
 
 **What it is:** a local-first workspace for customers, orders, deals, invoices, finance, notes, calendar, and analytics.
 
-**What to inspect:** static frontend without a mandatory backend, state model, `localStorage`, ZIP backup/restore, demo-data isolation, and separation of `index.html`, `css/`, and `js/`.
+**What to inspect:** static frontend without a mandatory backend, state model, `localStorage`, ZIP backup/restore, demo-data isolation, separation of `index.html`, `css/`, and `js/`, plus read-only CI for JavaScript syntax, local assets, and static serving.
 
 ---
 
@@ -36,7 +36,7 @@ The portfolio has two main tracks — **Web Development** and **Python Developme
 
 **What it is:** a browser 3D combat racing game with AI opponents, weapons, pickups, and adaptive quality.
 
-**Engineering focus:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation, and WebGL context recovery.
+**Engineering focus:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation, and WebGL context recovery. CI verifies HTML, inline JavaScript, and the static-server contract while leaving full gameplay runtime as a separate verification layer.
 
 ---
 
@@ -44,7 +44,7 @@ The portfolio has two main tracks — **Web Development** and **Python Developme
 
 **What it is:** a browser 3D FPS with hunting, progression, loot, contracts, and AI enemies.
 
-**Engineering focus:** state-based AI, InstancedMesh, object pools, spatial collision grid, and real-time object management.
+**Engineering focus:** state-based AI, InstancedMesh, object pools, spatial collision grid, and real-time object management. CI verifies HTML, inline JavaScript, and the static-server contract without claiming GPU/gameplay runtime coverage.
 
 ## Python Development
 
