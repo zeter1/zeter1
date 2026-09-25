@@ -2,9 +2,9 @@
 
 # Dmitry Kolesnichenko
 
-### Python Developer · Windows/Desktop · Automation · Multimedia · AI-assisted development
+### Python Developer · Web Developer · Windows/Desktop · Automation
 
-I build practical Windows applications, automation tools, multimedia software, local AI utilities, and hybrid desktop systems.
+I build **web applications and browser-first products** with HTML/CSS/JavaScript, Canvas and WebGL, alongside **Python applications for Windows**, automation tools, multimedia software, and local AI systems. Web development and Python development are the two main tracks of my portfolio.
 
 I try to take projects beyond a working prototype: separating responsibilities, adding diagnostics and recovery, automating verification, protecting user data, and documenting the codebase so it can be understood without reading every source file.
 
@@ -15,10 +15,11 @@ I try to take projects beyond a working prototype: separating responsibilities, 
 - **[ENGINEERING_EN.md](ENGINEERING_EN.md)** — my engineering approach to reliability, diagnostics, recovery, testing, and AI-assisted development.
 - **[SUPPORT_EN.md](SUPPORT_EN.md)** — guidance for useful bug reports and diagnostic data across projects.
 
-For a fast view of my technical range, start with **Screen Recorder Pro → BSOD Investigator → VoiceFlow → ZeTer OS → Video Translator Pro**.
+For a fast view of my technical range, start with **ZeTer Photo Editor → ZAP ZONE → Screen Recorder Pro → BSOD Investigator → VoiceFlow → BizPilot → ZeTer OS**.
 
 ## Core specialization
 
+- **Web / frontend** — HTML, CSS, JavaScript, Canvas 2D, WebGL, Three.js, Web Audio API, IndexedDB/localStorage, responsive interfaces, and browser-first applications that can work without a mandatory backend.
 - **Python / Windows desktop** — Tkinter, WinAPI, ctypes, COM/SAPI, system tray, global hotkeys, startup integration, and Windows-specific tooling.
 - **Multimedia** — FFmpeg, FFprobe, yt-dlp, screen capture, audio/video processing, remux/transcoding, and NVENC hardware encoding.
 - **Speech / AI** — Whisper, faster-whisper, Edge TTS, local speech recognition, and CPU/CUDA pipelines.
@@ -31,6 +32,11 @@ For a fast view of my technical range, start with **Screen Recorder Pro → BSOD
 
 | Project | Purpose | Key engineering topics |
 |---|---|---|
+| **[ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor)** | Browser image editor with layers, masks, and a PSD/PSB pipeline | Canvas 2D, JavaScript, layered document model, typed 16/32-bit pixel buffers, PSD/PSB, ICC/CMYK, regression tests |
+| **[BizPilot](https://github.com/zeter1/BizPilot)** | Local-first workspace for small-business operations | HTML/CSS/JavaScript, localStorage, business data model, ZIP backup/restore, static frontend without a backend |
+| **[ZAP ZONE](https://github.com/zeter1/ZAP-ZONE)** | Browser 3D 5v5 FPS with AI bots | Three.js/WebGL, modular JavaScript, tactical AI, weapon/ballistics systems, asset pipeline, headless browser smoke test |
+| **[CYBER RACE](https://github.com/zeter1/CYBER-RACE)** | Browser 3D combat racing game | Three.js/WebGL, AI opponents, weapons, Web Audio, adaptive quality, WebGL context recovery |
+| **[Forest Hunter](https://github.com/zeter1/ForestHunter)** | Browser 3D FPS with hunting, progression, and AI | Three.js/WebGL, state-based AI, InstancedMesh, object pools, spatial collisions, gameplay systems |
 | **[Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)** | Screen, system-audio, microphone, and screenshot capture | FFmpeg, Desktop Duplication, NVENC, WinAPI hotkeys, process management, modular architecture |
 | **[BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)** | Investigating Windows BSOD causes | WinDbg/CDB, crash dumps, Event Log, driver analysis, SQLite, evidence-based diagnostics |
 | **[VoiceFlow](https://github.com/zeter1/VoiceFlow)** | Local voice input for any Windows application | faster-whisper, CUDA/CPU, real-time pipeline, Windows input, background tasks, privacy-first design |
@@ -52,6 +58,9 @@ I try to separate engineering claims from the evidence supporting them. These ar
 | **Evidence-based diagnostics** | `BSOD-Investigator`, `Vacancy-Parser-Pro/problem_logging.py`, `Universal-Video-Downloader/problem_log_validator.py` | how diagnostic context becomes a reproducible investigation |
 | **Local AI pipeline** | `VoiceFlow/voiceflow.py`, `Video-Translator-Pro/videotranslator/` | CPU/CUDA paths, speech-to-text, staged processing, and recovery |
 | **Hybrid desktop/web architecture** | `ZeTer-OS/app/`, `tools/check_project.py` | native bridge, frontend modules, and project-level verification |
+| **Browser graphics / image pipeline** | `ZeTer-Photo-Editor` | Canvas rendering, layers/masks, PSD/PSB, high-depth typed buffers, and color-management work |
+| **WebGL / browser game systems** | `ZAP-ZONE`, `CYBER-RACE`, `ForestHunter` | Three.js, AI, real-time loops, resource management, browser graphics, and performance |
+| **Local-first web application** | `BizPilot` | browser state model, persistence, backup/restore, and frontend without a mandatory server |
 | **CI and safe automation** | `.github/workflows/` across the main repositories | compile/test/self-test gates, Windows runners, external-tool validation |
 
 For a detailed route through specific files and evidence levels, see **[REVIEW_GUIDE_EN.md](REVIEW_GUIDE_EN.md)**.
@@ -60,6 +69,9 @@ For a detailed route through specific files and evidence levels, see **[REVIEW_G
 
 | Area | Projects |
 |---|---|
+| **Web / frontend applications** | ZeTer Photo Editor, BizPilot, ZAP ZONE, CYBER RACE, Forest Hunter |
+| **Canvas 2D / browser imaging** | ZeTer Photo Editor |
+| **Three.js / WebGL / browser games** | ZAP ZONE, CYBER RACE, Forest Hunter |
 | **Windows API and system integration** | Screen Recorder Pro, BSOD Investigator, VoiceFlow, Windows PC Locker, Text to MP3 |
 | **Multimedia pipelines** | Screen Recorder Pro, Video Translator Pro, Universal Video Downloader, Text to MP3 |
 | **Local AI / Speech** | VoiceFlow, Video Translator Pro |
@@ -110,11 +122,11 @@ Larger projects also use `docs/`, code maps, verification scripts, tests, and CI
 
 ## Technologies
 
-`Python` · `Tkinter` · `WinAPI` · `ctypes` · `COM / SAPI` · `FFmpeg` · `FFprobe` · `yt-dlp` · `Whisper` · `faster-whisper` · `CUDA` · `Edge TTS` · `SQLite` · `pandas` · `openpyxl` · `requests` · `BeautifulSoup` · `pywebview` · `HTML` · `CSS` · `JavaScript` · `Git` · `GitHub Actions` · `PyInstaller`
+`Python` · `HTML` · `CSS` · `JavaScript` · `Canvas 2D` · `WebGL` · `Three.js` · `Web Audio API` · `IndexedDB` · `localStorage` · `Tkinter` · `WinAPI` · `ctypes` · `COM / SAPI` · `FFmpeg` · `FFprobe` · `yt-dlp` · `Whisper` · `faster-whisper` · `CUDA` · `Edge TTS` · `SQLite` · `pandas` · `openpyxl` · `requests` · `BeautifulSoup` · `pywebview` · `Git` · `GitHub Actions` · `PyInstaller`
 
 ## About me
 
-I have built more than 23 software projects. My main areas are practical Windows applications, automation, multimedia, system utilities, and software that combines desktop development with modern AI capabilities.
+My published work now spans two main tracks: **web development** — browser applications, Canvas/WebGL, local-first interfaces, and 3D games — and **Python development** — Windows desktop software, automation, multimedia, system utilities, and local AI tools.
 
 I am interested in the full lifecycle of an application: from idea and first working prototype to refactoring, diagnosis of real failures, UX improvement, testing, and preparation for long-term maintenance.
 

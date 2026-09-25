@@ -4,6 +4,69 @@
 
 This file is the extended navigation layer for the published projects. The main README gives a quick overview; this page groups the repositories by engineering area and highlights what is worth inspecting in each one.
 
+## Web applications and browser-first products
+
+### [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor)
+
+**Purpose:** a full browser image editor with layers, masks, history, non-destructive editing, and professional-format import/export.
+
+**What to inspect:**
+
+- Canvas 2D rendering/compositing pipeline;
+- layers, groups, raster/vector masks, and smart objects;
+- PSD/PSB import/export, including 16/32-bit typed pixel buffers;
+- ICC/CMYK color-management pipeline;
+- crash autosave through IndexedDB;
+- regression tests and CI.
+
+**Engineering focus:** complex browser-side graphics, precision preservation, file-format compatibility, and evolution of a large JavaScript application.
+
+---
+
+### [BizPilot](https://github.com/zeter1/BizPilot)
+
+**Purpose:** a local-first workspace for small-business operations: customers, orders, deals, invoices, finance, notes, calendar, and analytics.
+
+**What to inspect:**
+
+- static frontend without a mandatory backend;
+- local data model and persistence through `localStorage`;
+- ZIP backup/restore;
+- isolation of demo data from the working dataset;
+- the `index.html + css/ + js/` structure.
+
+**Engineering focus:** frontend application architecture, state management, local-first UX, and user-data safety.
+
+## Browser 3D / WebGL
+
+### [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE)
+
+**Purpose:** a browser 3D 5v5 FPS with the player, allied bots, and enemy AI.
+
+**What to inspect:** modular JavaScript architecture, Three.js/WebGL, tactical/combat AI, weapons and ballistics, asset catalog, performance/recovery, and a headless browser smoke test.
+
+**Engineering focus:** real-time browser gameplay, AI, modularizing a growing JavaScript codebase, and runtime verification.
+
+---
+
+### [CYBER RACE](https://github.com/zeter1/CYBER-RACE)
+
+**Purpose:** a browser 3D combat racing game with AI opponents, weapons, pickups, and adaptive graphics quality.
+
+**What to inspect:** Three.js/WebGL loop, AI, combat systems, Web Audio, automatic quality scaling, and WebGL context recovery.
+
+**Engineering focus:** real-time rendering, performance adaptation, and browser game systems.
+
+---
+
+### [Forest Hunter](https://github.com/zeter1/ForestHunter)
+
+**Purpose:** a browser 3D FPS with hunting, progression, loot, contracts, and AI enemies.
+
+**What to inspect:** state-based AI, InstancedMesh, object pools, spatial collision grid, weapon systems, and progression.
+
+**Engineering focus:** Three.js scene performance, AI/gameplay state, and managing many real-time objects.
+
 ## Windows and system integration
 
 ### [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)
@@ -161,10 +224,12 @@ This file is the extended navigation layer for the published projects. The main 
 
 If time is limited:
 
-1. Start with [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) — the broadest mix of Windows and multimedia engineering.
-2. Open [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator) — system diagnostics and evidence handling.
-3. Open [VoiceFlow](https://github.com/zeter1/VoiceFlow) — local AI and a real-time speech pipeline.
-4. Open [ZeTer OS](https://github.com/zeter1/ZeTer-OS) — hybrid Python/JavaScript architecture.
-5. For reliability of long-running workflows, inspect [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro).
+1. Start with [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) — deep browser-side graphics, Canvas, and the PSD/PSB pipeline.
+2. Open [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE) — Three.js/WebGL, modular JavaScript, and game AI.
+3. Inspect [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) — a broad mix of Python, Windows, and multimedia engineering.
+4. Open [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator) — system diagnostics and evidence handling.
+5. Open [VoiceFlow](https://github.com/zeter1/VoiceFlow) — local AI and a real-time speech pipeline.
+6. Open [BizPilot](https://github.com/zeter1/BizPilot) — local-first frontend application architecture.
+7. Inspect [ZeTer OS](https://github.com/zeter1/ZeTer-OS) — hybrid Python/JavaScript architecture.
 
 See also [ENGINEERING_EN.md](ENGINEERING_EN.md) for engineering principles that recur across these repositories.

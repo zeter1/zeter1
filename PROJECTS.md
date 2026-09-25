@@ -4,6 +4,69 @@
 
 Этот файл — расширенная навигация по опубликованным проектам. Главный README даёт краткий обзор, а здесь проекты сгруппированы по инженерным направлениям и по тому, что именно в них полезно смотреть.
 
+## Web-приложения и browser-first продукты
+
+### [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor)
+
+**Задача:** полноценный браузерный графический редактор со слоями, масками, историей, non-destructive editing и импортом/экспортом профессиональных форматов.
+
+**Что смотреть:**
+
+- Canvas 2D render/composite pipeline;
+- модель слоёв, групп, raster/vector masks и smart objects;
+- PSD/PSB import/export, включая 16/32-bit typed pixel buffers;
+- ICC/CMYK color-management pipeline;
+- аварийное автосохранение через IndexedDB;
+- regression tests и CI.
+
+**Инженерный акцент:** сложная browser-side графика, сохранение precision, совместимость форматов и эволюция крупного JavaScript-приложения.
+
+---
+
+### [BizPilot](https://github.com/zeter1/BizPilot)
+
+**Задача:** local-first рабочее пространство для малого бизнеса: клиенты, заказы, сделки, счета, финансы, заметки, календарь и аналитика.
+
+**Что смотреть:**
+
+- статический frontend без обязательного backend;
+- локальную модель данных и persistence через `localStorage`;
+- ZIP backup/restore;
+- изоляцию демо-режима от рабочих данных;
+- структуру `index.html + css/ + js/`.
+
+**Инженерный акцент:** frontend application architecture, state management, local-first UX и защита пользовательских данных.
+
+## Browser 3D / WebGL
+
+### [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE)
+
+**Задача:** браузерный 3D FPS 5×5 с игроком, союзными и вражескими AI-ботами.
+
+**Что смотреть:** modular JavaScript architecture, Three.js/WebGL, tactical/combat AI, оружие и баллистику, asset catalog, performance/recovery и headless browser smoke test.
+
+**Инженерный акцент:** real-time browser gameplay, AI, modularization растущего JavaScript-кода и проверяемость игрового runtime.
+
+---
+
+### [CYBER RACE](https://github.com/zeter1/CYBER-RACE)
+
+**Задача:** браузерная 3D боевая гонка с AI-соперниками, оружием, бонусами и адаптивным качеством графики.
+
+**Что смотреть:** Three.js/WebGL loop, AI, combat systems, Web Audio, auto quality и восстановление после потери WebGL context.
+
+**Инженерный акцент:** realtime rendering, performance adaptation и игровые системы в браузере.
+
+---
+
+### [Forest Hunter](https://github.com/zeter1/ForestHunter)
+
+**Задача:** браузерный 3D FPS с охотой, прогрессией, лутом, контрактами и AI-противниками.
+
+**Что смотреть:** state-based AI, InstancedMesh, object pools, spatial collision grid, weapon systems и progression.
+
+**Инженерный акцент:** производительность Three.js-сцены, AI/gameplay state и управление большим количеством realtime-объектов.
+
 ## Windows и системная интеграция
 
 ### [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)
@@ -161,10 +224,12 @@
 
 Если времени мало:
 
-1. Начать с [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) — самый широкий набор Windows/multimedia задач.
-2. Посмотреть [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator) — системная диагностика и работа с доказательствами.
-3. Открыть [VoiceFlow](https://github.com/zeter1/VoiceFlow) — локальный AI и real-time speech pipeline.
-4. Посмотреть [ZeTer OS](https://github.com/zeter1/ZeTer-OS) — гибридная Python/JavaScript архитектура.
-5. Для надёжности длительных workflow — [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro).
+1. Начать с [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) — глубокая browser-side графика, Canvas и PSD/PSB pipeline.
+2. Открыть [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE) — Three.js/WebGL, modular JavaScript и игровой AI.
+3. Посмотреть [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) — широкий набор Python/Windows/multimedia задач.
+4. Посмотреть [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator) — системная диагностика и работа с доказательствами.
+5. Открыть [VoiceFlow](https://github.com/zeter1/VoiceFlow) — локальный AI и real-time speech pipeline.
+6. Открыть [BizPilot](https://github.com/zeter1/BizPilot) — local-first frontend application architecture.
+7. Посмотреть [ZeTer OS](https://github.com/zeter1/ZeTer-OS) — гибридная Python/JavaScript архитектура.
 
 Дополнительно: [ENGINEERING.md](ENGINEERING.md) описывает общие инженерные принципы, повторяющиеся в этих проектах.
