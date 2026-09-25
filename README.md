@@ -87,4 +87,4 @@
 - **Email:** zeter11@gmail.com
 - **Telegram:** https://t.me/zeter1
 - **LinkedIn:** https://www.linkedin.com/in/zeter/
-- **Сайт / портфолио:** https://dkl.do.am/
+- **Сайт:** https://dkl.do.am/
