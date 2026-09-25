@@ -20,7 +20,7 @@ This page covers **all 14 project repositories** on the profile (excluding the `
 
 **What it is:** a local-first workspace for customers, orders, deals, invoices, finance, notes, calendar, and analytics.
 
-**What to inspect:** static frontend without a mandatory backend, state model, `localStorage`, ZIP backup/restore, demo-data isolation, separation of `index.html`, `css/`, and `js/`, plus read-only CI for JavaScript syntax, local assets, and static serving.
+**What to inspect:** static frontend without a mandatory backend, state model, `localStorage`, ZIP backup/restore, demo-data isolation, `js/cashflow.js`, cash-flow regression tests, and a real headless Chrome startup smoke. That smoke exposed a latent `cashflowForecast is not defined` startup failure; the root cause was fixed and covered by regression tests.
 
 ---
 
@@ -36,7 +36,7 @@ This page covers **all 14 project repositories** on the profile (excluding the `
 
 **What it is:** a browser 3D combat racing game with AI opponents, weapons, pickups, and adaptive quality.
 
-**Engineering focus:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation, and WebGL context recovery. CI verifies HTML, inline JavaScript, and the static-server contract while leaving full gameplay runtime as a separate verification layer.
+**Engineering focus:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation, and WebGL context recovery. The first architecture pass moved the giant inline runtime into `src/core`, `src/game`, `src/ai`, `src/weapons`, `src/audio`, and `src/ui`; structural validation and a headless WebGL boot are green in Actions.
 
 ---
 
@@ -44,7 +44,7 @@ This page covers **all 14 project repositories** on the profile (excluding the `
 
 **What it is:** a browser 3D FPS with hunting, progression, loot, contracts, and AI enemies.
 
-**Engineering focus:** state-based AI, InstancedMesh, object pools, spatial collision grid, and real-time object management. CI verifies HTML, inline JavaScript, and the static-server contract without claiming GPU/gameplay runtime coverage.
+**Engineering focus:** state-based AI, InstancedMesh, object pools, spatial collision grid, and real-time object management. The first architecture pass introduced core/game/ai/weapons/audio/ui boundaries; structural validation and headless WebGL boot are green while interactive gameplay/GPU behavior remains a separate proof layer.
 
 ## Python Development
 

@@ -22,9 +22,9 @@ Together they show both sides of the portfolio: complex browser runtime work and
 |---|---|---|---|
 | Browser image architecture | ZeTer Photo Editor | [`src/adapters/`](https://github.com/zeter1/ZeTer-Photo-Editor/tree/main/src/adapters), [`tests/color-management.test.mjs`](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/tests/color-management.test.mjs), [CI](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/.github/workflows/ci.yml) | layered document model, PSD/PSB, typed pixel buffers, ICC/CMYK tests |
 | WebGL/game architecture | ZAP ZONE | [`src/core/`](https://github.com/zeter1/ZAP-ZONE/tree/main/src/core), [`src/combat/`](https://github.com/zeter1/ZAP-ZONE/tree/main/src/combat), [`src/weapons/`](https://github.com/zeter1/ZAP-ZONE/tree/main/src/weapons), [validation](https://github.com/zeter1/ZAP-ZONE/blob/main/scripts/validate-structure.mjs), [CI](https://github.com/zeter1/ZAP-ZONE/blob/main/.github/workflows/validate.yml) | modular JavaScript, real-time loop, tactical AI, browser boot smoke test |
-| Local-first web state | BizPilot | [`js/app.js`](https://github.com/zeter1/BizPilot/blob/main/js/app.js), [CI](https://github.com/zeter1/BizPilot/blob/main/.github/workflows/validate.yml) | browser state model, local assets, static-server contract, and user-data lifecycle |
-| Single-file WebGL validation | CYBER RACE | [`index.html`](https://github.com/zeter1/CYBER-RACE/blob/main/index.html), [CI](https://github.com/zeter1/CYBER-RACE/blob/main/.github/workflows/validate.yml) | inline JavaScript syntax, HTML/local-resource contract, and static-server smoke |
-| Single-file WebGL validation | Forest Hunter | [`index.html`](https://github.com/zeter1/ForestHunter/blob/main/index.html), [CI](https://github.com/zeter1/ForestHunter/blob/main/.github/workflows/validate.yml) | inline JavaScript syntax, HTML/local-resource contract, and static-server smoke |
+| Local-first web + runtime recovery | BizPilot | [`js/cashflow.js`](https://github.com/zeter1/BizPilot/blob/main/js/cashflow.js), [`scripts/test-cashflow.mjs`](https://github.com/zeter1/BizPilot/blob/main/scripts/test-cashflow.mjs), [`scripts/browser-smoke.sh`](https://github.com/zeter1/BizPilot/blob/main/scripts/browser-smoke.sh), [CI](https://github.com/zeter1/BizPilot/blob/main/.github/workflows/validate.yml) | state lifecycle, cash-flow contract, regression tests, and real browser startup proof |
+| Modular WebGL architecture | CYBER RACE | [`src/game/runtime.js`](https://github.com/zeter1/CYBER-RACE/blob/main/src/game/runtime.js), [`docs/ARCHITECTURE.md`](https://github.com/zeter1/CYBER-RACE/blob/main/docs/ARCHITECTURE.md), [`scripts/validate-structure.mjs`](https://github.com/zeter1/CYBER-RACE/blob/main/scripts/validate-structure.mjs), [CI](https://github.com/zeter1/CYBER-RACE/blob/main/.github/workflows/validate.yml) | staged modularization, subsystem boundaries, and a headless WebGL boot marker |
+| Modular WebGL architecture | Forest Hunter | [`src/game/runtime.js`](https://github.com/zeter1/ForestHunter/blob/main/src/game/runtime.js), [`src/ai/config.js`](https://github.com/zeter1/ForestHunter/blob/main/src/ai/config.js), [`docs/ARCHITECTURE.md`](https://github.com/zeter1/ForestHunter/blob/main/docs/ARCHITECTURE.md), [CI](https://github.com/zeter1/ForestHunter/blob/main/.github/workflows/validate.yml) | staged extraction, AI/weapons/audio/UI boundaries, and a headless WebGL boot marker |
 | Multimedia recovery | Screen Recorder Pro | `screen_recorder/`, `verify_capture_recovery.py`, `verify_save_safety.py` | FFmpeg lifecycle, recovery, output safety |
 | Windows diagnostics | BSOD Investigator | `bsod_investigator.py`, `docs/`, `--self-test` | crash-evidence processing and reproducible self-check |
 | Local speech-to-text | VoiceFlow | `voiceflow.py`, `docs/` | faster-whisper, CPU/CUDA, Windows input |
@@ -38,8 +38,8 @@ Together they show both sides of the portfolio: complex browser runtime work and
 
 - **ZeTer Photo Editor** — a large browser application with rendering, format adapters, masks, typed pixel data, and persistence.
 - **ZAP ZONE** — a real-time Three.js application with separated runtime/gameplay modules.
-- **BizPilot** — a local-first business application with no mandatory backend.
-- **CYBER RACE / Forest Hunter** — compact browser games that make performance trade-offs and gameplay state easy to inspect.
+- **BizPilot** — a local-first business application with a testable cash-flow engine, regression suite, and diagnosable headless browser boot.
+- **CYBER RACE / Forest Hunter** — staged migrations from giant inline runtimes to core/game/ai/weapons/audio/ui boundaries with structural validation and headless WebGL boot.
 
 ### 2. Compare Python architectures
 

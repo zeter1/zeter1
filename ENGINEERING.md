@@ -33,9 +33,11 @@
 Где возможно, проверяется конечный артефакт или observable behavior:
 - готовое видео — через FFprobe;
 - downloader — через проверку результата после download/remux/transcoding;
-- browser runtime — smoke-тестом загрузки и ключевых инвариантов;
+- browser runtime — smoke-тестом фактической инициализации до явного ready-marker, а не только HTTP-доступности;
 - графические форматы — regression tests на import/export contracts;
 - критичные сценарии — безопасными self-tests.
+
+Практический пример: **BizPilot** прошёл syntax/local-asset checks, но первый настоящий headless Chrome smoke остановился на `cashflowForecast is not defined`. Ошибка была классифицирована как реальная runtime-регрессия, а не проблема CI; после этого cash-flow logic вынесена в тестируемый модуль, добавлены regression tests и boot-stage diagnostics, и новый browser smoke стал зелёным.
 
 ## 4. Внешняя зависимость должна иметь границы отказа
 
@@ -87,6 +89,8 @@ Local-first приложение должно явно определять:
 - **Screen Recorder Pro** разделяет UI, capture, audio, FFmpeg, process management и diagnostics.
 - **ZeTer OS** использует модульный JavaScript frontend и отдельный Python/native bridge.
 - **ZAP ZONE** разделяет engine, weapons, player state, combat, entities, progression и runtime.
+- **CYBER RACE** и **Forest Hunter** переведены с giant inline runtime на staged subsystem boundaries (`core/game/ai/weapons/audio/ui`) без одномоментного rewrite; architecture docs и structural validators фиксируют эти границы.
+- **BizPilot** выделяет cash-flow engine из UI orchestration, чтобы финансовую математику можно было проверять отдельно от DOM.
 - **Universal Video Downloader** содержит code map и инструменты определения минимального scope изменения.
 
 ## 8. Проверка должна соответствовать реальному риску
@@ -96,7 +100,8 @@ Local-first приложение должно явно определять:
 - unit и regression tests;
 - self-tests;
 - structural checks;
-- browser smoke tests;
+- structural architecture checks;
+- headless browser boot smoke с explicit ready-marker;
 - GitHub Actions;
 - ручная runtime-проверка там, где нужны реальная Windows-сессия, GPU, аудиоустройство или интерактивный браузер.
 

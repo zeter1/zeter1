@@ -20,9 +20,9 @@
 
 **Что это:** local-first рабочее пространство для малого бизнеса: клиенты, заказы, сделки, счета, финансы, заметки, календарь и аналитика.
 
-**Что смотреть:** static frontend без обязательного backend, state model, `localStorage`, ZIP backup/restore, demo-data isolation, разделение `index.html`, `css/` и `js/`.
+**Что смотреть:** static frontend без обязательного backend, state model, `localStorage`, ZIP backup/restore, demo-data isolation, `js/cashflow.js`, regression tests денежного прогноза и реальный headless Chrome startup smoke.
 
-**Инженерный акцент:** frontend architecture, state lifecycle и сохранность пользовательских данных. Репозиторий дополнен read-only GitHub Actions validation, проверкой local assets/static serving, SECURITY policy и структурированным bug report.
+**Инженерный акцент:** frontend architecture, state lifecycle и сохранность пользовательских данных. Browser smoke нашёл реальную latent startup-регрессию (`cashflowForecast is not defined`); root cause исправлен выделением тестируемого cash-flow engine и regression suite, после чего CI подтверждён зелёным runtime boot.
 
 ---
 
@@ -40,7 +40,7 @@
 
 **Что это:** браузерная 3D боевая гонка с AI-соперниками, оружием, бонусами и adaptive quality.
 
-**Инженерный акцент:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation и WebGL context recovery. CI проверяет HTML, inline JavaScript и static-server contract; полный gameplay runtime остаётся отдельным уровнем verification.
+**Инженерный акцент:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation и WebGL context recovery. Первый architecture pass вынес giant inline runtime в `src/core`, `src/game`, `src/ai`, `src/weapons`, `src/audio`, `src/ui`; structural validator и headless WebGL boot подтверждены Actions.
 
 ---
 
@@ -48,7 +48,7 @@
 
 **Что это:** браузерный 3D FPS с охотой, progression, loot, contracts и AI-противниками.
 
-**Инженерный акцент:** state-based AI, InstancedMesh, object pools, spatial collision grid и управление realtime-объектами. CI проверяет HTML, inline JavaScript и static-server contract; GPU/gameplay runtime не подменяется статической проверкой.
+**Инженерный акцент:** state-based AI, InstancedMesh, object pools, spatial collision grid и управление realtime-объектами. Первый architecture pass выделил core/game/ai/weapons/audio/ui boundaries; structural validation и настоящий headless WebGL boot проходят CI, а интерактивный gameplay/GPU остаются отдельным уровнем proof.
 
 ## Python Development
 

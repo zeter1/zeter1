@@ -25,9 +25,11 @@ Approaches include checkpoints, recovery, heartbeats, bounded retries, timeouts,
 Whenever possible, the final artifact or observable behavior is validated:
 - video through FFprobe;
 - download/remux/transcoding output through media validation;
-- browser runtime through boot smoke tests and key invariants;
+- browser runtime through actual initialization to an explicit ready marker, not merely HTTP availability;
 - graphics formats through regression tests around import/export contracts;
 - critical scenarios through safe self-tests.
+
+A concrete example is **BizPilot**: syntax and local-asset checks passed, but the first real headless Chrome smoke stopped on `cashflowForecast is not defined`. The failure was treated as a real runtime regression rather than a CI problem; the cash-flow logic was then moved into a testable module, regression tests and boot-stage diagnostics were added, and the browser smoke became green.
 
 ## 4. External dependencies need failure boundaries
 
@@ -79,6 +81,8 @@ Examples:
 - **Screen Recorder Pro** separates UI, capture, audio, FFmpeg, process management, and diagnostics.
 - **ZeTer OS** uses a modular JavaScript frontend with a separate Python/native bridge.
 - **ZAP ZONE** separates engine, weapons, player state, combat, entities, progression, and runtime.
+- **CYBER RACE** and **Forest Hunter** were moved from giant inline runtimes to staged subsystem boundaries (`core/game/ai/weapons/audio/ui`) without a one-shot rewrite; architecture docs and structural validators preserve those boundaries.
+- **BizPilot** separates its cash-flow engine from UI orchestration so financial logic can be regression-tested independently of the DOM.
 - **Universal Video Downloader** includes a code map and tools for finding the smallest change scope.
 
 ## 8. Verification should match real risk
@@ -88,7 +92,8 @@ The projects combine:
 - unit and regression tests;
 - self-tests;
 - structural checks;
-- browser smoke tests;
+- structural architecture checks;
+- headless browser boot smoke with an explicit ready marker;
 - GitHub Actions;
 - manual runtime verification where a real Windows session, GPU, audio device, or interactive browser is required.
 
