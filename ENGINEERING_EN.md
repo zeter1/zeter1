@@ -81,7 +81,7 @@ Examples:
 - **Screen Recorder Pro** separates UI, capture, audio, FFmpeg, process management, and diagnostics.
 - **ZeTer OS** uses a modular JavaScript frontend with a separate Python/native bridge.
 - **ZAP ZONE** separates engine, weapons, player state, combat, entities, progression, and runtime.
-- **CYBER RACE** and **Forest Hunter** now have a second decomposition layer: environment/track, AI policy, ballistics/combat, progression, and HUD math are extracted from orchestration into testable contracts. Structural validators prevent those boundaries from silently collapsing back into runtime.
+- **CYBER RACE** and **Forest Hunter** now go beyond decomposition: AI/combat state evolution is exposed as dependency-injected simulation, and versioned seeded fixtures replay frame sequences deterministically. Structural validators prevent simulation logic from silently collapsing back into runtime.
 - **BizPilot** separates its cash-flow engine from UI orchestration so financial logic can be regression-tested independently of the DOM.
 - **Universal Video Downloader** includes a code map and tools for finding the smallest change scope.
 
@@ -93,6 +93,7 @@ The projects combine:
 - self-tests;
 - structural checks;
 - deterministic gameplay contract tests without a browser;
+- seeded replay/regression scenarios for AI/combat state-transition sequences;
 - structural architecture checks;
 - headless WebGL browser boot smoke with an explicit ready marker;
 - GitHub Actions;

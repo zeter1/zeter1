@@ -36,7 +36,7 @@ This page covers **all 14 project repositories** on the profile (excluding the `
 
 **What it is:** a browser 3D combat racing game with AI opponents, weapons, pickups, and adaptive quality.
 
-**Engineering focus:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation, and WebGL context recovery. Deep Gameplay Decomposition extracted track/environment, lap state, opponent lane/rubber-band/lead math, collision/ballistics, and HUD/minimap into focused modules. `tests/contracts.mjs` validates deterministic gameplay contracts under Node; structural validation and headless WebGL boot are green in Actions.
+**Engineering focus:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation, and WebGL context recovery. Opponent frame/attack and homing kinematics now run through dependency-injected simulation contracts. `tests/scenarios.mjs` replays 180 seeded AI frames, attack decisions, and 90 homing-rocket frames before the headless WebGL integration gate.
 
 ---
 
@@ -44,7 +44,7 @@ This page covers **all 14 project repositories** on the profile (excluding the `
 
 **What it is:** a browser 3D FPS with hunting, progression, loot, contracts, and AI enemies.
 
-**Engineering focus:** state-based AI, InstancedMesh, object pools, spatial collision grid, and real-time object management. Deep Gameplay Decomposition extracted environment ownership, boar AI policy, weapon/reload/deployable math, collision geometry, XP/upgrades, and HUD modeling. Node contract tests + structural validation + headless WebGL boot are green; pointer lock, Web Audio, GPU performance, and full gameplay remain separate proof layers.
+**Engineering focus:** state-based AI, InstancedMesh, object pools, spatial collision grid, and real-time entities. Boar state transitions, stochastic damage rolls, reload/deployable timelines, and hit ordering are now replayable contracts with injected RNG. Seeded fixtures validate 150 AI frames and combat timelines before the headless WebGL integration gate; pointer lock, Web Audio, and real GPU behavior remain separate proof layers.
 
 ## Python Development
 

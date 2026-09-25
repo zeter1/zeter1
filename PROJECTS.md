@@ -40,7 +40,7 @@
 
 **Что это:** браузерная 3D боевая гонка с AI-соперниками, оружием, бонусами и adaptive quality.
 
-**Инженерный акцент:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation и WebGL context recovery. Deep Gameplay Decomposition вынес track/environment, lap state, opponent lane/rubber-band/lead math, collision/ballistics и HUD/minimap в отдельные modules. `tests/contracts.mjs` проверяет deterministic gameplay contracts под Node; structural validation и headless WebGL boot проходят Actions.
+**Инженерный акцент:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation и WebGL context recovery. После decomposition opponent frame/attack и homing kinematics стали dependency-injected simulation contracts. `tests/scenarios.mjs` с versioned seeded fixture replay-ит 180 кадров AI, серию attack decisions и 90 кадров homing rocket; затем CI поднимает настоящий headless WebGL boot.
 
 ---
 
@@ -48,7 +48,7 @@
 
 **Что это:** браузерный 3D FPS с охотой, progression, loot, contracts и AI-противниками.
 
-**Инженерный акцент:** state-based AI, InstancedMesh, object pools, spatial collision grid и управление realtime-объектами. Deep Gameplay Decomposition вынес environment ownership, boar AI policy, weapon/reload/deployable math, collision geometry, XP/upgrades и HUD model. Node contract tests + structural validation + headless WebGL boot проходят CI; pointer lock, Web Audio, GPU performance и полный gameplay остаются отдельным уровнем proof.
+**Инженерный акцент:** state-based AI, InstancedMesh, object pools, spatial collision grid и realtime entities. Boar state transitions, stochastic damage rolls, reload/deployable timelines и hit ordering теперь replayable contracts с injected RNG. Seeded scenario fixture проверяет 150 AI-кадров и combat timelines до headless WebGL integration gate; pointer lock, Web Audio и реальный GPU остаются отдельным proof layer.
 
 ## Python Development
 
