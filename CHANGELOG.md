@@ -2,6 +2,11 @@
 
 Отслеживание изменений начинается с этой записи; более ранняя история не реконструировалась. Репозиторий документации не имеет номера версии продукта.
 
+### 2026-10-11T22:19:08+03:00 — Ссылки на все сборки / Links to all builds
+
+- Changed: в USER_GUIDE.md и USER_GUIDE_EN.md ссылки ZeTer Media Converter ведут на все сборки; убрана привязка к v3.3.5 в тексте и таблице. / Both user guides link all ZeTer Media Converter builds; version-specific references were removed from the text and table.
+- Verification: проверены страница сборок, соответствие русской и английской правок, сохранность остальных строк таблиц и форматирование diff. / Checked the builds page, matching Russian and English edits, preservation of other table rows and diff formatting.
+
 ### 2026-10-11T15:47:35+03:00 — Результаты CI и обратная связь / CI results and feedback
 
 - Changed: в обеих версиях профиля три инженерных примера связаны напрямую с результатами GitHub Actions; добавлена проверка соответствия ветки, commit и сборки. / Both profile versions link three engineering examples directly to GitHub Actions results and explain matching the branch, commit and build.

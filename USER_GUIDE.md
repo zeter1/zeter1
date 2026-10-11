@@ -24,7 +24,7 @@ BizPilot хранит рабочее состояние в браузере. С�
 
 ## Windows-программы
 
-Статус выпуска зависит от проекта: часть сборок помечена **Pre-release**, но **ZeTer Media Converter v3.3.5** опубликован как обычный релиз с Windows x64 EXE; требования и известные ограничения определяет README конкретной программы.
+Статус выпуска зависит от проекта: сборки могут быть обычными релизами или иметь пометку **Pre-release**. Актуальную версию и статус проверяйте на странице сборок; требования и известные ограничения определяет README конкретной программы.
 
 | Задача | Программа и инструкция | Скачать |
 |---|---|---|
@@ -32,14 +32,14 @@ BizPilot хранит рабочее состояние в браузере. С�
 | Надиктовывать текст в Windows-приложения | [VoiceFlow](https://github.com/zeter1/VoiceFlow#readme) | [Сборки](https://github.com/zeter1/VoiceFlow/releases) |
 | Переводить и озвучивать видео | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro#readme) | [Сборки](https://github.com/zeter1/Video-Translator-Pro/releases) |
 | Скачивать видео и извлекать MP3 | [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader#readme) | [Сборки](https://github.com/zeter1/Universal-Video-Downloader/releases) |
-| Преобразовывать видеокурсы в MP3 и объединять видео | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [EXE v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) |
+| Преобразовывать видеокурсы в MP3 и объединять видео | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [Все сборки](https://github.com/zeter1/ZeTer-Media-Converter/releases) |
 | Превращать текст в озвучку и MP3 | [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows#readme) | [Сборки](https://github.com/zeter1/Text-to-MP3-Windows/releases) |
 | Искать вакансии, убирать дубликаты и экспортировать Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro#readme) | [Сборки](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
 | Исследовать причины синего экрана Windows | [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator#readme) | [Сборки](https://github.com/zeter1/BSOD-Investigator/releases) |
 | Блокировать сеанс Windows с управлением переходом в сон | [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker#readme) | [Сборки](https://github.com/zeter1/Windows-PC-Locker/releases) |
 | Вести заметки, задачи и локальное рабочее пространство | [ZeTer OS](https://github.com/zeter1/ZeTer-OS#readme) | [Сборки](https://github.com/zeter1/ZeTer-OS/releases) |
 
-**ZeTer Media Converter:** Windows 10/11 x64, автономный EXE со встроенными Python, FFmpeg и FFprobe. Программа не подписана Authenticode. Скачивайте с [официальной страницы релиза](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) и проверяйте контрольную сумму SHA-256.
+**ZeTer Media Converter:** Windows 10/11 x64, автономный EXE со встроенными Python, FFmpeg и FFprobe. Программа не подписана Authenticode. Скачивайте с [официальной страницы сборок](https://github.com/zeter1/ZeTer-Media-Converter/releases) и проверяйте контрольную сумму SHA-256.
 
 ### Как скачать готовую программу
 
