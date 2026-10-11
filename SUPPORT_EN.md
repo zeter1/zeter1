@@ -4,7 +4,18 @@
 
 Some of the main repositories use structured GitHub Issue Forms. Whether or not a form is available, the goal of a bug report is the same: provide enough context to reproduce the problem and distinguish an application bug from a browser, environment, external-tool, or data issue.
 
-**Where to report:** find the application in the [user catalog](USER_GUIDE_EN.md), open its repository → **Issues** → **New issue**. Use the provided form if available; otherwise copy the template below. This routes the report to the correct project. To contact me without a public report: [zeter11@gmail.com](mailto:zeter11@gmail.com) · [https://t.me/zeter1](https://t.me/zeter1) · [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1) · [https://vk.ru/zeter1](https://vk.ru/zeter1) · [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/) · [https://tenchat.ru/zeter](https://tenchat.ru/zeter) · [https://x.com/zeter1](https://x.com/zeter1) · [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992) · [https://ok.ru/zeter1](https://ok.ru/zeter1) · [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram group: about me, projects and chat.
+**Where to report:** find the application in the [user catalog](USER_GUIDE_EN.md), open its repository → **Issues** → **New issue**. Use the provided form if available; otherwise copy the template below. This routes the report to the correct project. To contact me without a public report:
+
+- [zeter11@gmail.com](mailto:zeter11@gmail.com)
+- [https://t.me/zeter1](https://t.me/zeter1)
+- [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1)
+- [https://vk.ru/zeter1](https://vk.ru/zeter1)
+- [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/)
+- [https://tenchat.ru/zeter](https://tenchat.ru/zeter)
+- [https://x.com/zeter1](https://x.com/zeter1)
+- [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992)
+- [https://ok.ru/zeter1](https://ok.ru/zeter1)
+- [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram group: about me, projects and chat
 
 ## Before opening an issue
 

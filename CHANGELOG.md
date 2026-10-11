@@ -6,6 +6,7 @@
 
 - Added: VK, Instagram, TenChat, X, Threads, OK и Telegram-группа во всех восьми контактных блоках русской и английской документации. / Added VK, Instagram, TenChat, X, Threads, OK, and the Telegram group to all eight contact blocks in both languages.
 - Changed: группа обозначена как «обо мне, проекты и чат»; сохранены ранее опубликованные контакты, включая Facebook. Адреса всех контактов видны целиком. / The group is labelled as about me, projects and chat; existing contacts, including Facebook, are preserved. All contact URLs are displayed in full.
+- Оформление: контакты показаны столбиком; ссылка на сообщение об ошибке вынесена в отдельный абзац.
 
 ### 2026-10-11T13:53:04+03:00 — Facebook в контактах / Facebook contact links
 

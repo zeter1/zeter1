@@ -51,4 +51,17 @@ A ready-made build may differ from the current source revision. FFmpeg, speech m
 
 Open **Issues** in the relevant project. Include the version, Windows or browser details, steps, expected result, and actual result. Provide a small example without personal files or secrets; see the [bug-report guide](SUPPORT_EN.md).
 
-Contact: [https://t.me/zeter1](https://t.me/zeter1) · [zeter11@gmail.com](mailto:zeter11@gmail.com) · [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1) · [https://vk.ru/zeter1](https://vk.ru/zeter1) · [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/) · [https://tenchat.ru/zeter](https://tenchat.ru/zeter) · [https://x.com/zeter1](https://x.com/zeter1) · [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992) · [https://ok.ru/zeter1](https://ok.ru/zeter1) · [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram group: about me, projects and chat. Technical detail: [project map](PROJECTS_EN.md) · [engineering approach](ENGINEERING_EN.md).
+Contact:
+
+- [https://t.me/zeter1](https://t.me/zeter1)
+- [zeter11@gmail.com](mailto:zeter11@gmail.com)
+- [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1)
+- [https://vk.ru/zeter1](https://vk.ru/zeter1)
+- [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/)
+- [https://tenchat.ru/zeter](https://tenchat.ru/zeter)
+- [https://x.com/zeter1](https://x.com/zeter1)
+- [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992)
+- [https://ok.ru/zeter1](https://ok.ru/zeter1)
+- [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram group: about me, projects and chat
+
+Technical detail: [project map](PROJECTS_EN.md) · [engineering approach](ENGINEERING_EN.md).

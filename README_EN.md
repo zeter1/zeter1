@@ -10,7 +10,21 @@ Choose a tool for your task, find its setup instructions, or inspect how it is b
 
 **For users:** [choose, download, and get started](USER_GUIDE_EN.md). **For employers:** [a 5/15/30-minute route through code, architecture, and checks](REVIEW_GUIDE_EN.md).
 
-**Discuss a role or project:** [zeter11@gmail.com](mailto:zeter11@gmail.com) · [https://t.me/zeter1](https://t.me/zeter1) · [https://www.linkedin.com/in/zeter/](https://www.linkedin.com/in/zeter/) · [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1) · [https://vk.ru/zeter1](https://vk.ru/zeter1) · [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/) · [https://tenchat.ru/zeter](https://tenchat.ru/zeter) · [https://x.com/zeter1](https://x.com/zeter1) · [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992) · [https://ok.ru/zeter1](https://ok.ru/zeter1) · [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram group: about me, projects and chat. **Report a bug:** [prepare a useful report](SUPPORT_EN.md).
+**Discuss a role or project:**
+
+- [zeter11@gmail.com](mailto:zeter11@gmail.com)
+- [https://t.me/zeter1](https://t.me/zeter1)
+- [https://www.linkedin.com/in/zeter/](https://www.linkedin.com/in/zeter/)
+- [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1)
+- [https://vk.ru/zeter1](https://vk.ru/zeter1)
+- [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/)
+- [https://tenchat.ru/zeter](https://tenchat.ru/zeter)
+- [https://x.com/zeter1](https://x.com/zeter1)
+- [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992)
+- [https://ok.ru/zeter1](https://ok.ru/zeter1)
+- [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram group: about me, projects and chat
+
+**Report a bug:** [prepare a useful report](SUPPORT_EN.md).
 
 ## What would you like to do?
 

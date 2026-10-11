@@ -51,4 +51,17 @@ BizPilot хранит рабочее состояние в браузере. С�
 
 Откройте **Issues** именно нужного проекта. Укажите версию, Windows или браузер, шаги, ожидаемый и фактический результат. Подготовьте небольшой пример без личных файлов и секретов; подробности — в [руководстве по сообщениям об ошибках](SUPPORT.md).
 
-Связь с разработчиком: [https://t.me/zeter1](https://t.me/zeter1) · [zeter11@gmail.com](mailto:zeter11@gmail.com) · [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1) · [https://vk.ru/zeter1](https://vk.ru/zeter1) · [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/) · [https://tenchat.ru/zeter](https://tenchat.ru/zeter) · [https://x.com/zeter1](https://x.com/zeter1) · [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992) · [https://ok.ru/zeter1](https://ok.ru/zeter1) · [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram-группа: обо мне, проекты и чат. Для знакомства с архитектурой: [карта проектов](PROJECTS.md) · [инженерный подход](ENGINEERING.md).
+Связь с разработчиком:
+
+- [https://t.me/zeter1](https://t.me/zeter1)
+- [zeter11@gmail.com](mailto:zeter11@gmail.com)
+- [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1)
+- [https://vk.ru/zeter1](https://vk.ru/zeter1)
+- [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/)
+- [https://tenchat.ru/zeter](https://tenchat.ru/zeter)
+- [https://x.com/zeter1](https://x.com/zeter1)
+- [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992)
+- [https://ok.ru/zeter1](https://ok.ru/zeter1)
+- [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram-группа: обо мне, проекты и чат
+
+Для знакомства с архитектурой: [карта проектов](PROJECTS.md) · [инженерный подход](ENGINEERING.md).
