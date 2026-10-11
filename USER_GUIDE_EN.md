@@ -51,4 +51,4 @@ A ready-made build may differ from the current source revision. FFmpeg, speech m
 
 Open **Issues** in the relevant project. Include the version, Windows or browser details, steps, expected result, and actual result. Provide a small example without personal files or secrets; see the [bug-report guide](SUPPORT_EN.md).
 
-Contact: [Telegram](https://t.me/zeter1) · [Email](mailto:zeter11@gmail.com). Technical detail: [project map](PROJECTS_EN.md) · [engineering approach](ENGINEERING_EN.md).
+Contact: [Telegram](https://t.me/zeter1) · [Email](mailto:zeter11@gmail.com) · [Facebook](https://www.facebook.com/zeter1). Technical detail: [project map](PROJECTS_EN.md) · [engineering approach](ENGINEERING_EN.md).

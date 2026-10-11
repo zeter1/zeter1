@@ -2,6 +2,10 @@
 
 Отслеживание изменений начинается с этой записи; более ранняя история не реконструировалась. Репозиторий документации не имеет номера версии продукта.
 
+### 2026-10-11T13:53:04+03:00 — Facebook в контактах / Facebook contact links
+
+- Added: ссылка на Facebook во всех восьми контактных блоках README, пользовательского руководства и поддержки на русском и английском. / Added Facebook to all eight contact blocks in the Russian and English profile, user guide, and support pages.
+
 ### 2026-10-11T13:47:10+03:00 — Быстрый просмотр и поддержка / Quick review and support
 
 - Changed: контакты и ссылка на поддержку доступны в начале русского и английского профиля. / Contact and support links are available near the top of both profile versions.

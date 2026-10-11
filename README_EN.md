@@ -10,7 +10,7 @@ Choose a tool for your task, find its setup instructions, or inspect how it is b
 
 **For users:** [choose, download, and get started](USER_GUIDE_EN.md). **For employers:** [a 5/15/30-minute route through code, architecture, and checks](REVIEW_GUIDE_EN.md).
 
-**Discuss a role or project:** [Email](mailto:zeter11@gmail.com) · [Telegram](https://t.me/zeter1) · [LinkedIn](https://www.linkedin.com/in/zeter/). **Report a bug:** [prepare a useful report](SUPPORT_EN.md).
+**Discuss a role or project:** [Email](mailto:zeter11@gmail.com) · [Telegram](https://t.me/zeter1) · [LinkedIn](https://www.linkedin.com/in/zeter/) · [Facebook](https://www.facebook.com/zeter1). **Report a bug:** [prepare a useful report](SUPPORT_EN.md).
 
 ## What would you like to do?
 
@@ -114,4 +114,5 @@ A technical reviewer can jump directly from the profile to code and checks:
 - **Email:** zeter11@gmail.com
 - **Telegram:** https://t.me/zeter1
 - **LinkedIn:** https://www.linkedin.com/in/zeter/
+- **Facebook:** https://www.facebook.com/zeter1
 - **Website / portfolio:** https://dkl.do.am/

@@ -10,7 +10,7 @@
 
 **Для пользователей:** [выбор, скачивание и запуск](USER_GUIDE.md). **Для работодателей:** [код, архитектура и проверки за 5/15/30 минут](REVIEW_GUIDE.md).
 
-**Обсудить работу или проект:** [Email](mailto:zeter11@gmail.com) · [Telegram](https://t.me/zeter1) · [LinkedIn](https://www.linkedin.com/in/zeter/). **Сообщить об ошибке:** [как подготовить отчёт](SUPPORT.md).
+**Обсудить работу или проект:** [Email](mailto:zeter11@gmail.com) · [Telegram](https://t.me/zeter1) · [LinkedIn](https://www.linkedin.com/in/zeter/) · [Facebook](https://www.facebook.com/zeter1). **Сообщить об ошибке:** [как подготовить отчёт](SUPPORT.md).
 
 ## Что хотите сделать?
 
@@ -116,3 +116,5 @@ Windows-сборки сейчас помечены **Pre-release**: это пр�
  https://t.me/zeter1
  
  https://www.linkedin.com/in/zeter/
+
+ [Facebook](https://www.facebook.com/zeter1)

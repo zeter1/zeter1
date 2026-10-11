@@ -4,7 +4,7 @@
 
 Some of the main repositories use structured GitHub Issue Forms. Whether or not a form is available, the goal of a bug report is the same: provide enough context to reproduce the problem and distinguish an application bug from a browser, environment, external-tool, or data issue.
 
-**Where to report:** find the application in the [user catalog](USER_GUIDE_EN.md), open its repository → **Issues** → **New issue**. Use the provided form if available; otherwise copy the template below. This routes the report to the correct project. To contact me without a public report: [Email](mailto:zeter11@gmail.com) · [Telegram](https://t.me/zeter1).
+**Where to report:** find the application in the [user catalog](USER_GUIDE_EN.md), open its repository → **Issues** → **New issue**. Use the provided form if available; otherwise copy the template below. This routes the report to the correct project. To contact me without a public report: [Email](mailto:zeter11@gmail.com) · [Telegram](https://t.me/zeter1) · [Facebook](https://www.facebook.com/zeter1).
 
 ## Before opening an issue
 
