@@ -6,7 +6,30 @@
 
 I build **web applications and browser-first products** with HTML/CSS/JavaScript, Canvas/WebGL, and Three.js, alongside **Python applications for Windows**, automation tools, multimedia systems, and local AI software.
 
-My portfolio has two primary tracks: **Web Development** and **Python Development**. In both, I focus on architecture, diagnostics, failure recovery, automated verification, and user-data safety—not only feature delivery.
+Choose a tool for your task, find its setup instructions, or inspect how it is built. My main areas are **Web Development** and **Python Development**: browser tools and games, Windows applications, automation, and multimedia.
+
+**For users:** [choose, download, and get started](USER_GUIDE_EN.md). **For employers:** [a 5/15/30-minute route through code, architecture, and checks](REVIEW_GUIDE_EN.md).
+
+## What would you like to do?
+
+| Task | Project | Start here |
+|---|---|---|
+| Edit images and work with layers | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Browser startup](https://github.com/zeter1/ZeTer-Photo-Editor#запуск-на-windows) |
+| Manage clients, tasks, and business finances | [BizPilot](https://github.com/zeter1/BizPilot) | [Setup](https://github.com/zeter1/BizPilot#запуск) |
+| Record the screen and audio or take screenshots | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) | [Windows builds](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
+| Dictate text instead of typing | [VoiceFlow](https://github.com/zeter1/VoiceFlow) | [Windows builds](https://github.com/zeter1/VoiceFlow/releases) |
+| Translate and voice over videos | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) | [Windows builds](https://github.com/zeter1/Video-Translator-Pro/releases) |
+| Collect vacancies and export them to Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) | [Windows builds](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
+| Organize notes and tasks | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Windows builds](https://github.com/zeter1/ZeTer-OS/releases) |
+| Play browser games | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [Startup and requirements](USER_GUIDE_EN.md#browser-applications-and-games) |
+
+Current Windows builds are marked **Pre-release**, for exploration and testing. Each application's README covers its FFmpeg, model, driver, and external-service requirements. The full user catalog, including video downloads, text-to-speech, and Windows diagnostics, is in **[USER_GUIDE_EN.md](USER_GUIDE_EN.md)**.
+
+## For employers and technical reviewers
+
+Inspect concrete engineering decisions: graphics-format handling in **ZeTer Photo Editor**, testable financial logic in **BizPilot**, recording lifecycle and recovery in **Screen Recorder Pro**, and system diagnostics in **BSOD Investigator**. Code and check entry points are listed below and in **[REVIEW_GUIDE_EN.md](REVIEW_GUIDE_EN.md)**.
+
+I use ChatGPT/Codex during development, with diff review, automated checks, and manual scenarios where browser, Windows, or hardware behavior matters. Tests in a repository do not establish that every user workflow works on every computer.
 
 ## Main areas
 
@@ -18,7 +41,7 @@ My portfolio has two primary tracks: **Web Development** and **Python Developmen
 
 ## All projects
 
-Below are **all 14 project repositories** on my GitHub profile. The `zeter1/zeter1` profile repository is not counted as a separate product because it hosts the portfolio itself.
+The following projects expose their code and engineering decisions. User-facing setup instructions are collected separately in **[USER_GUIDE_EN.md](USER_GUIDE_EN.md)**.
 
 | Project | Area | What it demonstrates |
 |---|---|---|
@@ -36,6 +59,7 @@ Below are **all 14 project repositories** on my GitHub profile. The `zeter1/zete
 | **[Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)** | Python / Windows | Microsoft SAPI/COM, Windows TTS, MP3, global hotkeys, state persistence, long-job recovery |
 | **[Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)** | Python / Windows | WinAPI, WTS API, mutex, power management, self-test, bounded logging |
 | **[ZeTer OS](https://github.com/zeter1/ZeTer-OS)** | Hybrid Desktop/Web | Python + JavaScript, pywebview bridge, modular frontend, local-first state, backup/recovery |
+| **[Zeter Video Editor](https://github.com/zeter1/zeter-video-editor)** | Desktop / Video | Tauri, React, TypeScript, Rust, FFmpeg; multi-track editing and local projects; release-readiness work, no public GitHub release yet |
 
 Extended technical map of all projects: **[PROJECTS_EN.md](PROJECTS_EN.md)**.
 
@@ -77,6 +101,7 @@ A technical reviewer can jump directly from the profile to code and checks:
 
 ## Navigation
 
+- **[USER_GUIDE_EN.md](USER_GUIDE_EN.md)** — choose a program, download, and get started.
 - **[PROJECTS_EN.md](PROJECTS_EN.md)** — project map.
 - **[REVIEW_GUIDE_EN.md](REVIEW_GUIDE_EN.md)** — 5/15/30-minute technical review path.
 - **[ENGINEERING_EN.md](ENGINEERING_EN.md)** — engineering principles and examples.

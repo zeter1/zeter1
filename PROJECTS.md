@@ -2,7 +2,7 @@
 
 # Карта проектов
 
-Здесь перечислены **все 14 проектных репозиториев** профиля (без служебного `zeter1/zeter1`). Портфолио разделено на два основных направления — **Web Development** и **Python Development**. Ниже — не просто список репозиториев, а карта того, какие инженерные решения в каждом проекте стоит смотреть.
+Здесь собраны проекты профиля и инженерные решения, которые можно изучить в коде. Основные направления — **Web Development** и **Python Development**; отдельно представлены гибридные приложения и новый видеоредактор. Для выбора, скачивания и запуска программы используйте **[пользовательский каталог](USER_GUIDE.md)**.
 
 ## Web Development
 
@@ -121,6 +121,14 @@
 **Что это:** локальное рабочее пространство с Python desktop shell и JavaScript frontend.
 
 **Что смотреть:** pywebview bridge, modular frontend, local-first state, backup/recovery и project-level verification.
+
+## Desktop / Video
+
+### [Zeter Video Editor](https://github.com/zeter1/zeter-video-editor)
+
+**Что это:** Windows-видеоредактор с многодорожечной временной шкалой и локальными проектами на Tauri, React, TypeScript, Rust и FFmpeg.
+
+**Что смотреть:** [README](https://github.com/zeter1/zeter-video-editor#readme), [PROJECT_STATUS.md](https://github.com/zeter1/zeter-video-editor/blob/main/PROJECT_STATUS.md) и [package.json](https://github.com/zeter1/zeter-video-editor/blob/main/apps/desktop/package.json). Проект проходит подготовку к выпуску; готового публичного GitHub-релиза пока нет. Текущий статус реализации и проверки определяет PROJECT_STATUS.md.
 
 ## Как смотреть портфолио
 

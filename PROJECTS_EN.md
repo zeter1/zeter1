@@ -2,7 +2,7 @@
 
 # Project map
 
-This page covers **all 14 project repositories** on the profile (excluding the `zeter1/zeter1` portfolio repository). The portfolio has two main tracks — **Web Development** and **Python Development**. This page is not just a repository list; it highlights the engineering decisions worth inspecting in each project.
+This page maps the projects and engineering decisions available for code review. The main areas are **Web Development** and **Python Development**, with hybrid applications and a new video editor listed separately. For choosing, downloading, and running a program, use the **[user catalog](USER_GUIDE_EN.md)**.
 
 ## Web Development
 
@@ -117,6 +117,14 @@ This page covers **all 14 project repositories** on the profile (excluding the `
 **What it is:** a local workspace with a Python desktop shell and JavaScript frontend.
 
 **What to inspect:** pywebview bridge, modular frontend, local-first state, backup/recovery, and project-level verification.
+
+## Desktop / Video
+
+### [Zeter Video Editor](https://github.com/zeter1/zeter-video-editor)
+
+**What it is:** a Windows multi-track video editor with local projects, built with Tauri, React, TypeScript, Rust, and FFmpeg.
+
+**What to inspect:** [README](https://github.com/zeter1/zeter-video-editor#readme), [PROJECT_STATUS.md](https://github.com/zeter1/zeter-video-editor/blob/main/PROJECT_STATUS.md), and [package.json](https://github.com/zeter1/zeter-video-editor/blob/main/apps/desktop/package.json). The project is undergoing release-readiness work; there is no public GitHub release yet. PROJECT_STATUS.md owns the current implementation and verification status.
 
 ## How to review the portfolio
 

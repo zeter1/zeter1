@@ -6,7 +6,30 @@
 
 Создаю **веб-приложения и browser-first продукты** на HTML/CSS/JavaScript, Canvas/WebGL и Three.js, а также **Python-приложения для Windows**, инструменты автоматизации, мультимедийные системы и локальные AI-приложения.
 
-Моё портфолио строится вокруг двух основных направлений: **Web Development** и **Python Development**. В обоих направлениях важны не только функции, но и архитектура, диагностика, восстановление после сбоев, автоматические проверки и сохранность пользовательских данных.
+Здесь можно выбрать программу под свою задачу, найти инструкции и посмотреть, как она устроена. Основные направления — **Web Development** и **Python Development**: браузерные инструменты и игры, Windows-приложения, автоматизация и мультимедиа.
+
+**Для пользователей:** [выбор, скачивание и запуск](USER_GUIDE.md). **Для работодателей:** [код, архитектура и проверки за 5/15/30 минут](REVIEW_GUIDE.md).
+
+## Что хотите сделать?
+
+| Задача | Проект | С чего начать |
+|---|---|---|
+| Редактировать фотографии и работать со слоями | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Запуск в браузере](https://github.com/zeter1/ZeTer-Photo-Editor#запуск-на-windows) |
+| Вести клиентов, задачи и финансы бизнеса | [BizPilot](https://github.com/zeter1/BizPilot) | [Открыть и настроить](https://github.com/zeter1/BizPilot#запуск) |
+| Записать экран, звук или сделать скриншот | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) | [Windows-сборки](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
+| Надиктовать текст вместо печати | [VoiceFlow](https://github.com/zeter1/VoiceFlow) | [Windows-сборки](https://github.com/zeter1/VoiceFlow/releases) |
+| Перевести и озвучить видео | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) | [Windows-сборки](https://github.com/zeter1/Video-Translator-Pro/releases) |
+| Собрать вакансии и выгрузить их в Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) | [Windows-сборки](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
+| Организовать заметки и задачи | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Windows-сборки](https://github.com/zeter1/ZeTer-OS/releases) |
+| Поиграть в браузере | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [Запуск и требования](USER_GUIDE.md#браузерные-приложения-и-игры) |
+
+Windows-сборки сейчас помечены **Pre-release**: это предварительные версии для знакомства и тестирования. Требования к FFmpeg, моделям, драйверам и внешним сервисам указаны в README соответствующей программы. Полный пользовательский каталог, включая загрузку видео, озвучку текста и диагностику Windows: **[USER_GUIDE.md](USER_GUIDE.md)**.
+
+## Для работодателей и технических специалистов
+
+Оценить мои проекты можно по конкретным решениям: обработка графических форматов в **ZeTer Photo Editor**, проверяемая логика финансов в **BizPilot**, управление записью и восстановлением в **Screen Recorder Pro**, системная диагностика в **BSOD Investigator**. Ссылки на код и проверки собраны ниже и в **[REVIEW_GUIDE.md](REVIEW_GUIDE.md)**.
+
+Разрабатываю с помощью ChatGPT/Codex; изменения проверяю по diff, автоматическими проверками и ручными сценариями там, где нужен браузер, Windows или оборудование. Наличие тестов в репозитории не означает, что все пользовательские сценарии проверены на любом компьютере.
 
 ## Основные направления
 
@@ -18,7 +41,7 @@
 
 ## Все проекты
 
-Ниже перечислены **все 14 проектных репозиториев** моего GitHub-профиля. 
+Ниже — проекты и технические решения, которые можно изучить в их репозиториях. Пользовательские инструкции собраны отдельно в **[USER_GUIDE.md](USER_GUIDE.md)**.
 
 | Проект | Направление | Что показывает |
 |---|---|---|
@@ -36,6 +59,7 @@
 | **[Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)** | Python / Windows | Microsoft SAPI/COM, Windows TTS, MP3, global hotkeys, state persistence и long-job recovery |
 | **[Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)** | Python / Windows | WinAPI, WTS API, mutex, power management, self-test и bounded logging |
 | **[ZeTer OS](https://github.com/zeter1/ZeTer-OS)** | Hybrid Desktop/Web | Python + JavaScript, pywebview bridge, modular frontend, local-first state и backup/recovery |
+| **[Zeter Video Editor](https://github.com/zeter1/zeter-video-editor)** | Desktop / Video | Tauri, React, TypeScript, Rust и FFmpeg; многодорожечный монтаж, локальные проекты; подготовка к выпуску, готового GitHub-релиза пока нет |
 
 Расширенная техническая карта всех проектов: **[PROJECTS.md](PROJECTS.md)**.
 
@@ -77,6 +101,7 @@
 
 ## Навигация
 
+- **[USER_GUIDE.md](USER_GUIDE.md)** — выбор программы, скачивание и запуск.
 - **[PROJECTS.md](PROJECTS.md)** — карта проектов.
 - **[REVIEW_GUIDE.md](REVIEW_GUIDE.md)** — технический маршрут на 5/15/30 минут.
 - **[ENGINEERING.md](ENGINEERING.md)** — инженерные принципы и примеры.
