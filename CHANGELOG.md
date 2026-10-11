@@ -2,6 +2,11 @@
 
 Отслеживание изменений начинается с этой записи; более ранняя история не реконструировалась. Репозиторий документации не имеет номера версии продукта.
 
+### 2026-10-11T14:07:47+03:00 — Социальные сети и Telegram-группа / Social profiles and Telegram group
+
+- Added: VK, Instagram, TenChat, X, Threads, OK и Telegram-группа во всех восьми контактных блоках русской и английской документации. / Added VK, Instagram, TenChat, X, Threads, OK, and the Telegram group to all eight contact blocks in both languages.
+- Changed: группа обозначена как «обо мне, проекты и чат»; сохранены ранее опубликованные контакты, включая Facebook. Адреса всех контактов видны целиком. / The group is labelled as about me, projects and chat; existing contacts, including Facebook, are preserved. All contact URLs are displayed in full.
+
 ### 2026-10-11T13:53:04+03:00 — Facebook в контактах / Facebook contact links
 
 - Added: ссылка на Facebook во всех восьми контактных блоках README, пользовательского руководства и поддержки на русском и английском. / Added Facebook to all eight contact blocks in the Russian and English profile, user guide, and support pages.

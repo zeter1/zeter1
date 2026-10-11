@@ -4,7 +4,7 @@
 
 В части основных репозиториев используются структурированные GitHub Issue Forms. Независимо от наличия формы, цель bug report одна: дать достаточно контекста, чтобы проблему можно было воспроизвести и отличить баг приложения от проблемы окружения, браузера, внешнего инструмента или данных.
 
-**Куда отправить:** найдите программу в [пользовательском каталоге](USER_GUIDE.md), откройте её репозиторий → **Issues** → **New issue**. Используйте предложенную форму, если она есть; иначе скопируйте шаблон ниже. Так отчёт попадёт к нужному проекту. Для обращения без публичного отчёта: [Email](mailto:zeter11@gmail.com) · [Telegram](https://t.me/zeter1) · [Facebook](https://www.facebook.com/zeter1).
+**Куда отправить:** найдите программу в [пользовательском каталоге](USER_GUIDE.md), откройте её репозиторий → **Issues** → **New issue**. Используйте предложенную форму, если она есть; иначе скопируйте шаблон ниже. Так отчёт попадёт к нужному проекту. Для обращения без публичного отчёта: [zeter11@gmail.com](mailto:zeter11@gmail.com) · [https://t.me/zeter1](https://t.me/zeter1) · [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1) · [https://vk.ru/zeter1](https://vk.ru/zeter1) · [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/) · [https://tenchat.ru/zeter](https://tenchat.ru/zeter) · [https://x.com/zeter1](https://x.com/zeter1) · [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992) · [https://ok.ru/zeter1](https://ok.ru/zeter1) · [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram-группа: обо мне, проекты и чат.
 
 ## Перед созданием issue
 

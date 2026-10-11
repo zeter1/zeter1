@@ -10,7 +10,7 @@
 
 **Для пользователей:** [выбор, скачивание и запуск](USER_GUIDE.md). **Для работодателей:** [код, архитектура и проверки за 5/15/30 минут](REVIEW_GUIDE.md).
 
-**Обсудить работу или проект:** [Email](mailto:zeter11@gmail.com) · [Telegram](https://t.me/zeter1) · [LinkedIn](https://www.linkedin.com/in/zeter/) · [Facebook](https://www.facebook.com/zeter1). **Сообщить об ошибке:** [как подготовить отчёт](SUPPORT.md).
+**Обсудить работу или проект:** [zeter11@gmail.com](mailto:zeter11@gmail.com) · [https://t.me/zeter1](https://t.me/zeter1) · [https://www.linkedin.com/in/zeter/](https://www.linkedin.com/in/zeter/) · [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1) · [https://vk.ru/zeter1](https://vk.ru/zeter1) · [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/) · [https://tenchat.ru/zeter](https://tenchat.ru/zeter) · [https://x.com/zeter1](https://x.com/zeter1) · [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992) · [https://ok.ru/zeter1](https://ok.ru/zeter1) · [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram-группа: обо мне, проекты и чат. **Сообщить об ошибке:** [как подготовить отчёт](SUPPORT.md).
 
 ## Что хотите сделать?
 
@@ -111,10 +111,14 @@ Windows-сборки сейчас помечены **Pre-release**: это пр�
 
 ## Контакты для связи:
 
- zeter11@gmail.com
- 
- https://t.me/zeter1
- 
- https://www.linkedin.com/in/zeter/
-
- [Facebook](https://www.facebook.com/zeter1)
+- [zeter11@gmail.com](mailto:zeter11@gmail.com)
+- [https://t.me/zeter1](https://t.me/zeter1)
+- [https://www.linkedin.com/in/zeter/](https://www.linkedin.com/in/zeter/)
+- [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1)
+- [https://vk.ru/zeter1](https://vk.ru/zeter1)
+- [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/)
+- [https://tenchat.ru/zeter](https://tenchat.ru/zeter)
+- [https://x.com/zeter1](https://x.com/zeter1)
+- [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992)
+- [https://ok.ru/zeter1](https://ok.ru/zeter1)
+- [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram-группа: обо мне, проекты и чат
