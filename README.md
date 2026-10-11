@@ -82,9 +82,8 @@
 - **[ENGINEERING.md](ENGINEERING.md)** — инженерные принципы и примеры.
 - **[SUPPORT.md](SUPPORT.md)** — диагностика и bug reports для Web, Python и hybrid-проектов.
 
-## Контакты
+## Контакты для связи:
 
-- **Email:** zeter11@gmail.com
-- **Telegram:** https://t.me/zeter1
-- **LinkedIn:** https://www.linkedin.com/in/zeter/
-- **Сайт:** https://dkl.do.am/
+ zeter11@gmail.com
+ https://t.me/zeter1
+ https://www.linkedin.com/in/zeter/
