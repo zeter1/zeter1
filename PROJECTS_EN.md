@@ -98,6 +98,16 @@ This page maps the projects and engineering decisions available for code review.
 
 ---
 
+### [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter)
+
+**What it is:** a Windows utility that converts video courses to per-lesson MP3 and sequential audio parts up to 10 hours long, and merges videos into MP4 parts.
+
+**What to inspect:** Tkinter UI, `videovaudio/audio/`, `videovaudio/video/`, `process_runner.py` (FFmpeg lifecycle, cancellation, and timeouts), `diagnostics/`, `tools/test_audio_regressions.py`, [Windows EXE CI](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/.github/workflows/build-windows.yml).
+
+**Engineering focus:** verified previous-MP3 backups with a manifest, staged output validation, structured diagnostics, and standalone packaging with SHA-256 verification. [v3.3.5 release](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5). Full GUI and multi-hour processing require manual testing.
+
+---
+
 ### [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)
 
 **What it is:** Windows TTS + MP3 creation.

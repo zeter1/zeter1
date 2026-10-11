@@ -28,11 +28,12 @@
 | Записать экран, звук или сделать скриншот | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) | [Windows-сборки](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
 | Надиктовать текст вместо печати | [VoiceFlow](https://github.com/zeter1/VoiceFlow) | [Windows-сборки](https://github.com/zeter1/VoiceFlow/releases) |
 | Перевести и озвучить видео | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) | [Windows-сборки](https://github.com/zeter1/Video-Translator-Pro/releases) |
+| Преобразовать видеокурс в MP3 или объединить видео по 10 часов | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [Скачать Windows EXE v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) |
 | Собрать вакансии и выгрузить их в Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) | [Windows-сборки](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
 | Организовать заметки и задачи | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Windows-сборки](https://github.com/zeter1/ZeTer-OS/releases) |
 | Поиграть в браузере | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [Запуск и требования](USER_GUIDE.md#браузерные-приложения-и-игры) |
 
-Windows-сборки сейчас помечены **Pre-release**: это предварительные версии для знакомства и тестирования. Требования к FFmpeg, моделям, драйверам и внешним сервисам указаны в README соответствующей программы. Полный пользовательский каталог, включая загрузку видео, озвучку текста и диагностику Windows: **[USER_GUIDE.md](USER_GUIDE.md)**.
+Статус выпуска зависит от проекта: **ZeTer Media Converter v3.3.5** опубликован как обычный релиз с Windows EXE, а у других программ могут быть **Pre-release**. Требования к FFmpeg, моделям, драйверам и внешним сервисам указаны в README соответствующей программы. Полный пользовательский каталог, включая загрузку видео, озвучку текста и диагностику Windows: **[USER_GUIDE.md](USER_GUIDE.md)**.
 
 ## Для работодателей и технических специалистов
 
@@ -73,6 +74,7 @@ Windows-сборки сейчас помечены **Pre-release**: это пр�
 | **[Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)** | Python / AI + Multimedia | Whisper → translation → TTS → FFmpeg, checkpoints, cache, recovery и artifact validation |
 | **[Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)** | Python / Automation | multi-source парсинг вакансий, adapters, fault isolation, deduplication и Excel export |
 | **[Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)** | Python / Multimedia | yt-dlp, MP4/MP3, format selection, remux/transcoding fallback, ffprobe validation и tests |
+| **[ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter)** | Python / Windows · Multimedia | Tkinter, FFmpeg/FFprobe, видео → MP3, объединение MP4 до 10 часов, резервирование MP3, диагностика, регрессионные тесты, Windows EXE CI |
 | **[Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)** | Python / Windows | Microsoft SAPI/COM, Windows TTS, MP3, global hotkeys, state persistence и long-job recovery |
 | **[Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)** | Python / Windows | WinAPI, WTS API, mutex, power management, self-test и bounded logging |
 | **[ZeTer OS](https://github.com/zeter1/ZeTer-OS)** | Hybrid Desktop/Web | Python + JavaScript, pywebview bridge, modular frontend, local-first state и backup/recovery |
@@ -104,6 +106,7 @@ Windows-сборки сейчас помечены **Pre-release**: это пр�
 - **CYBER RACE:** [`src/ai/opponent-brain.js`](https://github.com/zeter1/CYBER-RACE/blob/main/src/ai/opponent-brain.js) · [`src/weapons/ballistics.js`](https://github.com/zeter1/CYBER-RACE/blob/main/src/weapons/ballistics.js) · [`src/core/seeded-rng.js`](https://github.com/zeter1/CYBER-RACE/blob/main/src/core/seeded-rng.js) · [`tests/scenarios.mjs`](https://github.com/zeter1/CYBER-RACE/blob/main/tests/scenarios.mjs) · [CI](https://github.com/zeter1/CYBER-RACE/blob/main/.github/workflows/validate.yml).
 - **Forest Hunter:** [`src/ai/boar-brain.js`](https://github.com/zeter1/ForestHunter/blob/main/src/ai/boar-brain.js) · [`src/weapons/combat-rules.js`](https://github.com/zeter1/ForestHunter/blob/main/src/weapons/combat-rules.js) · [`src/core/seeded-rng.js`](https://github.com/zeter1/ForestHunter/blob/main/src/core/seeded-rng.js) · [`tests/scenarios.mjs`](https://github.com/zeter1/ForestHunter/blob/main/tests/scenarios.mjs) · [CI](https://github.com/zeter1/ForestHunter/blob/main/.github/workflows/validate.yml).
 - **Screen Recorder Pro:** [`screen_recorder/`](https://github.com/zeter1/Screen-Recorder-Pro/tree/main/screen_recorder) · [capture recovery](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_capture_recovery.py) · [save safety](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_save_safety.py).
+- **ZeTer Media Converter:** [audio pipeline](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/videovaudio/audio/folder_workflow.py) · [video pipeline](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/videovaudio/video/folder_workflow.py) · [regressions](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/tools/test_audio_regressions.py) · [EXE CI](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/.github/workflows/build-windows.yml) · [EXE v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5).
 - **BSOD Investigator:** [`bsod_investigator.py`](https://github.com/zeter1/BSOD-Investigator/blob/main/bsod_investigator.py) · [`docs/`](https://github.com/zeter1/BSOD-Investigator/tree/main/docs).
 - **VoiceFlow:** [`voiceflow.py`](https://github.com/zeter1/VoiceFlow/blob/main/voiceflow.py) · [`docs/`](https://github.com/zeter1/VoiceFlow/tree/main/docs).
 

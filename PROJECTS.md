@@ -102,6 +102,16 @@
 
 ---
 
+### [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter)
+
+**Что это:** Windows-приложение для конвертации видеокурсов в MP3 пофайлово и по частям до 10 часов, а также объединения видео в MP4-части.
+
+**Что смотреть:** Tkinter UI, `videovaudio/audio/`, `videovaudio/video/`, `process_runner.py` (запуск FFmpeg, отмена и таймауты), `diagnostics/`, `tools/test_audio_regressions.py`, [Windows EXE CI](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/.github/workflows/build-windows.yml).
+
+**Инженерный акцент:** резервные копии прежних MP3 с manifest, проверка результатов до публикации, структурированная диагностика и автономная сборка со сверкой SHA-256. [Релиз v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5). GUI и многочасовые сценарии требуют ручной проверки.
+
+---
+
 ### [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)
 
 **Что это:** Windows TTS + MP3.

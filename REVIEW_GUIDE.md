@@ -34,6 +34,7 @@
 | Local speech-to-text | VoiceFlow | `voiceflow.py`, `docs/` | faster-whisper, CPU/CUDA, Windows input |
 | Long AI/multimedia workflow | Video Translator Pro | `videotranslator/`, `tests/`, `tools/`, `AGENTS.md` | checkpoints, recovery, staged processing |
 | Hybrid desktop/web | ZeTer OS | `app/`, `tools/check_project.py` | Python/native bridge + modular JavaScript frontend |
+| Windows media converter / standalone EXE | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [audio pipeline](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/videovaudio/audio/folder_workflow.py) · [video pipeline](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/videovaudio/video/folder_workflow.py) · [regressions](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/tools/test_audio_regressions.py) · [EXE CI](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/.github/workflows/build-windows.yml) · [релиз v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) | subprocess lifecycle, recovery прежних MP3, валидация результатов, диагностические отчёты, headless smoke собранного EXE; полный GUI — NOT VERIFIED |
 | Downloader/media pipeline | Universal Video Downloader | `src/`, `tests/`, `problem_log_validator.py` | format strategy, validation и diagnostics |
 
 ## 15 минут

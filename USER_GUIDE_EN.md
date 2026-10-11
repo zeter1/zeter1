@@ -24,7 +24,7 @@ BizPilot stores its workspace in the browser. Export a ZIP backup from its data 
 
 ## Windows applications
 
-All published builds below are currently marked **Pre-release**, for exploration and testing. Each application's README owns its prerequisites and known limitations.
+Release status varies by project: some builds are marked **Pre-release**, but **ZeTer Media Converter v3.3.5** is a regular release with a Windows x64 EXE. Each application's README owns its prerequisites and known limitations.
 
 | Task | Application and instructions | Download |
 |---|---|---|
@@ -32,11 +32,14 @@ All published builds below are currently marked **Pre-release**, for exploration
 | Dictate text into Windows applications | [VoiceFlow](https://github.com/zeter1/VoiceFlow/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/VoiceFlow/releases) |
 | Translate and voice over videos | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/Video-Translator-Pro/releases) |
 | Download videos or extract MP3 audio | [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/Universal-Video-Downloader/releases) |
+| Convert video lessons to MP3 and merge video courses | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [EXE v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) |
 | Convert text to speech and MP3 | [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/Text-to-MP3-Windows/releases) |
 | Find vacancies, deduplicate, and export to Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
 | Investigate Windows blue-screen causes | [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/BSOD-Investigator/releases) |
 | Lock a Windows session and control sleep prevention | [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/Windows-PC-Locker/releases) |
 | Organize notes, tasks, and a local workspace | [ZeTer OS](https://github.com/zeter1/ZeTer-OS/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/ZeTer-OS/releases) |
+
+**ZeTer Media Converter:** Windows 10/11 x64 standalone EXE with Python, FFmpeg, and FFprobe bundled. It is not Authenticode-signed. Download from the [official release](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) and verify its SHA-256 checksum.
 
 ### Downloading a ready-made application
 
