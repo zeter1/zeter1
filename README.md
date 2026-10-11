@@ -10,6 +10,8 @@
 
 **Для пользователей:** [выбор, скачивание и запуск](USER_GUIDE.md). **Для работодателей:** [код, архитектура и проверки за 5/15/30 минут](REVIEW_GUIDE.md).
 
+На этой странице: [выбрать программу](#что-хотите-сделать) · [посмотреть инженерные решения](#для-работодателей-и-технических-специалистов) · [все проекты](#все-проекты).
+
 **Обсудить работу или проект:**
 
 - [zeter11@gmail.com](mailto:zeter11@gmail.com)
@@ -31,7 +33,7 @@
 | Задача | Проект | С чего начать |
 |---|---|---|
 | Редактировать фотографии и работать со слоями | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Запуск в браузере](https://github.com/zeter1/ZeTer-Photo-Editor#запуск-на-windows) |
-| Вести клиентов, задачи и финансы бизнеса | [BizPilot](https://github.com/zeter1/BizPilot) | [Открыть и настроить](https://github.com/zeter1/BizPilot#запуск) |
+| Вести клиентов, задачи и финансы бизнеса | [BizPilot](https://github.com/zeter1/BizPilot) | [Запустить онлайн](https://dkl.do.am/portfolio/bizpilot/index.html) · [Инструкция](https://github.com/zeter1/BizPilot#запуск) |
 | Записать экран, звук или сделать скриншот | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) | [Windows-сборки](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
 | Надиктовать текст вместо печати | [VoiceFlow](https://github.com/zeter1/VoiceFlow) | [Windows-сборки](https://github.com/zeter1/VoiceFlow/releases) |
 | Перевести и озвучить видео | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) | [Windows-сборки](https://github.com/zeter1/Video-Translator-Pro/releases) |
@@ -43,7 +45,15 @@ Windows-сборки сейчас помечены **Pre-release**: это пр�
 
 ## Для работодателей и технических специалистов
 
-Оценить мои проекты можно по конкретным решениям: обработка графических форматов в **ZeTer Photo Editor**, проверяемая логика финансов в **BizPilot**, управление записью и восстановлением в **Screen Recorder Pro**, системная диагностика в **BSOD Investigator**. Ссылки на код и проверки собраны ниже и в **[REVIEW_GUIDE.md](REVIEW_GUIDE.md)**.
+Три примера для первого знакомства — от задачи пользователя к решению и его проверке:
+
+| Проект и задача | Инженерное решение | Что изучить |
+|---|---|---|
+| **BizPilot** — планировать деньги малого бизнеса | Расчёты денежного потока отделены от интерфейса; тесты разбирают просроченные счета и отрицательный остаток. | [Модуль расчётов](https://github.com/zeter1/BizPilot/blob/main/js/cashflow.js) · [регрессионные сценарии](https://github.com/zeter1/BizPilot/blob/main/scripts/test-cashflow.mjs) |
+| **Screen Recorder Pro** — записывать экран и сохранять результат | Управление процессами FFmpeg, восстановление захвата и защита уже созданных файлов при сохранении. | [Модули приложения](https://github.com/zeter1/Screen-Recorder-Pro/tree/main/screen_recorder) · [проверки сохранения](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_save_safety.py) |
+| **ZeTer Photo Editor** — редактировать изображения со слоями | Адаптеры графических форматов и отдельные проверки управления цветом. | [Адаптеры](https://github.com/zeter1/ZeTer-Photo-Editor/tree/main/src/adapters) · [цветовые сценарии](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/tests/color-management.test.mjs) |
+
+Для других направлений и более подробного просмотра: **[маршрут на 5/15/30 минут](REVIEW_GUIDE.md)**. Описания и код доступны здесь; результат проверок конкретной ревизии смотрите во вкладке **Actions** соответствующего проекта.
 
 Разрабатываю с помощью ChatGPT/Codex; изменения проверяю по diff, автоматическими проверками и ручными сценариями там, где нужен браузер, Windows или оборудование. Наличие тестов в репозитории не означает, что все пользовательские сценарии проверены на любом компьютере.
 

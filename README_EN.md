@@ -10,6 +10,8 @@ Choose a tool for your task, find its setup instructions, or inspect how it is b
 
 **For users:** [choose, download, and get started](USER_GUIDE_EN.md). **For employers:** [a 5/15/30-minute route through code, architecture, and checks](REVIEW_GUIDE_EN.md).
 
+On this page: [choose an application](#what-would-you-like-to-do) · [inspect engineering decisions](#for-employers-and-technical-reviewers) · [all projects](#all-projects).
+
 **Discuss a role or project:**
 
 - [zeter11@gmail.com](mailto:zeter11@gmail.com)
@@ -30,8 +32,8 @@ Choose a tool for your task, find its setup instructions, or inspect how it is b
 
 | Task | Project | Start here |
 |---|---|---|
-| Edit images and work with layers | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Browser startup](https://github.com/zeter1/ZeTer-Photo-Editor#запуск-на-windows) |
-| Manage clients, tasks, and business finances | [BizPilot](https://github.com/zeter1/BizPilot) | [Setup](https://github.com/zeter1/BizPilot#запуск) |
+| Edit images and work with layers | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Browser startup](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/README_EN.md#get-started) |
+| Manage clients, tasks, and business finances | [BizPilot](https://github.com/zeter1/BizPilot) | [Launch online](https://dkl.do.am/portfolio/bizpilot/index.html) · [Instructions](https://github.com/zeter1/BizPilot/blob/main/README_EN.md#get-started) |
 | Record the screen and audio or take screenshots | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) | [Windows builds](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
 | Dictate text instead of typing | [VoiceFlow](https://github.com/zeter1/VoiceFlow) | [Windows builds](https://github.com/zeter1/VoiceFlow/releases) |
 | Translate and voice over videos | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) | [Windows builds](https://github.com/zeter1/Video-Translator-Pro/releases) |
@@ -43,7 +45,15 @@ Current Windows builds are marked **Pre-release**, for exploration and testing. 
 
 ## For employers and technical reviewers
 
-Inspect concrete engineering decisions: graphics-format handling in **ZeTer Photo Editor**, testable financial logic in **BizPilot**, recording lifecycle and recovery in **Screen Recorder Pro**, and system diagnostics in **BSOD Investigator**. Code and check entry points are listed below and in **[REVIEW_GUIDE_EN.md](REVIEW_GUIDE_EN.md)**.
+Three starting points connect a user's task to an engineering decision and its check:
+
+| Project and task | Engineering decision | What to inspect |
+|---|---|---|
+| **BizPilot** — plan small-business cash flow | Financial calculations are separate from the UI; tests cover overdue invoices and a negative balance. | [Calculation module](https://github.com/zeter1/BizPilot/blob/main/js/cashflow.js) · [regression scenarios](https://github.com/zeter1/BizPilot/blob/main/scripts/test-cashflow.mjs) |
+| **Screen Recorder Pro** — record a screen and save the result | FFmpeg process management, capture recovery, and protection of existing files during saving. | [Application modules](https://github.com/zeter1/Screen-Recorder-Pro/tree/main/screen_recorder) · [save-safety checks](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_save_safety.py) |
+| **ZeTer Photo Editor** — edit layered images | Graphics-format adapters and separate color-management checks. | [Adapters](https://github.com/zeter1/ZeTer-Photo-Editor/tree/main/src/adapters) · [color scenarios](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/tests/color-management.test.mjs) |
+
+For other areas and a deeper review, follow the **[5/15/30-minute route](REVIEW_GUIDE_EN.md)**. Descriptions and code are linked here; check the relevant project's **Actions** tab for verification results tied to a particular revision.
 
 I use ChatGPT/Codex during development, with diff review, automated checks, and manual scenarios where browser, Windows, or hardware behavior matters. Tests in a repository do not establish that every user workflow works on every computer.
 

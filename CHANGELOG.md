@@ -2,6 +2,13 @@
 
 Отслеживание изменений начинается с этой записи; более ранняя история не реконструировалась. Репозиторий документации не имеет номера версии продукта.
 
+### 2026-10-11T15:05:24+03:00 — Удобный выбор и инженерные примеры / Navigation and engineering examples
+
+- Changed: быстрые переходы и три инженерных примера с задачами, решениями и проверками в обеих версиях профиля. / Added quick navigation and three engineering examples connecting tasks, decisions and checks in both profile versions.
+- Fixed: 16 ссылок из английского профиля и каталога ведут к английским инструкциям запуска. / Corrected 16 links from the English profile and catalog to English startup instructions.
+- Added: прямые ZIP-ссылки для браузерных проектов, онлайн-запуск BizPilot и пример проверки SHA-256 Windows-сборки; русская и английская версии синхронизированы. / Added browser-project ZIP links, BizPilot online launch and a Windows-build SHA-256 example; Russian and English versions are aligned.
+- Verification: проверены относительные ссылки и якоря, сохранность контактов и упоминаний видеоредактора; команда SHA-256 проверена на файле с известной суммой. / Checked relative links and anchors, preserved contacts and video-editor references; tested the SHA-256 command with a known-hash fixture.
+
 ### 2026-10-11T14:07:47+03:00 — Социальные сети и Telegram-группа / Social profiles and Telegram group
 
 - Added: VK, Instagram, TenChat, X, Threads, OK и Telegram-группа во всех восьми контактных блоках русской и английской документации. / Added VK, Instagram, TenChat, X, Threads, OK, and the Telegram group to all eight contact blocks in both languages.
