@@ -40,11 +40,11 @@ Three starting points connect a user's task to an engineering decision and its c
 
 | Project and task | Engineering decision | What to inspect |
 |---|---|---|
-| **BizPilot** — plan small-business cash flow | Financial calculations are separate from the UI; tests cover overdue invoices and a negative balance. | [Calculation module](https://github.com/zeter1/BizPilot/blob/main/js/cashflow.js) · [regression scenarios](https://github.com/zeter1/BizPilot/blob/main/scripts/test-cashflow.mjs) |
-| **Screen Recorder Pro** — record a screen and save the result | FFmpeg process management, capture recovery, and protection of existing files during saving. | [Application modules](https://github.com/zeter1/Screen-Recorder-Pro/tree/main/screen_recorder) · [save-safety checks](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_save_safety.py) |
-| **ZeTer Photo Editor** — edit layered images | Graphics-format adapters and separate color-management checks. | [Adapters](https://github.com/zeter1/ZeTer-Photo-Editor/tree/main/src/adapters) · [color scenarios](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/tests/color-management.test.mjs) |
+| **BizPilot** — plan small-business cash flow | Financial calculations are separate from the UI; tests cover overdue invoices and a negative balance. | [Calculation module](https://github.com/zeter1/BizPilot/blob/main/js/cashflow.js) · [regression scenarios](https://github.com/zeter1/BizPilot/blob/main/scripts/test-cashflow.mjs) · [CI results](https://github.com/zeter1/BizPilot/actions) |
+| **Screen Recorder Pro** — record a screen and save the result | FFmpeg process management, capture recovery, and protection of existing files during saving. | [Application modules](https://github.com/zeter1/Screen-Recorder-Pro/tree/main/screen_recorder) · [save-safety checks](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_save_safety.py) · [CI results](https://github.com/zeter1/Screen-Recorder-Pro/actions) |
+| **ZeTer Photo Editor** — edit layered images | Graphics-format adapters and separate color-management checks. | [Adapters](https://github.com/zeter1/ZeTer-Photo-Editor/tree/main/src/adapters) · [color scenarios](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/tests/color-management.test.mjs) · [CI results](https://github.com/zeter1/ZeTer-Photo-Editor/actions) |
 
-For other areas and a deeper review, follow the **[5/15/30-minute route](REVIEW_GUIDE_EN.md)**. Descriptions and code are linked here; check the relevant project's **Actions** tab for verification results tied to a particular revision.
+For other areas and a deeper review, follow the **[5/15/30-minute route](REVIEW_GUIDE_EN.md)**. The “CI results” links open **GitHub Actions** runs: match the branch, commit, and checks performed. A green run for a different revision does not verify the current code or a downloaded build.
 
 I use ChatGPT/Codex during development, with diff review, automated checks, and manual scenarios where browser, Windows, or hardware behavior matters. Tests in a repository do not establish that every user workflow works on every computer.
 

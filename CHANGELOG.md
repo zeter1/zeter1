@@ -2,6 +2,13 @@
 
 Отслеживание изменений начинается с этой записи; более ранняя история не реконструировалась. Репозиторий документации не имеет номера версии продукта.
 
+### 2026-10-11T15:47:35+03:00 — Результаты CI и обратная связь / CI results and feedback
+
+- Changed: в обеих версиях профиля три инженерных примера связаны напрямую с результатами GitHub Actions; добавлена проверка соответствия ветки, commit и сборки. / Both profile versions link three engineering examples directly to GitHub Actions results and explain matching the branch, commit and build.
+- Added: в обеих версиях поддержки — быстрые переходы, поиск похожих обращений и шаблон предложения функции. / Both support pages include section shortcuts, guidance for finding existing reports and a feature-request template.
+- Changed: перед отчётом нужно сохранить версию, ошибку и важные данные; обновление или очистка настроек для обращения не требуются. / Reporting starts with recording the version and error and preserving important data; updating or clearing settings is not required to report a problem.
+- Verification: проверены 12 публичных страниц, шесть языковых пар, 98 относительных файловых ссылок и 26 якорей; контакты, каталог и упоминания видеоредактора сохранены; новые страницы Actions доступны; git diff --check пройден. Репозитории приложений не менялись. / Checked 12 public pages, six language pairs, 98 relative file links and 26 anchors; contacts, catalog and video-editor references are preserved; new Actions destinations are accessible; git diff --check passed. Application repositories were not changed.
+
 ### 2026-10-11T15:27:21+03:00 — Проекты видны сразу / Projects visible by default
 
 - Changed: полный список проектов в README.md и README_EN.md показан без раскрывающегося блока. / The full project list in README.md and README_EN.md is displayed without an expandable section.

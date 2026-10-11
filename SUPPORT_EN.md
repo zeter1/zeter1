@@ -4,6 +4,8 @@
 
 # Support and bug reports
 
+Jump to: [bug-report template](#copyable-template) · [suggest a feature](#how-to-suggest-a-feature) · [project diagnostics](#project-specific-diagnostics) · [report a vulnerability](#security-reports).
+
 Some of the main repositories use structured GitHub Issue Forms. Whether or not a form is available, the goal of a bug report is the same: provide enough context to reproduce the problem and distinguish an application bug from a browser, environment, external-tool, or data issue.
 
 **Where to report:** find the application in the [user catalog](USER_GUIDE_EN.md), open its repository → **Issues** → **New issue**. Use the provided form if available; otherwise copy the template below. This routes the report to the correct project. To contact me without a public report:
@@ -21,8 +23,8 @@ Some of the main repositories use structured GitHub Issue Forms. Whether or not 
 
 ## Before opening an issue
 
-1. Confirm that the problem still reproduces on the current project revision.
-2. Read the project's README and relevant documentation.
+1. Record the exact version or commit, startup method, and error message. Preserve important data first; do not update the application or clear settings just to submit a report.
+2. Read the README and search the project's **Issues**, including closed reports, for the exact error message or feature name. If you find the same problem, add your version and scenario to the existing report.
 3. If the application creates diagnostic files, preserve the latest failing session before repeated runs or cleanup.
 4. Remove personal information, secrets, and any data that should not be public from logs and attachments.
 
@@ -43,6 +45,20 @@ Frequency: always / sometimes / once
 Settings, stage, and failure time (if relevant):
 Minimal example or safe diagnostic excerpt:
 ```
+
+## How to suggest a feature
+
+Open the relevant project's **Issues**, check for a similar suggestion, and choose a feature-request form if one is available. Describe the user's task and the outcome that would make the feature useful; an interface example can be attached separately.
+
+```text
+Application:
+Task I want to accomplish:
+How I do it now and what gets in the way:
+Desired outcome:
+Example without personal data:
+```
+
+If no matching issue exists, open a new one. Keep one bug or feature per issue so the details and outcome are easier to track. Issues are public; use the contacts above for private details.
 
 ## A useful bug report
 
