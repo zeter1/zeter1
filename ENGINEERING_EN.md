@@ -1,5 +1,7 @@
 **Язык / Language:** [Русский](ENGINEERING.md) · **English**
 
+[Profile](README_EN.md) · [Applications](USER_GUIDE_EN.md) · [Technical review](REVIEW_GUIDE_EN.md) · [Support](SUPPORT_EN.md)
+
 # Engineering approach
 
 This document complements the profile and describes practices used across my **Python** and **Web** projects. The goal is not to apply the same template everywhere, but to use verifiable engineering choices that match the real risk of each project.

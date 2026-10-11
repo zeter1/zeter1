@@ -58,6 +58,9 @@ Windows-сборки сейчас помечены **Pre-release**: это пр�
 
 ## Все проекты
 
+<details>
+<summary>Развернуть полный каталог проектов</summary>
+
 Ниже — проекты и технические решения, которые можно изучить в их репозиториях. Пользовательские инструкции собраны отдельно в **[USER_GUIDE.md](USER_GUIDE.md)**.
 
 | Проект | Направление | Что показывает |
@@ -80,6 +83,8 @@ Windows-сборки сейчас помечены **Pre-release**: это пр�
 
 Расширенная техническая карта всех проектов: **[PROJECTS.md](PROJECTS.md)**.
 
+</details>
+
 ## Инженерный подход
 
 - Ищу первопричину, а не маскирую симптом.
@@ -93,6 +98,9 @@ Windows-сборки сейчас помечены **Pre-release**: это пр�
 
 ## Проверяемые точки входа
 
+<details>
+<summary>Развернуть ссылки на код, тесты и CI</summary>
+
 Чтобы технический reviewer мог быстро перейти от описания к коду и проверкам:
 
 - **ZeTer Photo Editor:** [`src/adapters/`](https://github.com/zeter1/ZeTer-Photo-Editor/tree/main/src/adapters) · [`tests/color-management.test.mjs`](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/tests/color-management.test.mjs) · [CI](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/.github/workflows/ci.yml).
@@ -104,7 +112,12 @@ Windows-сборки сейчас помечены **Pre-release**: это пр�
 - **BSOD Investigator:** [`bsod_investigator.py`](https://github.com/zeter1/BSOD-Investigator/blob/main/bsod_investigator.py) · [`docs/`](https://github.com/zeter1/BSOD-Investigator/tree/main/docs).
 - **VoiceFlow:** [`voiceflow.py`](https://github.com/zeter1/VoiceFlow/blob/main/voiceflow.py) · [`docs/`](https://github.com/zeter1/VoiceFlow/tree/main/docs).
 
+</details>
+
 ## Технологии
+
+<details>
+<summary>Развернуть полный список технологий</summary>
 
 **Web:** `HTML` · `CSS` · `JavaScript` · `Canvas 2D` · `WebGL` · `Three.js` · `Web Audio API` · `IndexedDB` · `localStorage`
 
@@ -115,6 +128,8 @@ Windows-сборки сейчас помечены **Pre-release**: это пр�
 **Data / Automation:** `SQLite` · `JSON` · `pandas` · `openpyxl` · `requests` · `BeautifulSoup`
 
 **Engineering:** `Git` · `GitHub Actions` · regression tests · smoke tests · diagnostics · backup/recovery
+
+</details>
 
 ## Навигация
 

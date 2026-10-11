@@ -1,5 +1,7 @@
 **Язык / Language:** [Русский](REVIEW_GUIDE.md) · **English**
 
+[Profile](README_EN.md) · [Applications](USER_GUIDE_EN.md) · **Technical review** · [Support](SUPPORT_EN.md)
+
 # Technical portfolio review guide
 
 This page provides a short route through the two main tracks of the profile: **Web Development** and **Python Development**. The goal is to move quickly from a description to code, architecture, tests, and verifiable engineering decisions.

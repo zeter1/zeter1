@@ -1,5 +1,7 @@
 **Язык / Language:** [Русский](PROJECTS.md) · **English**
 
+[Profile](README_EN.md) · [Applications](USER_GUIDE_EN.md) · [Technical review](REVIEW_GUIDE_EN.md) · [Support](SUPPORT_EN.md)
+
 # Project map
 
 This page maps the projects and engineering decisions available for code review. The main areas are **Web Development** and **Python Development**, with hybrid applications and a new video editor listed separately. For choosing, downloading, and running a program, use the **[user catalog](USER_GUIDE_EN.md)**.

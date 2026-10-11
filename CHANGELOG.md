@@ -2,6 +2,12 @@
 
 Отслеживание изменений начинается с этой записи; более ранняя история не реконструировалась. Репозиторий документации не имеет номера версии продукта.
 
+### 2026-10-11T15:22:51+03:00 — Компактный профиль и сквозная навигация / Compact profile and connected navigation
+
+- Changed: в обеих версиях профиля полный каталог, ссылки на код и проверки и список технологий свёрнуты в раскрывающиеся блоки; выбор программы и три инженерных примера остаются открытыми. / Both profile versions place the full catalog, code and check links, and technology list in expandable sections; task selection and three engineering examples remain visible.
+- Added: в начале десяти русских и английских страниц руководств — переходы к профилю, программам, техническому обзору и поддержке на выбранном языке. / Ten Russian and English guide pages now start with links to the profile, applications, technical review, and support in the selected language.
+- Verification: проверены 12 страниц, 98 относительных файловых ссылок, шесть языковых пар, сохранность исходного текста и оформление diff. Репозитории приложений не менялись. / Checked 12 pages, 98 relative file links, six language pairs, original text preservation, and patch formatting. Application repositories were not changed.
+
 ### 2026-10-11T15:15:43+03:00 — Компактная связь и безопасное обновление / Focused contacts and safe updates
 
 - Changed: в верхнем блоке обеих версий профиля оставлены Telegram и email; полный список контактов внизу сохранён. / The top contact block in both profile versions now contains Telegram and email; all footer contacts are preserved.

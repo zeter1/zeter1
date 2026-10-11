@@ -1,5 +1,7 @@
 **Язык / Language:** [Русский](SUPPORT.md) · **English**
 
+[Profile](README_EN.md) · [Applications](USER_GUIDE_EN.md) · [Technical review](REVIEW_GUIDE_EN.md) · **Support**
+
 # Support and bug reports
 
 Some of the main repositories use structured GitHub Issue Forms. Whether or not a form is available, the goal of a bug report is the same: provide enough context to reproduce the problem and distinguish an application bug from a browser, environment, external-tool, or data issue.

@@ -1,5 +1,7 @@
 **Язык / Language:** [Русский](USER_GUIDE.md) · **English**
 
+[Profile](README_EN.md) · **Applications** · [Technical review](REVIEW_GUIDE_EN.md) · [Support](SUPPORT_EN.md)
+
 # Choose, download, and get started
 
 Choose your task below. Project names link to source and README instructions; **Builds** links lead to published Windows files. For a technical assessment, use the separate [code and verification review route](REVIEW_GUIDE_EN.md).

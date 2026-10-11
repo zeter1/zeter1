@@ -58,6 +58,9 @@ I use ChatGPT/Codex during development, with diff review, automated checks, and 
 
 ## All projects
 
+<details>
+<summary>Explore the full project catalog</summary>
+
 The following projects expose their code and engineering decisions. User-facing setup instructions are collected separately in **[USER_GUIDE_EN.md](USER_GUIDE_EN.md)**.
 
 | Project | Area | What it demonstrates |
@@ -80,6 +83,8 @@ The following projects expose their code and engineering decisions. User-facing 
 
 Extended technical map of all projects: **[PROJECTS_EN.md](PROJECTS_EN.md)**.
 
+</details>
+
 ## Engineering approach
 
 - Find root causes instead of hiding symptoms.
@@ -93,6 +98,9 @@ More detail: **[ENGINEERING_EN.md](ENGINEERING_EN.md)**.
 
 ## Verifiable entry points
 
+<details>
+<summary>Explore code, tests, and CI links</summary>
+
 A technical reviewer can jump directly from the profile to code and checks:
 
 - **ZeTer Photo Editor:** [`src/adapters/`](https://github.com/zeter1/ZeTer-Photo-Editor/tree/main/src/adapters) · [`tests/color-management.test.mjs`](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/tests/color-management.test.mjs) · [CI](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/.github/workflows/ci.yml).
@@ -104,7 +112,12 @@ A technical reviewer can jump directly from the profile to code and checks:
 - **BSOD Investigator:** [`bsod_investigator.py`](https://github.com/zeter1/BSOD-Investigator/blob/main/bsod_investigator.py) · [`docs/`](https://github.com/zeter1/BSOD-Investigator/tree/main/docs).
 - **VoiceFlow:** [`voiceflow.py`](https://github.com/zeter1/VoiceFlow/blob/main/voiceflow.py) · [`docs/`](https://github.com/zeter1/VoiceFlow/tree/main/docs).
 
+</details>
+
 ## Technologies
+
+<details>
+<summary>Explore the full technology stack</summary>
 
 **Web:** `HTML` · `CSS` · `JavaScript` · `Canvas 2D` · `WebGL` · `Three.js` · `Web Audio API` · `IndexedDB` · `localStorage`
 
@@ -115,6 +128,8 @@ A technical reviewer can jump directly from the profile to code and checks:
 **Data / Automation:** `SQLite` · `JSON` · `pandas` · `openpyxl` · `requests` · `BeautifulSoup`
 
 **Engineering:** `Git` · `GitHub Actions` · regression tests · smoke tests · diagnostics · backup/recovery
+
+</details>
 
 ## Navigation
 
