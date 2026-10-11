@@ -14,17 +14,8 @@
 
 **Обсудить работу или проект:**
 
-- [zeter11@gmail.com](mailto:zeter11@gmail.com)
 - [https://t.me/zeter1](https://t.me/zeter1)
-- [https://www.linkedin.com/in/zeter/](https://www.linkedin.com/in/zeter/)
-- [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1)
-- [https://vk.ru/zeter1](https://vk.ru/zeter1)
-- [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/)
-- [https://tenchat.ru/zeter](https://tenchat.ru/zeter)
-- [https://x.com/zeter1](https://x.com/zeter1)
-- [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992)
-- [https://ok.ru/zeter1](https://ok.ru/zeter1)
-- [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram-группа: обо мне, проекты и чат
+- [zeter11@gmail.com](mailto:zeter11@gmail.com)
 
 **Сообщить об ошибке:** [как подготовить отчёт](SUPPORT.md).
 

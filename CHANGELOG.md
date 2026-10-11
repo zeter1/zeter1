@@ -2,6 +2,12 @@
 
 Отслеживание изменений начинается с этой записи; более ранняя история не реконструировалась. Репозиторий документации не имеет номера версии продукта.
 
+### 2026-10-11T15:15:43+03:00 — Компактная связь и безопасное обновление / Focused contacts and safe updates
+
+- Changed: в верхнем блоке обеих версий профиля оставлены Telegram и email; полный список контактов внизу сохранён. / The top contact block in both profile versions now contains Telegram and email; all footer contacts are preserved.
+- Added: в обеих версиях пользовательского руководства — маршрут безопасного обновления Windows-программ: резервная копия, сохранение прежней сборки, проверка новой версии на тестовых данных и граница совместимости общего хранилища. / Both user guides now cover safe Windows-app updates: backups, keeping the previous build, trying the new version with test data, and shared-storage compatibility.
+- Verification: проверены относительные ссылки, якоря, переключатели языков, сохранность контактов и разделов видеоредактора; проверка оформления diff пройдена. / Checked relative links, anchors, language switches, contact and video-editor section preservation; patch whitespace validation passed.
+
 ### 2026-10-11T15:05:24+03:00 — Удобный выбор и инженерные примеры / Navigation and engineering examples
 
 - Changed: быстрые переходы и три инженерных примера с задачами, решениями и проверками в обеих версиях профиля. / Added quick navigation and three engineering examples connecting tasks, decisions and checks in both profile versions.

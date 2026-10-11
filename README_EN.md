@@ -14,17 +14,8 @@ On this page: [choose an application](#what-would-you-like-to-do) · [inspect en
 
 **Discuss a role or project:**
 
-- [zeter11@gmail.com](mailto:zeter11@gmail.com)
 - [https://t.me/zeter1](https://t.me/zeter1)
-- [https://www.linkedin.com/in/zeter/](https://www.linkedin.com/in/zeter/)
-- [https://www.facebook.com/zeter1](https://www.facebook.com/zeter1)
-- [https://vk.ru/zeter1](https://vk.ru/zeter1)
-- [https://www.instagram.com/zeter1992/](https://www.instagram.com/zeter1992/)
-- [https://tenchat.ru/zeter](https://tenchat.ru/zeter)
-- [https://x.com/zeter1](https://x.com/zeter1)
-- [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992)
-- [https://ok.ru/zeter1](https://ok.ru/zeter1)
-- [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram group: about me, projects and chat
+- [zeter11@gmail.com](mailto:zeter11@gmail.com)
 
 **Report a bug:** [prepare a useful report](SUPPORT_EN.md).
 

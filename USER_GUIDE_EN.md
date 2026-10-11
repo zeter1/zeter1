@@ -4,7 +4,7 @@
 
 Choose your task below. Project names link to source and README instructions; **Builds** links lead to published Windows files. For a technical assessment, use the separate [code and verification review route](REVIEW_GUIDE_EN.md).
 
-Jump to: [browser applications and games](#browser-applications-and-games) · [Windows applications](#windows-applications) · [verify a downloaded file](#verifying-a-downloaded-file) · [report a problem](#reporting-a-problem).
+Jump to: [browser applications and games](#browser-applications-and-games) · [Windows applications](#windows-applications) · [verify a downloaded file](#verifying-a-downloaded-file) · [safe updates](#safely-updating-a-windows-application) · [report a problem](#reporting-a-problem).
 
 ## Browser applications and games
 
@@ -59,6 +59,16 @@ Get-FileHash -LiteralPath '.\Screen-Recorder-Pro.exe' -Algorithm SHA256
 3. Compare **Hash** with the SHA-256 value in the downloaded `.sha256.txt`: all 64 characters must match, ignoring letter case. If they differ, do not run the file; download it again from the same release.
 
 The command reads the file without launching the application. A match confirms agreement with the published checksum; it does not replace checking the download source or a digital signature. For another application, use its filename and checksum from the same release.
+
+## Safely updating a Windows application
+
+1. Read the new release notes and the application's README for changes, requirements, and data-migration instructions.
+2. Finish current operations, save the result, and back up important data using the application's own tools. Fully close the application before copying files.
+3. Keep the previous build. If the README supports running from an extracted folder, extract the new version into a separate folder; for an installer, follow the project's instructions.
+4. Verify the checksum if provided, then try the new version with a copy or a small test file. Check opening, the main operation, and saving the result.
+5. Transfer working data only as described in the README. If the new version does not suit your needs, close it and return to the previous build with the data backup made before updating.
+
+A separate application folder does not guarantee separate storage: versions may share settings or a database. The project's documentation must establish whether data from the new version is compatible with the old one. If migration instructions are missing, [ask the developer](SUPPORT_EN.md) before opening your only copy of important data.
 
 ## Video editor under development
 
