@@ -6,15 +6,17 @@ This page provides a short route through the two main tracks of the profile: **W
 
 ## 5-minute review
 
-If time is limited, open these five projects:
+Choose **one route relevant to the role**. Start with one project and compare a concrete implementation with its checks.
 
-1. **[ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor)** — browser graphics, Canvas, PSD/PSB, high-depth pixel pipeline, masks, and color management.
-2. **[ZAP ZONE](https://github.com/zeter1/ZAP-ZONE)** — Three.js/WebGL, modular JavaScript, tactical AI, combat systems, and browser smoke testing.
-3. **[Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)** — Python/Windows, FFmpeg, capture lifecycle, recovery, and verification scripts.
-4. **[BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)** — system diagnostics, crash dumps, WinDbg/CDB, and evidence-based analysis.
-5. **[VoiceFlow](https://github.com/zeter1/VoiceFlow)** — local AI, faster-whisper, CPU/CUDA, and Windows input.
+| Area | Code → checks | What to inspect |
+|---|---|---|
+| Web / business applications — **BizPilot** | [`js/cashflow.js`](https://github.com/zeter1/BizPilot/blob/main/js/cashflow.js) → [`scripts/test-cashflow.mjs`](https://github.com/zeter1/BizPilot/blob/main/scripts/test-cashflow.mjs) | How financial calculations are separated from the UI, and which edge cases are checked. |
+| Python / Windows — **Screen Recorder Pro** | [`screen_recorder/`](https://github.com/zeter1/Screen-Recorder-Pro/tree/main/screen_recorder) → [`verify_capture_recovery.py`](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_capture_recovery.py) · [`verify_save_safety.py`](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_save_safety.py) | Capture recovery and output saving, and the scenarios covered by the checks. |
+| Web / graphics — **ZeTer Photo Editor** | [`src/adapters/`](https://github.com/zeter1/ZeTer-Photo-Editor/tree/main/src/adapters) → [`tests/color-management.test.mjs`](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/tests/color-management.test.mjs) | The boundary between file formats and internal image data; color-management checks. |
 
-Together they show both sides of the portfolio: complex browser runtime work and deep Python/Windows integration.
+In five minutes: **1)** read the project description; **2)** open its code and corresponding checks from the table; **3)** inspect what the workflow in `.github/workflows/` runs, and the relevant result under **Actions**. Match the branch and commit: a green run for another revision does not verify the current one.
+
+This route identifies a topic for discussion. It does not replace a detailed review or manual application testing. For games, local AI, and system diagnostics, use the map below.
 
 ## Engineering evidence map
 

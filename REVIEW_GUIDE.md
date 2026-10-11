@@ -6,15 +6,17 @@
 
 ## 5 минут
 
-Если времени мало, открыть пять проектов:
+Выберите **один маршрут под вакансию**. Начните с одного проекта и сопоставьте конкретное решение с его проверкой.
 
-1. **[ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor)** — browser graphics, Canvas, PSD/PSB, high-depth pixel pipeline, masks и color management.
-2. **[ZAP ZONE](https://github.com/zeter1/ZAP-ZONE)** — Three.js/WebGL, modular JavaScript, tactical AI, combat systems, browser smoke test.
-3. **[Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)** — Python/Windows, FFmpeg, capture lifecycle, recovery и verification scripts.
-4. **[BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)** — системная диагностика, crash dumps, WinDbg/CDB и evidence-based analysis.
-5. **[VoiceFlow](https://github.com/zeter1/VoiceFlow)** — local AI, faster-whisper, CPU/CUDA и Windows input.
+| Направление | Код → проверка | На что обратить внимание |
+|---|---|---|
+| Web / бизнес-приложения — **BizPilot** | [`js/cashflow.js`](https://github.com/zeter1/BizPilot/blob/main/js/cashflow.js) → [`scripts/test-cashflow.mjs`](https://github.com/zeter1/BizPilot/blob/main/scripts/test-cashflow.mjs) | Как финансовые расчёты отделены от интерфейса и какие граничные случаи проверяются. |
+| Python / Windows — **Screen Recorder Pro** | [`screen_recorder/`](https://github.com/zeter1/Screen-Recorder-Pro/tree/main/screen_recorder) → [`verify_capture_recovery.py`](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_capture_recovery.py) · [`verify_save_safety.py`](https://github.com/zeter1/Screen-Recorder-Pro/blob/main/verify_save_safety.py) | Как устроены восстановление захвата и сохранение результата; какие сценарии покрывают проверки. |
+| Web / графика — **ZeTer Photo Editor** | [`src/adapters/`](https://github.com/zeter1/ZeTer-Photo-Editor/tree/main/src/adapters) → [`tests/color-management.test.mjs`](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/tests/color-management.test.mjs) | Граница между форматом файла и внутренними данными изображения; проверки управления цветом. |
 
-Этого достаточно, чтобы увидеть обе стороны портфолио: сложный browser runtime и глубокую Python/Windows-интеграцию.
+За пять минут: **1)** прочитайте описание проекта; **2)** откройте код и соответствующую проверку из таблицы; **3)** посмотрите, что запускает workflow в `.github/workflows/`, и результат нужного запуска во вкладке **Actions**. Сверяйте ветку и commit: зелёный запуск другой ревизии не подтверждает текущую.
+
+Этот маршрут помогает выбрать предмет для обсуждения. Он не заменяет подробный review или ручную проверку приложения. Для игр, локального AI и системной диагностики используйте карту ниже.
 
 ## Карта инженерных доказательств
 

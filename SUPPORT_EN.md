@@ -4,12 +4,32 @@
 
 Some of the main repositories use structured GitHub Issue Forms. Whether or not a form is available, the goal of a bug report is the same: provide enough context to reproduce the problem and distinguish an application bug from a browser, environment, external-tool, or data issue.
 
+**Where to report:** find the application in the [user catalog](USER_GUIDE_EN.md), open its repository → **Issues** → **New issue**. Use the provided form if available; otherwise copy the template below. This routes the report to the correct project. To contact me without a public report: [Email](mailto:zeter11@gmail.com) · [Telegram](https://t.me/zeter1).
+
 ## Before opening an issue
 
 1. Confirm that the problem still reproduces on the current project revision.
 2. Read the project's README and relevant documentation.
 3. If the application creates diagnostic files, preserve the latest failing session before repeated runs or cleanup.
 4. Remove personal information, secrets, and any data that should not be public from logs and attachments.
+
+## Copyable template
+
+Fill in the fields you know; say when something is unknown. For a long operation, include the stage and approximate failure time. Attach a screenshot or small log excerpt only after checking for personal data.
+
+```text
+Application and version / commit:
+Startup method: ready-made build / source / browser
+Windows or browser and its version:
+Steps to reproduce:
+1.
+2.
+Expected result:
+Actual result and exact error message:
+Frequency: always / sometimes / once
+Settings, stage, and failure time (if relevant):
+Minimal example or safe diagnostic excerpt:
+```
 
 ## A useful bug report
 
