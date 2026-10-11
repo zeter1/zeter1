@@ -2,6 +2,11 @@
 
 Отслеживание изменений начинается с этой записи; более ранняя история не реконструировалась. Репозиторий документации не имеет номера версии продукта.
 
+### 2026-10-11T15:27:21+03:00 — Проекты видны сразу / Projects visible by default
+
+- Changed: полный список проектов в README.md и README_EN.md показан без раскрывающегося блока. / The full project list in README.md and README_EN.md is displayed without an expandable section.
+- Verification: удалена только обёртка каталога в обеих версиях; текст, ссылки, переключатели языков и остальные раскрывающиеся блоки сохранены; git diff --check пройден. / Only the catalog wrapper was removed in both versions; text, links, language switches, and other expandable sections are preserved; git diff --check passed.
+
 ### 2026-10-11T15:22:51+03:00 — Компактный профиль и сквозная навигация / Compact profile and connected navigation
 
 - Changed: в обеих версиях профиля полный каталог, ссылки на код и проверки и список технологий свёрнуты в раскрывающиеся блоки; выбор программы и три инженерных примера остаются открытыми. / Both profile versions place the full catalog, code and check links, and technology list in expandable sections; task selection and three engineering examples remain visible.

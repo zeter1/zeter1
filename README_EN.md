@@ -58,9 +58,6 @@ I use ChatGPT/Codex during development, with diff review, automated checks, and 
 
 ## All projects
 
-<details>
-<summary>Explore the full project catalog</summary>
-
 The following projects expose their code and engineering decisions. User-facing setup instructions are collected separately in **[USER_GUIDE_EN.md](USER_GUIDE_EN.md)**.
 
 | Project | Area | What it demonstrates |
@@ -82,8 +79,6 @@ The following projects expose their code and engineering decisions. User-facing 
 | **[Zeter Video Editor](https://github.com/zeter1/zeter-video-editor)** | Desktop / Video | Tauri, React, TypeScript, Rust, FFmpeg; multi-track editing and local projects; release-readiness work, no public GitHub release yet |
 
 Extended technical map of all projects: **[PROJECTS_EN.md](PROJECTS_EN.md)**.
-
-</details>
 
 ## Engineering approach
 
