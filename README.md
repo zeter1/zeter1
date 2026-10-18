@@ -33,7 +33,7 @@
 | Организовать заметки и задачи | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Windows-сборки](https://github.com/zeter1/ZeTer-OS/releases) |
 | Поиграть в браузере | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [Запуск и требования](USER_GUIDE.md#браузерные-приложения-и-игры) |
 
-Статус выпуска зависит от проекта: **ZeTer Media Converter v3.3.5** опубликован как обычный релиз с Windows EXE, а у других программ могут быть **Pre-release**. Требования к FFmpeg, моделям, драйверам и внешним сервисам указаны в README соответствующей программы. Полный пользовательский каталог, включая загрузку видео, озвучку текста и диагностику Windows: **[USER_GUIDE.md](USER_GUIDE.md)**.
+Полный пользовательский каталог, включая загрузку видео, озвучку текста и диагностику Windows: **[USER_GUIDE.md](USER_GUIDE.md)**.
 
 ## Для работодателей и технических специалистов
 
