@@ -37,7 +37,7 @@ BizPilot хранит рабочее состояние в браузере. С�
 | Искать вакансии, убирать дубликаты и экспортировать Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro#readme) | [Сборки](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
 | Исследовать причины синего экрана Windows | [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator#readme) | [Сборки](https://github.com/zeter1/BSOD-Investigator/releases) |
 | Блокировать сеанс Windows с управлением переходом в сон | [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker#readme) | [Сборки](https://github.com/zeter1/Windows-PC-Locker/releases) |
-| Вести заметки, задачи и локальное рабочее пространство | [ZeTer OS](https://github.com/zeter1/ZeTer-OS#readme) | [Сборки](https://github.com/zeter1/ZeTer-OS/releases) |
+| Вести заметки, задачи и локальное рабочее пространство | [ZeTer OS](https://github.com/zeter1/ZeTer-OS#readme) | [Запустить онлайн](https://dkl.do.am/zeteros/index.html) · [Сборки](https://github.com/zeter1/ZeTer-OS/releases) |
 
 **ZeTer Media Converter:** Windows 10/11 x64, автономный EXE со встроенными Python, FFmpeg и FFprobe. Программа не подписана Authenticode. Скачивайте с [официальной страницы сборок](https://github.com/zeter1/ZeTer-Media-Converter/releases) и проверяйте контрольную сумму SHA-256.
 

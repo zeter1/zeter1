@@ -30,7 +30,7 @@
 | Перевести и озвучить видео | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) | [Windows-сборки](https://github.com/zeter1/Video-Translator-Pro/releases) |
 | Преобразовать видеокурс в MP3 или объединить видео по 10 часов | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [Скачать Windows EXE v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) |
 | Собрать вакансии и выгрузить их в Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) | [Windows-сборки](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
-| Организовать заметки и задачи | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Windows-сборки](https://github.com/zeter1/ZeTer-OS/releases) |
+| Организовать заметки и задачи | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Запустить онлайн](https://dkl.do.am/zeteros/index.html) · [Windows-сборки](https://github.com/zeter1/ZeTer-OS/releases) |
 | Поиграть в браузере | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [Запуск и требования](USER_GUIDE.md#браузерные-приложения-и-игры) |
 
 Полный пользовательский каталог, включая загрузку видео, озвучку текста и диагностику Windows: **[USER_GUIDE.md](USER_GUIDE.md)**.

@@ -30,7 +30,7 @@ On this page: [choose an application](#what-would-you-like-to-do) · [inspect en
 | Translate and voice over videos | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) | [Windows builds](https://github.com/zeter1/Video-Translator-Pro/releases) |
 | Convert a video course to MP3 or merge video in up-to-10-hour parts | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [Download Windows EXE v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) |
 | Collect vacancies and export them to Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) | [Windows builds](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
-| Organize notes and tasks | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Windows builds](https://github.com/zeter1/ZeTer-OS/releases) |
+| Organize notes and tasks | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Launch online](https://dkl.do.am/zeteros/index.html) · [Windows builds](https://github.com/zeter1/ZeTer-OS/releases) |
 | Play browser games | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [Startup and requirements](USER_GUIDE_EN.md#browser-applications-and-games) |
 
 Release status varies: **ZeTer Media Converter v3.3.5** is a regular release with a Windows EXE, while other applications may offer **Pre-release** builds. Each application's README covers its FFmpeg, model, driver, and external-service requirements. The full user catalog, including video downloads, text-to-speech, and Windows diagnostics, is in **[USER_GUIDE_EN.md](USER_GUIDE_EN.md)**.

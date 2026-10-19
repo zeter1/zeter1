@@ -37,7 +37,7 @@ Release status varies by project: builds may be regular releases or marked **Pre
 | Find vacancies, deduplicate, and export to Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
 | Investigate Windows blue-screen causes | [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/BSOD-Investigator/releases) |
 | Lock a Windows session and control sleep prevention | [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/Windows-PC-Locker/releases) |
-| Organize notes, tasks, and a local workspace | [ZeTer OS](https://github.com/zeter1/ZeTer-OS/blob/main/README_EN.md#download-and-run-on-windows) | [Builds](https://github.com/zeter1/ZeTer-OS/releases) |
+| Organize notes, tasks, and a local workspace | [ZeTer OS](https://github.com/zeter1/ZeTer-OS/blob/main/README_EN.md#download-and-run-on-windows) | [Launch online](https://dkl.do.am/zeteros/index.html) · [Builds](https://github.com/zeter1/ZeTer-OS/releases) |
 
 **ZeTer Media Converter:** Windows 10/11 x64 standalone EXE with Python, FFmpeg, and FFprobe bundled. It is not Authenticode-signed. Download from the [official builds page](https://github.com/zeter1/ZeTer-Media-Converter/releases) and verify its SHA-256 checksum.
 
