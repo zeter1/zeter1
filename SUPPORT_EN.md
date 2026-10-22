@@ -141,7 +141,7 @@ Specify desktop/web mode and the affected module. Do not attach application stat
 
 Include the vacancy source, search parameters, and a safe summary of the diagnostic session.
 
-### Universal Video Downloader
+### ZeTer Video Downloader
 
 Include the site, video/MP3 mode, requested quality, yt-dlp version, and the relevant FFmpeg/yt-dlp message. Do not publish cookies or private URLs.
 

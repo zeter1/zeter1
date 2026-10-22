@@ -85,7 +85,7 @@ Examples:
 - **ZAP ZONE** separates engine, weapons, player state, combat, entities, progression, and runtime.
 - **CYBER RACE** and **Forest Hunter** now go beyond decomposition: AI/combat state evolution is exposed as dependency-injected simulation, and versioned seeded fixtures replay frame sequences deterministically. Structural validators prevent simulation logic from silently collapsing back into runtime.
 - **BizPilot** separates its cash-flow engine from UI orchestration so financial logic can be regression-tested independently of the DOM.
-- **Universal Video Downloader** includes a code map and tools for finding the smallest change scope.
+- **ZeTer Video Downloader** includes a code map and tools for finding the smallest change scope.
 
 ## 8. Verification should match real risk
 
@@ -125,6 +125,6 @@ Large projects use architecture docs, code maps, `AGENTS.md`, tests, CI, and dia
 
 **Web:** [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) · [BizPilot](https://github.com/zeter1/BizPilot) · [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE) · [CYBER RACE](https://github.com/zeter1/CYBER-RACE) · [Forest Hunter](https://github.com/zeter1/ForestHunter)
 
-**Python / Windows:** [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) · [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator) · [VoiceFlow](https://github.com/zeter1/VoiceFlow) · [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) · [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) · [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader) · [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows) · [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)
+**Python / Windows:** [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) · [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator) · [VoiceFlow](https://github.com/zeter1/VoiceFlow) · [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) · [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) · [ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader) · [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows) · [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)
 
 **Hybrid:** [ZeTer OS](https://github.com/zeter1/ZeTer-OS)

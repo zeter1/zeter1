@@ -1,5 +1,12 @@
 # История изменений
 
+### 2026-10-22 — ZeTer Video Downloader в GitHub-профиле / Profile links refreshed
+
+- Changed: название **ZeTer Video Downloader** и адрес `https://github.com/zeter1/ZeTer-Video-Downloader` синхронизированы в двуязычных README, каталогах проектов, руководствах, инженерном обзоре и поддержке. / Updated the application name and repository URL across the Russian and English profile documentation.
+- Added: прямой переход к программе и её Windows Releases в быстрый выбор на главной странице профиля. / Added a direct application and Windows Releases entry to the top-level profile quick-selection tables.
+- Fixed: ссылки на соответствующие русскую и английскую инструкции быстрого старта. / Corrected links to the language-specific quick-start sections.
+- Verification: сравнение всех двенадцати обновляемых файлов с текущими SHA в `main`; проверка отсутствия устаревшего имени, URL и одинаковых целевых адресов в RU/EN. / Audited the twelve profile files for legacy names and URLs; checked matching RU/EN destinations.
+
 Отслеживание изменений начинается с этой записи; более ранняя история не реконструировалась. Репозиторий документации не имеет номера версии продукта.
 
 ### 2026-10-11T22:19:08+03:00 — Ссылки на все сборки / Links to all builds

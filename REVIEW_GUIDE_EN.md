@@ -35,7 +35,7 @@ This route identifies a topic for discussion. It does not replace a detailed rev
 | Long AI/multimedia workflow | Video Translator Pro | `videotranslator/`, `tests/`, `tools/`, `AGENTS.md` | checkpoints, recovery, staged processing |
 | Hybrid desktop/web | ZeTer OS | `app/`, `tools/check_project.py` | Python/native bridge + modular JavaScript frontend |
 | Windows media converter / standalone EXE | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [audio pipeline](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/videovaudio/audio/folder_workflow.py) · [video pipeline](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/videovaudio/video/folder_workflow.py) · [regressions](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/tools/test_audio_regressions.py) · [EXE CI](https://github.com/zeter1/ZeTer-Media-Converter/blob/main/.github/workflows/build-windows.yml) · [v3.3.5 release](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) | subprocess lifecycle, previous-MP3 recovery, output validation, diagnostics, packaged-EXE headless smoke; full GUI NOT VERIFIED |
-| Downloader/media pipeline | Universal Video Downloader | `src/`, `tests/`, `problem_log_validator.py` | format strategy, validation, and diagnostics |
+| Downloader/media pipeline | ZeTer Video Downloader | `src/`, `tests/`, `problem_log_validator.py` | format strategy, validation, and diagnostics |
 
 ## 15-minute review
 
@@ -49,7 +49,7 @@ This route identifies a topic for discussion. It does not replace a detailed rev
 ### 2. Compare Python architectures
 
 - `Screen-Recorder-Pro/screen_recorder/` — modular Windows multimedia application;
-- `Universal-Video-Downloader/src/` — downloader with separate tests/scripts/docs;
+- `ZeTer-Video-Downloader/src/` — downloader with separate tests/scripts/docs;
 - `Video-Translator-Pro/videotranslator/` — package structure for a long-running pipeline;
 - `ZeTer-OS/app/` — hybrid Python + JavaScript boundary;
 - `Vacancy-Parser-Pro` — scraper / GUI / logging responsibilities.

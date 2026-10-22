@@ -94,7 +94,7 @@
 
 ---
 
-### [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)
+### [ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader)
 
 **Что это:** загрузка MP4/MP3 с compatibility-first стратегией.
 

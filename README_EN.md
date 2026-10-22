@@ -28,6 +28,7 @@ On this page: [choose an application](#what-would-you-like-to-do) · [inspect en
 | Record the screen and audio or take screenshots | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) | [Windows builds](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
 | Dictate text instead of typing | [VoiceFlow](https://github.com/zeter1/VoiceFlow) | [Windows builds](https://github.com/zeter1/VoiceFlow/releases) |
 | Translate and voice over videos | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) | [Windows builds](https://github.com/zeter1/Video-Translator-Pro/releases) |
+| Download MP4 videos up to 1080p and extract MP3 audio | [ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader) | [Windows builds](https://github.com/zeter1/ZeTer-Video-Downloader/releases) |
 | Convert a video course to MP3 or merge video in up-to-10-hour parts | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [Download Windows EXE v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) |
 | Collect vacancies and export them to Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) | [Windows builds](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
 | Organize notes and tasks | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Launch online](https://dkl.do.am/zeteros/index.html) · [Windows builds](https://github.com/zeter1/ZeTer-OS/releases) |
@@ -73,7 +74,7 @@ The following projects expose their code and engineering decisions. User-facing 
 | **[VoiceFlow](https://github.com/zeter1/VoiceFlow)** | Python / AI | local speech-to-text, faster-whisper, CPU/CUDA, background pipeline, Windows input |
 | **[Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)** | Python / AI + Multimedia | Whisper → translation → TTS → FFmpeg, checkpoints, cache, recovery, artifact validation |
 | **[Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)** | Python / Automation | multi-source vacancy parsing, adapters, fault isolation, deduplication, Excel export |
-| **[Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)** | Python / Multimedia | yt-dlp, MP4/MP3, format selection, remux/transcoding fallback, ffprobe validation, tests |
+| **[ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader)** | Python / Multimedia | yt-dlp, MP4/MP3, format selection, remux/transcoding fallback, ffprobe validation, tests |
 | **[ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter)** | Python / Windows · Multimedia | Tkinter, FFmpeg/FFprobe, video-to-MP3 and up-to-10-hour MP4 merging, MP3 backup, diagnostics, regression tests, Windows EXE CI |
 | **[Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)** | Python / Windows | Microsoft SAPI/COM, Windows TTS, MP3, global hotkeys, state persistence, long-job recovery |
 | **[Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)** | Python / Windows | WinAPI, WTS API, mutex, power management, self-test, bounded logging |

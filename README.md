@@ -28,6 +28,7 @@
 | Записать экран, звук или сделать скриншот | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) | [Windows-сборки](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
 | Надиктовать текст вместо печати | [VoiceFlow](https://github.com/zeter1/VoiceFlow) | [Windows-сборки](https://github.com/zeter1/VoiceFlow/releases) |
 | Перевести и озвучить видео | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) | [Windows-сборки](https://github.com/zeter1/Video-Translator-Pro/releases) |
+| Скачать видео в MP4 до 1080p и получить MP3 | [ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader) | [Windows-сборки](https://github.com/zeter1/ZeTer-Video-Downloader/releases) |
 | Преобразовать видеокурс в MP3 или объединить видео по 10 часов | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [Скачать Windows EXE v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) |
 | Собрать вакансии и выгрузить их в Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) | [Windows-сборки](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
 | Организовать заметки и задачи | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Запустить онлайн](https://dkl.do.am/zeteros/index.html) · [Windows-сборки](https://github.com/zeter1/ZeTer-OS/releases) |
@@ -73,7 +74,7 @@
 | **[VoiceFlow](https://github.com/zeter1/VoiceFlow)** | Python / AI | local speech-to-text, faster-whisper, CPU/CUDA, background pipeline и Windows input |
 | **[Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro)** | Python / AI + Multimedia | Whisper → translation → TTS → FFmpeg, checkpoints, cache, recovery и artifact validation |
 | **[Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)** | Python / Automation | multi-source парсинг вакансий, adapters, fault isolation, deduplication и Excel export |
-| **[Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)** | Python / Multimedia | yt-dlp, MP4/MP3, format selection, remux/transcoding fallback, ffprobe validation и tests |
+| **[ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader)** | Python / Multimedia | yt-dlp, MP4/MP3, format selection, remux/transcoding fallback, ffprobe validation и tests |
 | **[ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter)** | Python / Windows · Multimedia | Tkinter, FFmpeg/FFprobe, видео → MP3, объединение MP4 до 10 часов, резервирование MP3, диагностика, регрессионные тесты, Windows EXE CI |
 | **[Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)** | Python / Windows | Microsoft SAPI/COM, Windows TTS, MP3, global hotkeys, state persistence и long-job recovery |
 | **[Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)** | Python / Windows | WinAPI, WTS API, mutex, power management, self-test и bounded logging |

@@ -90,7 +90,7 @@ This page maps the projects and engineering decisions available for code review.
 
 ---
 
-### [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader)
+### [ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader)
 
 **What it is:** MP4/MP3 downloading with a compatibility-first strategy.
 

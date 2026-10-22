@@ -31,7 +31,7 @@ BizPilot хранит рабочее состояние в браузере. С�
 | Записывать экран, звук и делать скриншоты | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro#readme) | [Сборки](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
 | Надиктовывать текст в Windows-приложения | [VoiceFlow](https://github.com/zeter1/VoiceFlow#readme) | [Сборки](https://github.com/zeter1/VoiceFlow/releases) |
 | Переводить и озвучивать видео | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro#readme) | [Сборки](https://github.com/zeter1/Video-Translator-Pro/releases) |
-| Скачивать видео и извлекать MP3 | [Universal Video Downloader](https://github.com/zeter1/Universal-Video-Downloader#readme) | [Сборки](https://github.com/zeter1/Universal-Video-Downloader/releases) |
+| Скачивать видео и извлекать MP3 | [ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader/blob/main/README.md#быстрый-старт) | [Сборки](https://github.com/zeter1/ZeTer-Video-Downloader/releases) |
 | Преобразовывать видеокурсы в MP3 и объединять видео | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [Сборки](https://github.com/zeter1/ZeTer-Media-Converter/releases) |
 | Превращать текст в озвучку и MP3 | [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows#readme) | [Сборки](https://github.com/zeter1/Text-to-MP3-Windows/releases) |
 | Искать вакансии, убирать дубликаты и экспортировать Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro#readme) | [Сборки](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
