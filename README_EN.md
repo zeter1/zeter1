@@ -36,6 +36,8 @@ On this page: [choose an application](#what-would-you-like-to-do) · [inspect en
 
 **Before downloading a Windows application:** open that project's Releases page and check whether the build is a regular release or marked **Pre-release**. **ZeTer Media Converter v3.3.5** has a regular [Windows EXE release](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5). Other apps may require FFmpeg, an AI model, drivers, or an external service; check the project's README for requirements. The full user catalog, including video downloads, text-to-speech, and Windows diagnostics, is in **[USER_GUIDE_EN.md](USER_GUIDE_EN.md)**.
 
+**Safety check before running a download:** get installers only from the linked repository's **Releases** page; check the publisher, version, and system requirements. If a release has no digital signature or published checksum, do not treat its binary provenance as cryptographically verified. Do not disable SmartScreen/antivirus just to run an app, and do not run unverified EXEs as administrator.
+
 ## For employers and technical reviewers
 
 Three starting points connect a user's task to an engineering decision and its check:
