@@ -8,7 +8,7 @@ I build **web applications and browser-first products** with HTML/CSS/JavaScript
 
 Choose a tool for your task, find its setup instructions, or inspect how it is built. My main areas are **Web Development** and **Python Development**: browser tools and games, Windows applications, automation, and multimedia.
 
-**For users:** [choose, download, and get started](USER_GUIDE_EN.md). **For employers:** [a 5/15/30-minute route through code, architecture, and checks](REVIEW_GUIDE_EN.md).
+**For users:** [choose, download, and get started](USER_GUIDE_EN.md). **For employers:** [a 5/15/30-minute route through code, architecture, and checks](REVIEW_GUIDE_EN.md). **Portfolio and web demos:** [visit website](https://dkl.do.am/).
 
 On this page: [choose an application](#what-would-you-like-to-do) · [inspect engineering decisions](#for-employers-and-technical-reviewers) · [all projects](#all-projects).
 
