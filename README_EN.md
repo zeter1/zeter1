@@ -23,7 +23,7 @@ On this page: [choose an application](#what-would-you-like-to-do) · [inspect en
 
 | Task | Project | Start here |
 |---|---|---|
-| Edit images and work with layers | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Browser startup](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/README_EN.md#get-started) |
+| Edit images and work with layers | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Try online](https://dkl.do.am/servisi/PhotoEditor/index.html) · [Get started](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/README_EN.md#get-started) |
 | Manage clients, tasks, and business finances | [BizPilot](https://github.com/zeter1/BizPilot) | [Launch online](https://dkl.do.am/portfolio/bizpilot/index.html) · [Instructions](https://github.com/zeter1/BizPilot/blob/main/README_EN.md#get-started) |
 | Record the screen and audio or take screenshots | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) | [Windows builds](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
 | Dictate text instead of typing | [VoiceFlow](https://github.com/zeter1/VoiceFlow) | [Windows builds](https://github.com/zeter1/VoiceFlow/releases) |
@@ -34,7 +34,7 @@ On this page: [choose an application](#what-would-you-like-to-do) · [inspect en
 | Organize notes and tasks | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Launch online](https://dkl.do.am/zeteros/index.html) · [Windows builds](https://github.com/zeter1/ZeTer-OS/releases) |
 | Play browser games | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [Startup and requirements](USER_GUIDE_EN.md#browser-applications-and-games) |
 
-Release status varies: **ZeTer Media Converter v3.3.5** is a regular release with a Windows EXE, while other applications may offer **Pre-release** builds. Each application's README covers its FFmpeg, model, driver, and external-service requirements. The full user catalog, including video downloads, text-to-speech, and Windows diagnostics, is in **[USER_GUIDE_EN.md](USER_GUIDE_EN.md)**.
+**Before downloading a Windows application:** open that project's Releases page and check whether the build is a regular release or marked **Pre-release**. **ZeTer Media Converter v3.3.5** has a regular [Windows EXE release](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5). Other apps may require FFmpeg, an AI model, drivers, or an external service; check the project's README for requirements. The full user catalog, including video downloads, text-to-speech, and Windows diagnostics, is in **[USER_GUIDE_EN.md](USER_GUIDE_EN.md)**.
 
 ## For employers and technical reviewers
 
