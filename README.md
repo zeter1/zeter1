@@ -23,7 +23,7 @@
 
 | Задача | Проект | С чего начать |
 |---|---|---|
-| Редактировать фотографии и работать со слоями | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Запуск в браузере](https://github.com/zeter1/ZeTer-Photo-Editor#запуск-на-windows) |
+| Редактировать фотографии и работать со слоями | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Открыть онлайн](https://dkl.do.am/servisi/PhotoEditor/index.html) · [Как начать](https://github.com/zeter1/ZeTer-Photo-Editor#попробовать-редактор) |
 | Вести клиентов, задачи и финансы бизнеса | [BizPilot](https://github.com/zeter1/BizPilot) | [Запустить онлайн](https://dkl.do.am/portfolio/bizpilot/index.html) · [Инструкция](https://github.com/zeter1/BizPilot#запуск) |
 | Записать экран, звук или сделать скриншот | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) | [Windows-сборки](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
 | Надиктовать текст вместо печати | [VoiceFlow](https://github.com/zeter1/VoiceFlow) | [Windows-сборки](https://github.com/zeter1/VoiceFlow/releases) |
@@ -33,6 +33,8 @@
 | Собрать вакансии и выгрузить их в Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) | [Windows-сборки](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
 | Организовать заметки и задачи | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Запустить онлайн](https://dkl.do.am/zeteros/index.html) · [Windows-сборки](https://github.com/zeter1/ZeTer-OS/releases) |
 | Поиграть в браузере | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [Запуск и требования](USER_GUIDE.md#браузерные-приложения-и-игры) |
+
+**Перед скачиванием Windows-приложения:** откройте страницу Releases нужного проекта и проверьте, является ли сборка обычным релизом или помечена **Pre-release**. У **ZeTer Media Converter v3.3.5** есть обычный [Windows EXE-релиз](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5). Другим приложениям могут понадобиться FFmpeg, модель AI, драйверы или доступ к внешнему сервису — требования уточняйте в README проекта.
 
 Полный пользовательский каталог, включая загрузку видео, озвучку текста и диагностику Windows: **[USER_GUIDE.md](USER_GUIDE.md)**.
 
