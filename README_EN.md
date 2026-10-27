@@ -139,6 +139,7 @@ A technical reviewer can jump directly from the profile to code and checks:
 - **[REVIEW_GUIDE_EN.md](REVIEW_GUIDE_EN.md)** — 5/15/30-minute technical review path.
 - **[ENGINEERING_EN.md](ENGINEERING_EN.md)** — engineering principles and examples.
 - **[SUPPORT_EN.md](SUPPORT_EN.md)** — diagnostics and bug-report guidance for Web, Python, and hybrid projects.
+- **[CONTRIBUTING_EN.md](CONTRIBUTING_EN.md)** — prepare a reproducible fix, tests, and pull request.
 
 ## Contacts
 
