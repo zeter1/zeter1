@@ -141,6 +141,7 @@
 - **[REVIEW_GUIDE.md](REVIEW_GUIDE.md)** — технический маршрут на 5/15/30 минут.
 - **[ENGINEERING.md](ENGINEERING.md)** — инженерные принципы и примеры.
 - **[SUPPORT.md](SUPPORT.md)** — диагностика и bug reports для Web, Python и hybrid-проектов.
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** — как подготовить воспроизводимое исправление, тесты и pull request.
 
 ## Контакты для связи:
 
