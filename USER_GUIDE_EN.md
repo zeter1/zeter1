@@ -1,6 +1,6 @@
 **Язык / Language:** [Русский](USER_GUIDE.md) · **English**
 
-[Profile](README_EN.md) · **Applications** · [Technical review](REVIEW_GUIDE_EN.md) · [Support](SUPPORT_EN.md)
+[Profile](README_EN.md) · **Applications** · [Technical review](REVIEW_GUIDE_EN.md) · [Support](SUPPORT_EN.md) · [Security](SECURITY_EN.md)
 
 # Choose, download, and get started
 
@@ -82,6 +82,8 @@ A separate application folder does not guarantee separate storage: versions may 
 ## Reporting a problem
 
 Open **Issues** in the relevant project. Include the version, Windows or browser details, steps, expected result, and actual result. Provide a small example without personal files or secrets; see the [bug-report guide](SUPPORT_EN.md).
+
+**Potential security vulnerability:** if an issue could expose data, grant unauthorized access, or cause dangerous code execution, do not post exploit details in a public issue. Follow the [private security reporting guide](SECURITY_EN.md); any repository-specific policy takes precedence.
 
 Contact:
 
