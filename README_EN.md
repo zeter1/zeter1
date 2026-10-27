@@ -17,7 +17,7 @@ On this page: [choose an application](#what-would-you-like-to-do) · [inspect en
 - [https://t.me/zeter1](https://t.me/zeter1)
 - [zeter11@gmail.com](mailto:zeter11@gmail.com)
 
-**Report a bug:** [prepare a useful report](SUPPORT_EN.md).
+**Report a bug:** [prepare a useful report](SUPPORT_EN.md). **Potential vulnerability:** [private reporting guide](SECURITY_EN.md).
 
 ## What would you like to do?
 
