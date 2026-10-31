@@ -8,7 +8,7 @@ I build **web applications and browser-first products** with HTML/CSS/JavaScript
 
 Choose a tool for your task, find its setup instructions, or inspect how it is built. My main areas are **Web Development** and **Python Development**: browser tools and games, Windows applications, automation, and multimedia.
 
-**For users:** [choose, download, and get started](USER_GUIDE_EN.md). **For employers:** [a 5/15/30-minute route through code, architecture, and checks](REVIEW_GUIDE_EN.md). **Portfolio and web demos:** [visit website](https://dkl.do.am/).
+**For users:** [choose, download, and get started](USER_GUIDE_EN.md). **For employers:** [a 5/15/30-minute route through code, architecture, and checks](REVIEW_GUIDE_EN.md). **Portfolio and web demos:** [visit website](https://dkoles.com/).
 
 On this page: [choose an application](#what-would-you-like-to-do) · [inspect engineering decisions](#for-employers-and-technical-reviewers) · [all projects](#all-projects).
 
@@ -23,15 +23,15 @@ On this page: [choose an application](#what-would-you-like-to-do) · [inspect en
 
 | Task | Project | Start here |
 |---|---|---|
-| Edit images and work with layers | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Try online](https://dkl.do.am/servisi/PhotoEditor/index.html) · [Get started](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/README_EN.md#get-started) |
-| Manage clients, tasks, and business finances | [BizPilot](https://github.com/zeter1/BizPilot) | [Launch online](https://dkl.do.am/portfolio/bizpilot/index.html) · [Instructions](https://github.com/zeter1/BizPilot/blob/main/README_EN.md#get-started) |
+| Edit images and work with layers | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Try online](https://dkoles.com/servisi/PhotoEditor/index.html) · [Get started](https://github.com/zeter1/ZeTer-Photo-Editor/blob/main/README_EN.md#get-started) |
+| Manage clients, tasks, and business finances | [BizPilot](https://github.com/zeter1/BizPilot) | [Launch online](https://dkoles.com/portfolio/bizpilot/index.html) · [Instructions](https://github.com/zeter1/BizPilot/blob/main/README_EN.md#get-started) |
 | Record the screen and audio or take screenshots | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) | [Windows builds](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
 | Dictate text instead of typing | [VoiceFlow](https://github.com/zeter1/VoiceFlow) | [Windows builds](https://github.com/zeter1/VoiceFlow/releases) |
 | Translate and voice over videos | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) | [Windows builds](https://github.com/zeter1/Video-Translator-Pro/releases) |
 | Download MP4 videos up to 1080p and extract MP3 audio | [ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader) | [Windows builds](https://github.com/zeter1/ZeTer-Video-Downloader/releases) |
 | Convert a video course to MP3 or merge video in up-to-10-hour parts | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [Download Windows EXE v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) |
 | Collect vacancies and export them to Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) | [Windows builds](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
-| Organize notes and tasks | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Launch online](https://dkl.do.am/zeteros/index.html) · [Windows builds](https://github.com/zeter1/ZeTer-OS/releases) |
+| Organize notes and tasks | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Launch online](https://dkoles.com/zeteros/index.html) · [Windows builds](https://github.com/zeter1/ZeTer-OS/releases) |
 | Play browser games | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [Startup and requirements](USER_GUIDE_EN.md#browser-applications-and-games) |
 
 **Before downloading a Windows application:** open that project's Releases page and check whether the build is a regular release or marked **Pre-release**. **ZeTer Media Converter v3.3.5** has a regular [Windows EXE release](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5). Other apps may require FFmpeg, an AI model, drivers, or an external service; check the project's README for requirements. The full user catalog, including video downloads, text-to-speech, and Windows diagnostics, is in **[USER_GUIDE_EN.md](USER_GUIDE_EN.md)**.
@@ -154,4 +154,4 @@ A technical reviewer can jump directly from the profile to code and checks:
 - [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992)
 - [https://ok.ru/zeter1](https://ok.ru/zeter1)
 - [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram group: about me, projects and chat
-- **Website / portfolio:** https://dkl.do.am/
+- **Website / portfolio:** https://dkoles.com/

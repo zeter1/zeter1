@@ -8,7 +8,7 @@
 
 Здесь можно выбрать программу под свою задачу, найти инструкции и посмотреть, как она устроена. Основные направления — **Web Development** и **Python Development**: браузерные инструменты и игры, Windows-приложения, автоматизация и мультимедиа.
 
-**Для пользователей:** [выбор, скачивание и запуск](USER_GUIDE.md). **Для работодателей:** [код, архитектура и проверки за 5/15/30 минут](REVIEW_GUIDE.md). **Портфолио и веб-демо:** [открыть сайт](https://dkl.do.am/).
+**Для пользователей:** [выбор, скачивание и запуск](USER_GUIDE.md). **Для работодателей:** [код, архитектура и проверки за 5/15/30 минут](REVIEW_GUIDE.md). **Портфолио и веб-демо:** [открыть сайт](https://dkoles.com/).
 
 На этой странице: [выбрать программу](#что-хотите-сделать) · [посмотреть инженерные решения](#для-работодателей-и-технических-специалистов) · [все проекты](#все-проекты).
 
@@ -23,15 +23,15 @@
 
 | Задача | Проект | С чего начать |
 |---|---|---|
-| Редактировать фотографии и работать со слоями | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Открыть онлайн](https://dkl.do.am/servisi/PhotoEditor/index.html) · [Как начать](https://github.com/zeter1/ZeTer-Photo-Editor#попробовать-редактор) |
-| Вести клиентов, задачи и финансы бизнеса | [BizPilot](https://github.com/zeter1/BizPilot) | [Запустить онлайн](https://dkl.do.am/portfolio/bizpilot/index.html) · [Инструкция](https://github.com/zeter1/BizPilot#запуск) |
+| Редактировать фотографии и работать со слоями | [ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor) | [Открыть онлайн](https://dkoles.com/servisi/PhotoEditor/index.html) · [Как начать](https://github.com/zeter1/ZeTer-Photo-Editor#попробовать-редактор) |
+| Вести клиентов, задачи и финансы бизнеса | [BizPilot](https://github.com/zeter1/BizPilot) | [Запустить онлайн](https://dkoles.com/portfolio/bizpilot/index.html) · [Инструкция](https://github.com/zeter1/BizPilot#запуск) |
 | Записать экран, звук или сделать скриншот | [Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro) | [Windows-сборки](https://github.com/zeter1/Screen-Recorder-Pro/releases) |
 | Надиктовать текст вместо печати | [VoiceFlow](https://github.com/zeter1/VoiceFlow) | [Windows-сборки](https://github.com/zeter1/VoiceFlow/releases) |
 | Перевести и озвучить видео | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro) | [Windows-сборки](https://github.com/zeter1/Video-Translator-Pro/releases) |
 | Скачать видео в MP4 до 1080p и получить MP3 | [ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader) | [Windows-сборки](https://github.com/zeter1/ZeTer-Video-Downloader/releases) |
 | Преобразовать видеокурс в MP3 или объединить видео по 10 часов | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [Скачать Windows EXE v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) |
 | Собрать вакансии и выгрузить их в Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) | [Windows-сборки](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
-| Организовать заметки и задачи | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Запустить онлайн](https://dkl.do.am/zeteros/index.html) · [Windows-сборки](https://github.com/zeter1/ZeTer-OS/releases) |
+| Организовать заметки и задачи | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Запустить онлайн](https://dkoles.com/zeteros/index.html) · [Windows-сборки](https://github.com/zeter1/ZeTer-OS/releases) |
 | Поиграть в браузере | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [Запуск и требования](USER_GUIDE.md#браузерные-приложения-и-игры) |
 
 **Перед скачиванием Windows-приложения:** откройте страницу Releases нужного проекта и проверьте, является ли сборка обычным релизом или помечена **Pre-release**. У **ZeTer Media Converter v3.3.5** есть обычный [Windows EXE-релиз](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5). Другим приложениям могут понадобиться FFmpeg, модель AI, драйверы или доступ к внешнему сервису — требования уточняйте в README проекта.
@@ -156,4 +156,4 @@
 - [https://www.threads.com/@zeter1992](https://www.threads.com/@zeter1992)
 - [https://ok.ru/zeter1](https://ok.ru/zeter1)
 - [https://t.me/zeterchat](https://t.me/zeterchat) — Telegram-группа: обо мне, проекты и чат
-- [https://dkl.do.am/](https://dkl.do.am/) — сайт-портфолио и веб-проекты
+- [https://dkoles.com/](https://dkoles.com/) — сайт-портфолио и веб-проекты

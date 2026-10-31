@@ -1,5 +1,9 @@
 # История изменений
 
+### 2026-10-31T15:38:25+03:00 — Новый домен сайта
+
+- Изменено: действующие ссылки сайта и онлайн-приложений переведены на https://dkoles.com/ с сохранением путей страниц.
+
 ### 2026-10-22 — ZeTer Video Downloader в GitHub-профиле / Profile links refreshed
 
 - Changed: название **ZeTer Video Downloader** и адрес `https://github.com/zeter1/ZeTer-Video-Downloader` синхронизированы в двуязычных README, каталогах проектов, руководствах, инженерном обзоре и поддержке. / Updated the application name and repository URL across the Russian and English profile documentation.
