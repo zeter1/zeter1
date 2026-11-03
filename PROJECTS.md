@@ -112,7 +112,7 @@
 
 ---
 
-### [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)
+### [ZeTer Voice](https://github.com/zeter1/ZeTer-Voice)
 
 **Что это:** Windows TTS + MP3.
 

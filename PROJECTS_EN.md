@@ -108,7 +108,7 @@ This page maps the projects and engineering decisions available for code review.
 
 ---
 
-### [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)
+### [ZeTer Voice](https://github.com/zeter1/ZeTer-Voice)
 
 **What it is:** Windows TTS + MP3 creation.
 

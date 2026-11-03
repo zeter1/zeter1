@@ -80,7 +80,7 @@
 | **[Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)** | Python / Automation | multi-source парсинг вакансий, adapters, fault isolation, deduplication и Excel export |
 | **[ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader)** | Python / Multimedia | yt-dlp, MP4/MP3, format selection, remux/transcoding fallback, ffprobe validation и tests |
 | **[ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter)** | Python / Windows · Multimedia | Tkinter, FFmpeg/FFprobe, видео → MP3, объединение MP4 до 10 часов, резервирование MP3, диагностика, регрессионные тесты, Windows EXE CI |
-| **[Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)** | Python / Windows | Microsoft SAPI/COM, Windows TTS, MP3, global hotkeys, state persistence и long-job recovery |
+| **[ZeTer Voice](https://github.com/zeter1/ZeTer-Voice)** | Python / Windows | Microsoft SAPI/COM, Windows TTS, MP3, global hotkeys, state persistence и long-job recovery |
 | **[Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)** | Python / Windows | WinAPI, WTS API, mutex, power management, self-test и bounded logging |
 | **[ZeTer OS](https://github.com/zeter1/ZeTer-OS)** | Hybrid Desktop/Web | Python + JavaScript, pywebview bridge, modular frontend, local-first state и backup/recovery |
 | **[Zeter Video Editor](https://github.com/zeter1/zeter-video-editor)** | Desktop / Video | Tauri, React, TypeScript, Rust и FFmpeg; многодорожечный монтаж, локальные проекты; подготовка к выпуску, готового GitHub-релиза пока нет |

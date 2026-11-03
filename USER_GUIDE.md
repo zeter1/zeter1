@@ -33,7 +33,7 @@ BizPilot хранит рабочее состояние в браузере. С�
 | Переводить и озвучивать видео | [Video Translator Pro](https://github.com/zeter1/Video-Translator-Pro#readme) | [Сборки](https://github.com/zeter1/Video-Translator-Pro/releases) |
 | Скачивать видео и извлекать MP3 | [ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader/blob/main/README.md#быстрый-старт) | [Сборки](https://github.com/zeter1/ZeTer-Video-Downloader/releases) |
 | Преобразовывать видеокурсы в MP3 и объединять видео | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [Сборки](https://github.com/zeter1/ZeTer-Media-Converter/releases) |
-| Превращать текст в озвучку и MP3 | [Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows#readme) | [Сборки](https://github.com/zeter1/Text-to-MP3-Windows/releases) |
+| Превращать текст в озвучку и MP3 | [ZeTer Voice](https://github.com/zeter1/ZeTer-Voice#readme) | [Сборки](https://github.com/zeter1/ZeTer-Voice/releases) |
 | Искать вакансии, убирать дубликаты и экспортировать Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro#readme) | [Сборки](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
 | Исследовать причины синего экрана Windows | [BSOD Investigator](https://github.com/zeter1/BSOD-Investigator#readme) | [Сборки](https://github.com/zeter1/BSOD-Investigator/releases) |
 | Блокировать сеанс Windows с управлением переходом в сон | [Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker#readme) | [Сборки](https://github.com/zeter1/Windows-PC-Locker/releases) |

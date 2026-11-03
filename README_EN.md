@@ -78,7 +78,7 @@ The following projects expose their code and engineering decisions. User-facing 
 | **[Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro)** | Python / Automation | multi-source vacancy parsing, adapters, fault isolation, deduplication, Excel export |
 | **[ZeTer Video Downloader](https://github.com/zeter1/ZeTer-Video-Downloader)** | Python / Multimedia | yt-dlp, MP4/MP3, format selection, remux/transcoding fallback, ffprobe validation, tests |
 | **[ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter)** | Python / Windows · Multimedia | Tkinter, FFmpeg/FFprobe, video-to-MP3 and up-to-10-hour MP4 merging, MP3 backup, diagnostics, regression tests, Windows EXE CI |
-| **[Text to MP3 for Windows](https://github.com/zeter1/Text-to-MP3-Windows)** | Python / Windows | Microsoft SAPI/COM, Windows TTS, MP3, global hotkeys, state persistence, long-job recovery |
+| **[ZeTer Voice](https://github.com/zeter1/ZeTer-Voice)** | Python / Windows | Microsoft SAPI/COM, Windows TTS, MP3, global hotkeys, state persistence, long-job recovery |
 | **[Windows PC Locker](https://github.com/zeter1/Windows-PC-Locker)** | Python / Windows | WinAPI, WTS API, mutex, power management, self-test, bounded logging |
 | **[ZeTer OS](https://github.com/zeter1/ZeTer-OS)** | Hybrid Desktop/Web | Python + JavaScript, pywebview bridge, modular frontend, local-first state, backup/recovery |
 | **[Zeter Video Editor](https://github.com/zeter1/zeter-video-editor)** | Desktop / Video | Tauri, React, TypeScript, Rust, FFmpeg; multi-track editing and local projects; release-readiness work, no public GitHub release yet |

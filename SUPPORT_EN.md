@@ -145,7 +145,7 @@ Include the vacancy source, search parameters, and a safe summary of the diagnos
 
 Include the site, video/MP3 mode, requested quality, yt-dlp version, and the relevant FFmpeg/yt-dlp message. Do not publish cookies or private URLs.
 
-### Text to MP3 for Windows
+### ZeTer Voice
 
 Include the SAPI voice, reading/MP3 scenario, audio device, and a safe diagnostic excerpt.
 
