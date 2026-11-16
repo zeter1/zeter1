@@ -40,6 +40,8 @@
 
 ### [CYBER RACE](https://github.com/zeter1/CYBER-RACE)
 
+**[Играть онлайн](https://dkoles.com/Games/cyber-race/index.html)**
+
 **Что это:** браузерная 3D боевая гонка с AI-соперниками, оружием, бонусами и adaptive quality.
 
 **Инженерный акцент:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation и WebGL context recovery. После decomposition opponent frame/attack и homing kinematics стали dependency-injected simulation contracts. `tests/scenarios.mjs` с versioned seeded fixture replay-ит 180 кадров AI, серию attack decisions и 90 кадров homing rocket; затем CI поднимает настоящий headless WebGL boot.

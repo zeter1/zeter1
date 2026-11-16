@@ -32,7 +32,7 @@
 | Преобразовать видеокурс в MP3 или объединить видео по 10 часов | [ZeTer Media Converter](https://github.com/zeter1/ZeTer-Media-Converter) | [Скачать Windows EXE v3.3.5](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5) |
 | Собрать вакансии и выгрузить их в Excel | [Vacancy Parser Pro](https://github.com/zeter1/Vacancy-Parser-Pro) | [Windows-сборки](https://github.com/zeter1/Vacancy-Parser-Pro/releases) |
 | Организовать заметки и задачи | [ZeTer OS](https://github.com/zeter1/ZeTer-OS) | [Запустить онлайн](https://dkoles.com/zeteros/index.html) · [Windows-сборки](https://github.com/zeter1/ZeTer-OS/releases) |
-| Поиграть в браузере | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [Запуск и требования](USER_GUIDE.md#браузерные-приложения-и-игры) |
+| Поиграть в браузере | [ZAP ZONE](https://github.com/zeter1/ZAP-ZONE), [CYBER RACE](https://github.com/zeter1/CYBER-RACE), [Forest Hunter](https://github.com/zeter1/ForestHunter) | [CYBER RACE онлайн](https://dkoles.com/Games/cyber-race/index.html) · [Запуск и требования](USER_GUIDE.md#браузерные-приложения-и-игры) |
 
 **Перед скачиванием Windows-приложения:** откройте страницу Releases нужного проекта и проверьте, является ли сборка обычным релизом или помечена **Pre-release**. У **ZeTer Media Converter v3.3.5** есть обычный [Windows EXE-релиз](https://github.com/zeter1/ZeTer-Media-Converter/releases/tag/v3.3.5). Другим приложениям могут понадобиться FFmpeg, модель AI, драйверы или доступ к внешнему сервису — требования уточняйте в README проекта.
 
@@ -71,7 +71,7 @@
 | **[ZeTer Photo Editor](https://github.com/zeter1/ZeTer-Photo-Editor)** | Web / Graphics | браузерный графический редактор: Canvas 2D, layers/masks, PSD/PSB, high-depth pixel pipeline, ICC/CMYK, regression tests |
 | **[BizPilot](https://github.com/zeter1/BizPilot)** | Web / Application | local-first бизнес-приложение, testable cash-flow engine, localStorage/ZIP backup, regression tests и real headless-browser boot smoke |
 | **[ZAP ZONE](https://github.com/zeter1/ZAP-ZONE)** | Web / 3D | Three.js/WebGL FPS, modular JavaScript, tactical AI, оружие/баллистика, structural validation и browser smoke CI |
-| **[CYBER RACE](https://github.com/zeter1/CYBER-RACE)** | Web / 3D | Three.js/WebGL combat racing; dependency-injected opponent/ballistics simulation, seeded replay fixtures, Node contracts и headless WebGL integration CI |
+| **[CYBER RACE](https://github.com/zeter1/CYBER-RACE)** · [Играть онлайн](https://dkoles.com/Games/cyber-race/index.html) | Web / 3D | Three.js/WebGL combat racing; dependency-injected opponent/ballistics simulation, seeded replay fixtures, Node contracts и headless WebGL integration CI |
 | **[Forest Hunter](https://github.com/zeter1/ForestHunter)** | Web / 3D | Three.js FPS; replayable boar state machine, seeded combat/reload/deployable scenarios, environment modules, Node contracts и headless WebGL CI |
 | **[Screen Recorder Pro](https://github.com/zeter1/Screen-Recorder-Pro)** | Python / Windows | FFmpeg, Desktop Duplication, NVENC, WinAPI, process lifecycle, capture recovery и save safety |
 | **[BSOD Investigator](https://github.com/zeter1/BSOD-Investigator)** | Python / Diagnostics | WinDbg/CDB, crash dumps, Event Log, SQLite и evidence-based диагностика |

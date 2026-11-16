@@ -36,6 +36,8 @@ This page maps the projects and engineering decisions available for code review.
 
 ### [CYBER RACE](https://github.com/zeter1/CYBER-RACE)
 
+**[Play online](https://dkoles.com/Games/cyber-race/index.html)**
+
 **What it is:** a browser 3D combat racing game with AI opponents, weapons, pickups, and adaptive quality.
 
 **Engineering focus:** Three.js/WebGL loop, Web Audio, AI, combat systems, performance adaptation, and WebGL context recovery. Opponent frame/attack and homing kinematics now run through dependency-injected simulation contracts. `tests/scenarios.mjs` replays 180 seeded AI frames, attack decisions, and 90 homing-rocket frames before the headless WebGL integration gate.
